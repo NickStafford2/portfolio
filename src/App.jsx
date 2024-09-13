@@ -22,9 +22,14 @@ function App() {
 
   return (
     <>
-      <h1 class="parallelogram">
-        <div class="no-skew">Hello World</div>
-      </h1>
+      <motion.div
+        className="parallelogram"
+        initial={{ obacity: 0, scale: 0 }}
+        animate={{ obacity: 1, scale: 1 }}
+      >
+
+        <h1 class="no-skew">Hello World</h1>
+      </motion.div>
       <h2>Nicholas Stafford. Full Stack Developer.</h2>
       <motion.div
         className="box"

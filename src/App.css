@@ -1,18 +1,43 @@
+
+body {
+background: rgb(87,39,102);
+background: radial-gradient(circle, rgba(87,39,102,1) 0%, rgba(41,34,91,1) 100%);
+	background-size: 400% 400%;
+	animation: gradient 35s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 .icon {
   height: 40px;
   width:40px;
 }
 
+.banner {
+
+}
 .no-skew {
  transform: skew(20deg);
-  margin-left:1em;
+  margin-left:5em;
 }
 
 .parallelogram {
   padding: 1em;
-  margin-left: -1em;
-	width: 13em;
+  margin-left: -5em;
+	width: 27em;
 	/*height: 3em;*/
 	transform: skew(-20deg);
-	background: #764685;
+	background: #437552;
 }
