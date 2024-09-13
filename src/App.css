@@ -1,7 +1,8 @@
 
 body {
-background: rgb(87,39,102);
-background: radial-gradient(circle, rgba(87,39,102,1) 0%, rgba(41,34,91,1) 100%);
+  margin:0;
+  background: rgb(87,39,102);
+  background: radial-gradient(circle, rgba(87,39,102,1) 0%, rgba(41,34,91,1) 100%);
 	background-size: 400% 400%;
 	animation: gradient 35s ease infinite;
 	height: 100vh;
@@ -27,17 +28,50 @@ background: radial-gradient(circle, rgba(87,39,102,1) 0%, rgba(41,34,91,1) 100%)
 
 .banner {
 
+  padding: 1em;
+  /*margin-left: -5em;*/
+	width: 27em;
+	/*height: 3em;*/
+	background: #437551;
 }
+
 .no-skew {
  transform: skew(20deg);
   margin-left:5em;
 }
 
 .parallelogram {
-  padding: 1em;
-  margin-left: -5em;
-	width: 27em;
-	/*height: 3em;*/
-	transform: skew(-20deg);
-	background: #437552;
+  transform: skew(-20deg);
+}
+.quote-box {
+  background-color: #909993;
+
+}
+.page-width {
+  padding: 0em 5em;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.section {
+  width:100%;
+  margin: 1em;
+  padding:1em;
+  background: rgb(116,103,109);
+  background: linear-gradient(90deg, rgba(116,103,109,0.5060224773503151) 0%, rgba(182,195,210,0.43039222524947474) 100%);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  /*width:100%;*/
+  height:2em;
+  background: rgb(116,103,109);
+  background: linear-gradient(90deg, rgba(116,103,109,0.5060224773503151) 0%, rgba(182,195,210,0.43039222524947474) 100%);
+
 }

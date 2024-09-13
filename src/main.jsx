@@ -10,8 +10,8 @@ function AppWithUI() {
 
   return (
     <StrictMode>
-      <Refresh onClick={() => setCount(count + 1)} />
-      <App key={count} />
+      <nav className="page-width"><a>Resume</a></nav>
+      <App key={count} className="page-width" />
       <Footer
         title="Enter animation"
         url="https://framer.com/docs/animation/"
