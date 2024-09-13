@@ -25,6 +25,10 @@ function App() {
       <h1>Your next website</h1>
       <h1>About me</h1>
       <h1>Education</h1>
+      <h2>Masters of Computer Science - Kent State University</h2>
+      <p>In progress. I am a graduate student at Kent State. Currently studying Cryptography and AI.</p>
+      <h2>B.S Computer Science. GPA: 3.958 - Kent State University</h2>
+      <p>You have no idea how much that A- in Latin class still urks me.</p>
       <h1>Projects</h1>
       <h2>Visual NPM</h2>
       <p>Visualize the tools that power the web. See it change over time. Coming soon. . .</p>
