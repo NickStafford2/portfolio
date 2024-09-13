@@ -13,10 +13,23 @@ function App() {
       <h2>Nicholas Stafford. Full Stack Developer.</h2>
       <p>Test</p>
       <motion.div
-        classname="box"
+        className="box"
         initial={{ obacity: 0, scale: 0 }}
         animate={{ obacity: 1, scale: 1 }}
       />
+      <ul>
+        <li><a>Github</a></li>
+        <li><a>Resume</a></li>
+        <li><a>Icebox</a></li>
+      </ul>
+      <h1>Your next website</h1>
+      <h1>About me</h1>
+      <h1>Education</h1>
+      <h1>Projects</h1>
+      <h2>Visual NPM</h2>
+      <p>Visualize the tools that power the web. See it change over time. Coming soon. . .</p>
+      <h2>NBA Goat Calculator</h2>
+      <p>Generations have argued. Is anyone right? Who you consider the greatest depends on your values. This app asks what you value, and with the power of advanced analytics, ranks players accordingly. Coming soon. . .</p>
     </div>
   );
   /*

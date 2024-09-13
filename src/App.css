@@ -133,7 +133,7 @@ ul {
   height: 300px;
   overflow-x: scroll;
   padding: 20px 0;
-  flex: 0 0 600px;
+  flex: 0 0 1000px;
   margin: 0 auto;
 }
 
@@ -155,12 +155,8 @@ ul {
 
 li {
   flex: 0 0 200px;
-  background: var(--accent);
-  margin: 0 20px 0 0;
-}
-
-li:last-of-type {
-  margin: 0;
+  /*background: var(--accent);*/
+  /*margin: 0 20px 0 0;*/
 }
 
 .refresh {
