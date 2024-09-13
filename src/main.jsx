@@ -10,7 +10,11 @@ function AppWithUI() {
 
   return (
     <StrictMode>
-      <nav className="page-width"><a>Resume</a></nav>
+      <nav className="page-width">
+        <div className="gradient-box">
+          <a>RESUME</a>
+        </div>
+      </nav>
       <App key={count} className="page-width" />
       <Footer
         title="Enter animation"

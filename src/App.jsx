@@ -48,9 +48,6 @@ function App() {
         animate={{ obacity: 1, scale: 1 }}
       />
       <div className="section">
-        <p>test</p>
-      </div>
-      <div className="section">
         <ul>
           <li><a>Github</a><FaGithub /></li>
           <li><a>Resume</a></li>
