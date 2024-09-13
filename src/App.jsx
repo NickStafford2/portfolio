@@ -2,10 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { motion } from "framer-motion"
 
 function App() {
   const [count, setCount] = useState(0)
 
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <h2>Nicholas Stafford. Full Stack Developer.</h2>
+      <p>Test</p>
+      <motion.div
+        classname="box"
+        initial={{ obacity: 0, scale: 0 }}
+        animate={{ obacity: 1, scale: 1 }}
+      />
+    </div>
+  );
+  /*
   return (
     <>
       <div>
@@ -16,7 +30,6 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -30,6 +43,7 @@ function App() {
       </p>
     </>
   )
+  */
 }
 
 export default App
