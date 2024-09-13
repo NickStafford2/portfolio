@@ -21,8 +21,10 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>Hello World</h1>
+    <>
+      <h1 class="parallelogram">
+        <div class="no-skew">Hello World</div>
+      </h1>
       <h2>Nicholas Stafford. Full Stack Developer.</h2>
       <motion.div
         className="box"
@@ -69,7 +71,7 @@ function App() {
       <p>Generations have argued. Is anyone right? Who you consider the greatest depends on your values. This app asks what you value, and with the power of advanced analytics, ranks players accordingly. Coming soon. . .</p>
       <h2>Neovim Config</h2>
       <p>Link</p>
-    </div>
+    </>
   );
   /*
   return (
