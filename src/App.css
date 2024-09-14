@@ -1,3 +1,6 @@
+:root {
+  --border-width: 4px;
+}
 
 body {
   margin:0;
@@ -26,16 +29,16 @@ body {
 }
 
 .banner {
-  padding: 1em;
+  padding: 1rem;
   /*margin-left: -5em;*/
-	width: 27em;
+	width: 27rem;
 	/*height: 3em;*/
 	background: #437551;
 }
 
 .no-skew {
   transform: skew(20deg);
-  margin-left:5em;
+  margin-left:5rem;
 }
 
 .parallelogram {
@@ -45,11 +48,16 @@ body {
   background-color: #909993;
 
 }
+.page {
+  display: flex;
+  flex-direction:row;
+
+}
 .page-width {
-  padding: 0em 5em;
+  padding: 0rem 1rem;
 }
 
-.page-wrapper {
+.content-wrapper {
   display: flex;
   flex-direction: column;
   height:100%;
@@ -57,8 +65,8 @@ body {
 
 .section {
   /*width:100%;*/
-  margin: 1em 0em;
-  padding:10em 1em;
+  margin: 1rem 0rem;
+  padding:10rem 1rem;
   color: white;
   background: rgb(13,52,36);
   background: linear-gradient(59deg, rgba(13,52,36,1) 0%, rgba(5,19,36,1) 100%);
@@ -82,7 +90,7 @@ nav {
 	 /*width: 15em;*/
 	 /*max-width: 15em;*/
 	 position: relative;
-	 padding: 1em 2em;
+	 padding: 1rem 2rem;
 	 box-sizing: border-box;
 	 color: #fff;
 	 background: #000;
@@ -90,7 +98,7 @@ nav {
 	/* !importanté */
 	 border: solid 5px transparent;
 	/* !importanté */
-	 border-radius: 1em;
+	 border-radius: 1rem;
 }
 
 .gradient-box:before {
@@ -109,8 +117,33 @@ nav {
 }
 
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-right: var(--border-width) solid pink;
+}
 
+.sidebar-item {
+  border-top: var(--border-width) solid orange;
+  border-right: var(--border-width) solid orange;
+  border-top-right-radius: 1rem;
+  width: 8rem;
+  height: 1rem;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 1rem 0;
+  position: relative;
+}
 
-
-
+.sidebar-item:after {
+  left: calc(8rem + 0rem);
+  top: 2rem;
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2em;
+  border-left: var(--border-width) solid red;
+  border-bottom: var(--border-width) solid red;
+  border-bottom-left-radius: 1rem;
+}
 
