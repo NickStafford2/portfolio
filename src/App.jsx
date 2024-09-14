@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="page page-width">
       <div className="sidebar">
+        <div className="sidebar-spacer"></div>
         <div className="sidebar-item">Github</div>
         <div className="sidebar-item">Github</div>
         <div className="sidebar-item">Github</div>
