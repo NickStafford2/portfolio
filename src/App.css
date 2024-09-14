@@ -20,14 +20,12 @@ body {
 	}
 }
 
-
 .icon {
   height: 40px;
   width:40px;
 }
 
 .banner {
-
   padding: 1em;
   /*margin-left: -5em;*/
 	width: 27em;
@@ -36,7 +34,7 @@ body {
 }
 
 .no-skew {
- transform: skew(20deg);
+  transform: skew(20deg);
   margin-left:5em;
 }
 
@@ -60,7 +58,7 @@ body {
 .section {
   /*width:100%;*/
   margin: 1em 0em;
-  padding:1em;
+  padding:10em 1em;
   color: white;
   background: rgb(13,52,36);
   background: linear-gradient(59deg, rgba(13,52,36,1) 0%, rgba(5,19,36,1) 100%);
@@ -94,7 +92,8 @@ nav {
 	/* !importanté */
 	 border-radius: 1em;
 }
- .gradient-box:before {
+
+.gradient-box:before {
 	 content: '';
 	 position: absolute;
 	 top: 0;
@@ -108,4 +107,10 @@ nav {
 	/* !importanté */
 	 background: linear-gradient(to right, green, orange);
 }
- 
+
+
+
+
+
+
+

@@ -17,6 +17,10 @@ import { FaRegSnowflake } from "react-icons/fa";
 import './App.css'
 import { motion } from "framer-motion"
 
+
+
+// idea. Make a terminal looking thing. use react to change text over time like someone is typing. 
+//
 function App() {
   const [count, setCount] = useState(0)
 
@@ -25,19 +29,17 @@ function App() {
       <motion.div
         className="banner"
         animate={{
-          skew: [0, 20],
+          skew: [0, -20, 0],
         }}
         transition={{
           duration: 2,
           ease: "easeInOut",
-          times: [0, 2],
+          times: [0, 1, 2],
           repeat: Infinity,
           repeatDelay: 0
         }}
-
       >
-        <motion.h1
-        >
+        <motion.h1>
           Hello World
         </motion.h1>
       </motion.div>
