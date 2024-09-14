@@ -28,15 +28,16 @@ function App() {
     <div className="page page-width">
       <div className="sidebar">
         <div className="sidebar-spacer"></div>
+        <div className="sidebar-item">Me</div>
+        <div className="sidebar-item">Education</div>
+        <div className="sidebar-item">Projects</div>
         <div className="sidebar-item">Github</div>
-        <div className="sidebar-item">Github</div>
-        <div className="sidebar-item">Github</div>
-        <div className="sidebar-item">Github</div>
-        <div className="sidebar-item">Github</div>
+        <div className="sidebar-item">Contact</div>
       </div>
       <div className="content-wrapper">
         <div className="section">
-          <h2>Nicholas Stafford. Full Stack Developer.</h2>
+          <h1>Nicholas Stafford</h1>
+          <h2>Full Stack Developer</h2>
 
         </div>
         <div className="section">
@@ -86,6 +87,11 @@ function App() {
           <p>Generations have argued. Is anyone right? Who you consider the greatest depends on your values. This app asks what you value, and with the power of advanced analytics, ranks players accordingly. Coming soon. . .</p>
           <h2>Neovim Config</h2>
           <p>Link</p>
+        </div>
+        <div className="section">
+          <h1>Contact me</h1>
+          <p>Write me a message here, and I will get back to you.</p>
+          <textarea></textarea>
         </div>
         <div className="section">
           <h1>Keep in mind</h1>

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');*/
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
 :root {
   --border-width: 4px;
 }
@@ -23,6 +39,9 @@ body {
 	}
 }
 
+h1 {
+  font-size: 4rem;
+}
 .icon {
   height: 40px;
   width:40px;
