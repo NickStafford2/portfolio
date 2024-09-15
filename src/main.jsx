@@ -4,6 +4,8 @@ import * as ReactDOMClient from "react-dom/client";
 import App from "./App";
 import { Footer } from "./template/Footer";
 import { Refresh } from "./template/Refresh";
+//import "@fontsource/poppins" // Defaults to weight 400 with all styles included.
+import '@fontsource-variable/raleway';
 
 function AppWithUI() {
   const [count, setCount] = useState(0);
