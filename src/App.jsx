@@ -25,21 +25,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="page page-width">
-      <div className="sidebar">
-        <div className="sidebar-spacer"></div>
-        <div className="sidebar-item">Me</div>
-        <div className="sidebar-item">Education</div>
-        <div className="sidebar-item">Skills</div>
-        <div className="sidebar-item">Projects</div>
-        <div className="sidebar-item">Beyond Code</div>
-        <div className="sidebar-item">Contact</div>
-      </div>
+    <div className="page">
       <div className="content-wrapper">
         <div className="section">
           <h1>Nicholas Stafford</h1>
           <h2>Full Stack Developer</h2>
-
         </div>
         <div className="section">
           <h1>Contact me</h1>

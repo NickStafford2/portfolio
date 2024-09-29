@@ -17,12 +17,12 @@ body {
 body {
   /*font-family: "Poppins";*/
   font-family: 'Raleway Variable', sans-serif;
-  margin:0;
-  background: rgb(87,39,102);
-  background: radial-gradient(circle, rgba(87,39,102,1) 0%, rgba(41,34,91,1) 100%);
-background-size: 400% 400%;
-animation: gradient 35s ease infinite;
-height: 100vh;
+  margin: 0;
+  background: rgb(87, 39, 102);
+  background: radial-gradient(circle, rgba(87, 39, 102, 1) 0%, rgba(41, 34, 91, 1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 35s ease infinite;
+  height: 100vh;
   color: white;
 }
 
@@ -30,16 +30,19 @@ height: 100vh;
   --border-width: 4px;
 }
 
+
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -53,20 +56,20 @@ h2 {
 
 .icon {
   height: 40px;
-  width:40px;
+  width: 40px;
 }
 
 .banner {
   padding: 1rem;
   /*margin-left: -5em;*/
-	width: 27rem;
-	/*height: 3em;*/
-	background: #437551;
+  width: 27rem;
+  /*height: 3em;*/
+  background: #437551;
 }
 
 .no-skew {
   transform: skew(20deg);
-  margin-left:5rem;
+  margin-left: 5rem;
 }
 
 .parallelogram {
@@ -80,8 +83,9 @@ h2 {
 
 .page {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: flex-start;
+  padding-left: 12rem;
 }
 
 .page-width {
@@ -91,14 +95,14 @@ h2 {
 .content-wrapper {
   display: flex;
   flex-direction: column;
-  height:100%;
+  height: 100%;
   padding-right: 3rem;
 }
 
 .section {
   /*width:100%;*/
-  margin: 1rem 0rem;
-  padding:10rem 1rem;
+  margin: 4rem 0rem;
+  padding: 10rem 1rem;
   color: white;
   position: relative;
   top: 3rem;
@@ -111,63 +115,9 @@ h2 {
   min-height: 20vw;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-  background: rgb(116,103,109);
-  background: linear-gradient(90deg, rgba(116,103,109,0.5060224773503151) 0%, rgba(182,195,210,0.43039222524947474) 100%);
-}
-
-.resume-button {
-
-}
-
-.gradient-box {
-	 display: flex;
-	 align-items: center;
-	 /*width: 15em;*/
-	 /*max-width: 15em;*/
-	 position: relative;
-	 padding: 1rem 2rem;
-	 box-sizing: border-box;
-	 color: #fff;
-	 background: #000;
-	 background-clip: padding-box;
-	/* !importanté */
-	 border: solid 5px transparent;
-	/* !importanté */
-	 border-radius: 1rem;
-}
-
-.gradient-box:before {
-	 content: '';
-	 position: absolute;
-	 top: 0;
-	 right: 0;
-	 bottom: 0;
-	 left: 0;
-	 z-index: -1;
-	 margin: -5px;
-	/* !importanté */
-	 border-radius: inherit;
-	/* !importanté */
-	 background: linear-gradient(to right, green, orange);
-}
-
-
-.sidebar {
-  position: relative;
-  top: 4rem;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  /*border-right: var(--border-width) solid pink;*/
-}
-
-.sidebar:after {
+.section:before {
   position: absolute;
-  left: calc(12rem + var(--border-width));
+  left: calc(-1 * var(--border-width));
   top: -3rem;
   content: "";
   height: 3rem;
@@ -177,33 +127,44 @@ nav {
   border-top-left-radius: 3rem;
 }
 
-.sidebar-spacer {
-  height: 1rem;
-  width: 1rem;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background: rgb(116, 103, 109);
+  background: linear-gradient(90deg, rgba(116, 103, 109, 0.5060224773503151) 0%, rgba(182, 195, 210, 0.43039222524947474) 100%);
 }
 
-.sidebar-item {
-  border-top: var(--border-width) solid orange;
-  border-right: var(--border-width) solid orange;
-  border-top-right-radius: 1rem;
-  width: 8rem;
-  height: 1rem;
-  padding: 1rem 0rem 0rem 0rem;
-  margin: 2rem 0;
+.resume-button {}
+
+.gradient-box {
+  display: flex;
+  align-items: center;
+  /*width: 15em;*/
+  /*max-width: 15em;*/
   position: relative;
-}
-.sidebar-item:first-child {
-  content: "test";
-}
-.sidebar-item:after {
-  left: calc(8rem + 0rem);
-  top: 2rem;
-  content: "";
-  position: absolute;
-  width: 2rem;
-  height: 2em;
-  border-left: var(--border-width) solid red;
-  border-bottom: var(--border-width) solid red;
-  border-bottom-left-radius: 1rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  color: #fff;
+  background: #000;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 5px transparent;
+  /* !importanté */
+  border-radius: 1rem;
 }
 
+.gradient-box:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(to right, green, orange);
+}

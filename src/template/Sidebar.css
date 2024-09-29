@@ -1,0 +1,40 @@
+.sidebar {
+  position: fixed;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  /*border-right: var(--border-width) solid pink;*/
+}
+
+.sidebar-spacer {
+  height: 1rem;
+  width: 1rem;
+}
+
+.sidebar-item {
+  border-top: var(--border-width) solid orange;
+  border-right: var(--border-width) solid orange;
+  border-top-right-radius: 1rem;
+  width: 8rem;
+  height: 1rem;
+  padding: 1rem 0rem 0rem 0rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.sidebar-item:first-child {
+  content: "test";
+}
+
+.sidebar-item:after {
+  left: calc(8rem + 0rem);
+  top: 2rem;
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2em;
+  border-left: var(--border-width) solid red;
+  border-bottom: var(--border-width) solid red;
+  border-bottom-left-radius: 1rem;
+}

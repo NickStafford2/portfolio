@@ -2,6 +2,7 @@ import { StrictMode, useState } from "react";
 import * as ReactDOMClient from "react-dom/client";
 
 import App from "./App";
+import Sidebar from "./template/Sidebar"
 import { Footer } from "./template/Footer";
 import { Refresh } from "./template/Refresh";
 //import "@fontsource/poppins" // Defaults to weight 400 with all styles included.
@@ -17,11 +18,8 @@ function AppWithUI() {
           <a>RESUME</a>
         </div>
       </nav>
-      <App key={count} className="page-width" />
-      <Footer
-        title="Enter animation"
-        url="https://framer.com/docs/animation/"
-      />
+      <Sidebar></Sidebar>
+      <App key={count} className="" />
     </StrictMode>
   );
 }
