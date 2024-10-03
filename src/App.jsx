@@ -27,6 +27,7 @@ function App() {
   return (
     <div className="page">
       <div className="content-wrapper">
+
         <div className="section">
           <h1>Nicholas Stafford</h1>
           <h2>Full Stack Developer</h2>

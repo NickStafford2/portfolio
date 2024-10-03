@@ -2,6 +2,7 @@ import { StrictMode, useState } from "react";
 import * as ReactDOMClient from "react-dom/client";
 
 import App from "./App";
+import Header from "./template/Header"
 import Sidebar from "./template/Sidebar"
 import { Footer } from "./template/Footer";
 import { Refresh } from "./template/Refresh";
@@ -13,11 +14,10 @@ function AppWithUI() {
 
   return (
     <StrictMode>
-      <nav className="page-width">
-        <div className="gradient-box">
-          <a>RESUME</a>
-        </div>
-      </nav>
+      <Header></Header>
+      <h1 className="text-3xl font-bold underline bg-red-50">
+        Hello world!
+      </h1>
       <Sidebar></Sidebar>
       <App key={count} className="" />
     </StrictMode>
