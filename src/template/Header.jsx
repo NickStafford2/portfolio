@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "framer-motion"
+import { motion, useMotionValue, useMotionValueEvent, useScroll, useTransform } from "framer-motion"
 
 import { useRef, useState } from "react";
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
   const [y, setY] = useState(10);
 
   const inputRef = useRef(null);
-  const { scrollYProgress } = useScroll()
+  const { scrollYProgress, scrollY } = useScroll()
   // useScroll({
   //   target: ref,
   //   offset: ["end end", "start start"]
@@ -18,8 +18,21 @@ function Header() {
   };
   // const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
   const translate = useTransform(scrollYProgress, [0, 1], [0, 100])
+  const x = useMotionValue(0)
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest)
+  })
+  // useMotionValueEvent(x, "animationStart", () => {
+  //   console.log("animation started on x")
+  // })
+  //
+  // useMotionValueEvent(x, "change", (latest) => {
+  //   console.log("x changed to", latest)
+  // })
   return (
     <>
+
+      <motion.div style={{ x }} />
       <input className="text-black" value={y} type="number" onChange={e => setY(e.target.value)} />
       <button className="text-black bg-sky-50" onClick={handleInputChangeY}>Change Height</button>
       {/* <nav className="page-width"> */}
@@ -28,7 +41,7 @@ function Header() {
       {/*   </div> */}
       {/* </nav> */}
       <motion.div
-        animate={{ paddingTop: yText }}
+        animate={{ paddingTop: scrollY.get() + "em" }}
         transition={{ ease: "easeInOut", duration: 3 }}
         style={{
           backgroundColor: "tan",
@@ -55,7 +68,6 @@ function Header() {
 
       >
         Nicholas Stafford
-
       </motion.div>
       <div
         style={{
