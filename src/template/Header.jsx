@@ -1,31 +1,40 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 function Header() {
 
-  const ref = useRef(null);
+  const [yText, setYText] = useState("10em");
+  const [y, setY] = useState(10);
+
+  const inputRef = useRef(null);
   const { scrollYProgress } = useScroll()
   // useScroll({
   //   target: ref,
   //   offset: ["end end", "start start"]
   // });
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
+  const handleInputChangeY = () => {
+    setYText(y + "em");
+    console.log(yText)
+  };
+  // const rotate = useTransform(scrollYProgress, [0, 1], [20, 0]);
   const translate = useTransform(scrollYProgress, [0, 1], [0, 100])
   return (
     <>
-
+      <input className="text-black" value={y} type="number" onChange={e => setY(e.target.value)} />
+      <button className="text-black bg-sky-50" onClick={handleInputChangeY}>Change Height</button>
       {/* <nav className="page-width"> */}
       {/*   <div className="gradient-box"> */}
       {/*     <a>RESUME</a> */}
       {/*   </div> */}
       {/* </nav> */}
       <motion.div
-
+        animate={{ paddingTop: yText }}
+        transition={{ ease: "easeInOut", duration: 3 }}
         style={{
+          backgroundColor: "tan",
           paddingTop: "10em",
-          translateX: translate,
-          rotateX: rotate, // rotate in X-axis
+          // translateX: translate,
+          // rotateX: rotate, // rotate in X-axis
           // position: "absolute"
         }}
       // translate={translate}
@@ -52,7 +61,7 @@ function Header() {
         style={{
           paddingTop: "80vh"
         }}
-        ref={ref}
+      // ref={ref}
       >
         anchor
         {/* {{ scrollYProgress }} */}
