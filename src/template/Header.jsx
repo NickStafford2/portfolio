@@ -21,6 +21,8 @@ function Header() {
   const x = useMotionValue(0)
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log("Page scroll: ", latest)
+    let size = Math.min(50, 600 - latest)
+    setYText(size + "px")
   })
   // useMotionValueEvent(x, "animationStart", () => {
   //   console.log("animation started on x")
@@ -32,43 +34,22 @@ function Header() {
   return (
     <>
 
-      <motion.div style={{ x }} />
-      <input className="text-black" value={y} type="number" onChange={e => setY(e.target.value)} />
-      <button className="text-black bg-sky-50" onClick={handleInputChangeY}>Change Height</button>
-      {/* <nav className="page-width"> */}
-      {/*   <div className="gradient-box"> */}
-      {/*     <a>RESUME</a> */}
-      {/*   </div> */}
-      {/* </nav> */}
-      <motion.div
-        animate={{ paddingTop: scrollY.get() + "em" }}
-        transition={{ ease: "easeInOut", duration: 3 }}
+      <motion.nav className="page-width"
+        animate={{ paddingTop: yText }}
+        // transition={{ ease: "easeInOut", duration: 3 }}
         style={{
+          top: 0,
+          position: "fixed",
           backgroundColor: "tan",
-          paddingTop: "10em",
           // translateX: translate,
           // rotateX: rotate, // rotate in X-axis
           // position: "absolute"
         }}
-      // translate={translate}
-      // rotate={rotate}
-      // style={{
-      //   position: 'fixed',
-      //   top: 0,
-      //   height: "3em",
-      //   right: 0,
-      //   left: 0,
-      //   backgroundColor: "red",
-      //   fontSize: scrollYProgress,
-      // }}
-      // initial={{
-      //   top: "10em",
-      //   fontSize: "3em"
-      // }}
-
       >
-        Nicholas Stafford
-      </motion.div>
+        <div className="gradient-box">
+          <a>RESUME</a>
+        </div>
+      </motion.nav>
       <div
         style={{
           paddingTop: "80vh"
