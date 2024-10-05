@@ -3,7 +3,7 @@
   top: 4rem;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 2rem 0.5rem;
   /*border-right: var(--border-width) solid pink;*/
 }
 

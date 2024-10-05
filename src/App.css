@@ -19,10 +19,14 @@ body {
 */
 body {
   /*font-family: "Poppins";*/
-  font-family: 'Raleway Variable', sans-serif;
+  font-family: "Raleway Variable", sans-serif;
   margin: 0;
   background: rgb(87, 39, 102);
-  background: radial-gradient(circle, rgba(87, 39, 102, 1) 0%, rgba(41, 34, 91, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(87, 39, 102, 1) 0%,
+    rgba(41, 34, 91, 1) 100%
+  );
   background-size: 400% 400%;
   animation: gradient 35s ease infinite;
   height: 100vh;
@@ -32,7 +36,6 @@ body {
 :root {
   --border-width: 4px;
 }
-
 
 @keyframes gradient {
   0% {
@@ -81,7 +84,6 @@ h2 {
 
 .quote-box {
   background-color: #909993;
-
 }
 
 .page {
@@ -135,39 +137,9 @@ nav {
   flex-direction: row;
   justify-content: right;
   background: rgb(116, 103, 109);
-  background: linear-gradient(90deg, rgba(116, 103, 109, 0.5060224773503151) 0%, rgba(182, 195, 210, 0.43039222524947474) 100%);
-}
-
-.resume-button {}
-
-.gradient-box {
-  display: flex;
-  align-items: center;
-  /*width: 15em;*/
-  /*max-width: 15em;*/
-  position: relative;
-  padding: 1rem 2rem;
-  box-sizing: border-box;
-  color: #fff;
-  background: #000;
-  background-clip: padding-box;
-  /* !importanté */
-  border: solid 5px transparent;
-  /* !importanté */
-  border-radius: 1rem;
-}
-
-.gradient-box:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -5px;
-  /* !importanté */
-  border-radius: inherit;
-  /* !importanté */
-  background: linear-gradient(to right, green, orange);
+  background: linear-gradient(
+    90deg,
+    rgba(116, 103, 109, 0.5060224773503151) 0%,
+    rgba(182, 195, 210, 0.43039222524947474) 100%
+  );
 }
