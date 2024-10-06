@@ -1,9 +1,10 @@
 .sidebar {
-  position: fixed;
-  top: 4rem;
+  /* position: fixed; */
+  /* top: 4rem; */
   display: flex;
   flex-direction: column;
   padding: 2rem 0.5rem;
+  padding-right: 2rem;
   /*border-right: var(--border-width) solid pink;*/
 }
 
