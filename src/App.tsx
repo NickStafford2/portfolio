@@ -15,6 +15,8 @@ import { FaPython } from 'react-icons/fa6'
 import { TbBrandCpp } from 'react-icons/tb'
 import { FaRegSnowflake } from 'react-icons/fa'
 import './App.css'
+// import { Progress } from '@radix-ui/react-progress'
+import { Progress } from './components/ui/progress'
 // import { motion } from "framer-motion";
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -27,6 +29,7 @@ function App() {
             <div className="section">
                 <h1>Nicholas Stafford</h1>
                 <h2>Full Stack Developer</h2>
+                <Progress value={33}></Progress>
             </div>
             <div className="section">
                 <h1>Contact me</h1>
@@ -109,6 +112,7 @@ function App() {
                     <li>
                         React
                         <FaReact />
+                        <Progress value={33}></Progress>
                     </li>
                     <li>
                         Flask

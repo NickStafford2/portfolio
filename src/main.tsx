@@ -1,8 +1,8 @@
 import { StrictMode, useState } from 'react'
 import * as ReactDOMClient from 'react-dom/client'
 
-// import App from './App'
-// import Header from './template/Header'
+import App from './App'
+import Header from './template/Header'
 import Sidebar from './template/Sidebar'
 // import { Footer } from './template/Footer'
 //import "@fontsource/poppins" // Defaults to weight 400 with all styles included.
@@ -13,10 +13,10 @@ function AppWithUI() {
 
     return (
         <StrictMode>
-            {/* <Header></Header> */}
+            <Header></Header>
             <div className="page">
                 <Sidebar></Sidebar>
-                {/* <App key={count} /> */}
+                <App key={count} />
             </div>
         </StrictMode>
     )
