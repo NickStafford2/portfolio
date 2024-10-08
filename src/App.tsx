@@ -17,6 +17,7 @@ import { FaRegSnowflake } from 'react-icons/fa'
 import './App.css'
 // import { Progress } from '@radix-ui/react-progress'
 import { Progress } from './components/ui/progress'
+import { Textarea } from './components/ui/textarea'
 // import { motion } from "framer-motion";
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -34,7 +35,7 @@ function App() {
       <div className="section">
         <h1>Contact me</h1>
         <p>Write me a message here, and I will get back to you.</p>
-        <textarea></textarea>
+        <Textarea></Textarea>
       </div>
       <div className="section">
         <ul>
