@@ -18,6 +18,7 @@ import './App.css'
 // import { Progress } from '@radix-ui/react-progress'
 import { Progress } from './components/ui/progress'
 import { Textarea } from './components/ui/textarea'
+import TextWriter from './components/uiBeats/TextWriter'
 // import { motion } from "framer-motion";
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -28,7 +29,12 @@ function App() {
   return (
     <div className="content-wrapper">
       <div className="section">
-        <h1>Nicholas Stafford</h1>
+        <h1 className="text-6xl font-extrabold">Nicholas Stafford</h1>
+        <TextWriter
+          text="Full Stack Developer"
+          className="text-3xl mb-6"
+          delay={0.1}
+        />
         <h2>Full Stack Developer</h2>
         <Progress value={33}></Progress>
       </div>
