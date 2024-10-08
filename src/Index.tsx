@@ -2,6 +2,7 @@ import * as ReactDOMClient from 'react-dom/client'
 import { Portfolio } from './Portfolio'
 //import "@fontsource/poppins" // Defaults to weight 400 with all styles included.
 import '@fontsource-variable/raleway'
+import './Index.css'
 
 const rootElement = document.getElementById('root')!
 const root = ReactDOMClient.createRoot(rootElement)
