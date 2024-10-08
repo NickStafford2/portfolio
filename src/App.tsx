@@ -2,47 +2,33 @@
 import { FaLinux } from 'react-icons/fa'
 import { SiFlask } from 'react-icons/si'
 // import reactLogo from "./assets/react.svg";
-import { SiNeovim } from 'react-icons/si'
-import { RiAngularjsLine } from 'react-icons/ri'
-import { SiTypescript } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import { LuBrainCircuit } from 'react-icons/lu'
+import { RiAngularjsLine } from 'react-icons/ri'
+import { SiNeovim, SiTypescript } from 'react-icons/si'
 // import viteLogo from "/vite.svg";
-import { SiJavascript } from 'react-icons/si'
-import { FaGithub } from 'react-icons/fa'
-import { FaAngular } from 'react-icons/fa'
+import { FaAngular, FaGithub, FaRegSnowflake } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa6'
+import { SiJavascript } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
-import { FaRegSnowflake } from 'react-icons/fa'
 import './App.css'
-// import { Progress } from '@radix-ui/react-progress'
 import { Progress } from './components/ui/progress'
 import { Textarea } from './components/ui/textarea'
-import TextWriter from './components/uiBeats/TextWriter'
+import { Hero } from './Hero'
 // import { motion } from "framer-motion";
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
-//
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
-    <div className="content-wrapper">
-      <div className="section">
-        <h1 className="text-6xl font-extrabold">Nicholas Stafford</h1>
-        <TextWriter
-          text="Full Stack Developer"
-          className="text-3xl mb-6"
-          delay={0.1}
-        />
-        <h2>Full Stack Developer</h2>
-        <Progress value={33}></Progress>
-      </div>
+    <div className="content-wrapper flex flex-col gap-20 px-20">
+      <Hero></Hero>
+
       <div className="section">
         <h1>Contact me</h1>
         <p>Write me a message here, and I will get back to you.</p>
         <Textarea></Textarea>
       </div>
+
       <div className="section">
         <ul>
           <li>
@@ -58,10 +44,12 @@ function App() {
           </li>
         </ul>
       </div>
+
       <div className="section">
         <h1>Your next website</h1>
         <p>Contact my business email at ngstafford1@gmail.com.</p>
       </div>
+
       <div className="section">
         <h1>Education</h1>
         <LuBrainCircuit />
@@ -80,6 +68,7 @@ function App() {
         <h2>B.S Computer Science. GPA: 3.958 - Kent State University</h2>
         <p>You have no idea how much that A- in Latin class still urks me.</p>
       </div>
+
       <div className="section">
         <h1>Skills</h1>
         <h2>Languages</h2>
@@ -129,6 +118,7 @@ function App() {
           <FaLinux />
         </p>
       </div>
+
       <div className="section">
         <h1>Pet Projects</h1>
         <p>
