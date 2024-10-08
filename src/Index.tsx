@@ -1,30 +1,11 @@
-import { StrictMode, useState } from 'react'
 import * as ReactDOMClient from 'react-dom/client'
-
-import App from './App'
-import Header from './template/Header'
-import Sidebar from './template/Sidebar'
-// import { Footer } from './template/Footer'
+import { Portfolio } from './Portfolio'
 //import "@fontsource/poppins" // Defaults to weight 400 with all styles included.
 import '@fontsource-variable/raleway'
 
-function AppWithUI() {
-    const [count, setCount] = useState(0)
-
-    return (
-        <StrictMode>
-            <Header></Header>
-            <div className="page">
-                <Sidebar></Sidebar>
-                <App key={count} />
-            </div>
-        </StrictMode>
-    )
-}
-
-const rootElement = document.getElementById('root')
+const rootElement = document.getElementById('root')!
 const root = ReactDOMClient.createRoot(rootElement)
-root.render(<AppWithUI />)
+root.render(<Portfolio />)
 
 /*import { StrictMode, useState } from "react";
 import * as ReactDOMClient from "react-dom/client";
