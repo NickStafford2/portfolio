@@ -13,9 +13,23 @@ import { SiJavascript } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
 import './App.css'
 import { Progress } from './components/ui/progress'
-import { Textarea } from './components/ui/textarea'
 import { Hero } from './Hero'
+import { SkillCard } from './template/SkillCard'
 // import { motion } from "framer-motion";
+
+const skills = [
+  {
+    title: 'Neovim',
+    icon: <SiNeovim />,
+    description:
+      'Neovim has changed how I program. It has been years since I last used vi, and this time, I am not going back to the mouse. ',
+  },
+  {
+    title: 'Github',
+    icon: <FaGithub />,
+    description: 'check out all my code here',
+  },
+]
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
 function App() {
@@ -24,16 +38,9 @@ function App() {
       <Hero></Hero>
 
       <div className="section">
-        <h1>Contact me</h1>
-        <p>Write me a message here, and I will get back to you.</p>
-        <Textarea></Textarea>
-      </div>
-
-      <div className="section">
         <ul>
           <li>
             <a>Github</a>
-            <FaGithub />
           </li>
           <li>
             <a>Resume</a>
@@ -46,31 +53,9 @@ function App() {
       </div>
 
       <div className="section">
-        <h1>Your next website</h1>
-        <p>Contact my business email at ngstafford1@gmail.com.</p>
-      </div>
-
-      <div className="section">
-        <h1>Education</h1>
-        <LuBrainCircuit />
-        <h2>Masters of Computer Science - Kent State University</h2>
-        <p>
-          In progress. I am a graduate student at Kent State. Currently studying
-          Cryptography and AI.
-        </p>
-        <ul>
-          <li>Artificial Intelligence</li>
-          <li>Secure Programming</li>
-          <li>Cryptography</li>
-          <li>Graph Algorithms</li>
-          <li>iOS Programming</li>
-        </ul>
-        <h2>B.S Computer Science. GPA: 3.958 - Kent State University</h2>
-        <p>You have no idea how much that A- in Latin class still urks me.</p>
-      </div>
-
-      <div className="section">
         <h1>Skills</h1>
+        <div className="flex flex-row flex-wrap justify-between gap-10"></div>
+        <SkillCard data={skills[0]}></SkillCard>
         <h2>Languages</h2>
         <ul>
           <li>
@@ -119,6 +104,24 @@ function App() {
         </p>
       </div>
 
+      <div className="section">
+        <h1>Education</h1>
+        <LuBrainCircuit />
+        <h2>Masters of Computer Science - Kent State University</h2>
+        <p>
+          In progress. I am a graduate student at Kent State. Currently studying
+          Cryptography and AI.
+        </p>
+        <ul>
+          <li>Artificial Intelligence</li>
+          <li>Secure Programming</li>
+          <li>Cryptography</li>
+          <li>Graph Algorithms</li>
+          <li>iOS Programming</li>
+        </ul>
+        <h2>B.S Computer Science. GPA: 3.958 - Kent State University</h2>
+        <p>You have no idea how much that A- in Latin class still urks me.</p>
+      </div>
       <div className="section">
         <h1>Pet Projects</h1>
         <p>
