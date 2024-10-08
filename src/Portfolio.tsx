@@ -1,7 +1,7 @@
 import App from './App'
 import { StrictMode } from 'react'
 import Header from './template/Header'
-import Sidebar from './template/Sidebar'
+// import Sidebar from './template/Sidebar'
 
 import BackgroundGrid from '@/components/edil-ozi/background-grid'
 
@@ -9,8 +9,8 @@ export function Portfolio() {
   return (
     <StrictMode>
       <Header></Header>
-      <div className="page">
-        <Sidebar></Sidebar>
+      <div className="py-24 ">
+        {/* <Sidebar></Sidebar> */}
         <App />
 
         <section

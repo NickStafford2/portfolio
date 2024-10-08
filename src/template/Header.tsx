@@ -46,7 +46,7 @@ export default function Header() {
       href: '#',
     },
     {
-      title: 'Changelog',
+      title: 'Beyond Code',
       icon: (
         <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
@@ -69,7 +69,7 @@ export default function Header() {
     },
   ]
   return (
-    <div className="flex items-center justify-center w-full">
+    <div className="fixed flex items-center justify-center w-full">
       <FloatingDock items={links} />
     </div>
   )
