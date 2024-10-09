@@ -1,62 +1,72 @@
-// import { useState } from "react";
 import { FaLinux } from 'react-icons/fa'
 import { SiFlask } from 'react-icons/si'
-// import reactLogo from "./assets/react.svg";
 import { FaReact } from 'react-icons/fa'
 import { LuBrainCircuit } from 'react-icons/lu'
 import { RiAngularjsLine } from 'react-icons/ri'
 import { SiNeovim, SiTypescript } from 'react-icons/si'
-// import viteLogo from "/vite.svg";
-import { FaAngular, FaGithub, FaRegSnowflake } from 'react-icons/fa'
+import { FaAngular, FaGithub } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa6'
 import { SiJavascript } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
 import './App.css'
-import { Progress } from './components/ui/progress'
 import { Hero } from './Hero'
 import { SkillCard } from './template/SkillCard'
-// import { motion } from "framer-motion";
 
 const skills = [
   {
     title: 'Neovim',
-    icon: <SiNeovim />,
+    icon: <SiNeovim className="skillcard-icon" />,
     description:
       'Neovim has changed how I program. It has been years since I last used vi, and this time, I am not going back to the mouse. ',
   },
   {
     title: 'Github',
-    icon: <FaGithub />,
+    icon: <FaGithub className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'Javascript',
-    icon: <SiJavascript />,
+    icon: <SiJavascript className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'Typescript',
-    icon: <SiTypescript />,
+    icon: <SiTypescript className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'C++',
-    icon: <TbBrandCpp />,
+    icon: <TbBrandCpp className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'Python',
-    icon: <FaPython />,
+    icon: <FaPython className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'AngularJs',
-    icon: <RiAngularjsLine />,
+    icon: <RiAngularjsLine className="skillcard-icon" />,
     description: 'check out all my code here',
   },
   {
     title: 'Angular',
-    icon: <FaAngular />,
+    icon: <FaAngular className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'React',
+    icon: <FaReact className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Flask',
+    icon: <SiFlask className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Linux',
+    icon: <FaLinux className="skillcard-icon" />,
     description: 'check out all my code here',
   },
 ]
@@ -69,41 +79,13 @@ function App() {
 
       <div className="section">
         <h1>Skills</h1>
-        <div className="flex flex-row flex-wrap justify-between gap-10">
+        <div className="flex flex-row flex-wrap justify-between gap-5">
           {skills.map((skill) => (
-            <div className="gap-10 p-4 w-96">
+            <div className="w-96">
               <SkillCard data={skill}></SkillCard>
             </div>
           ))}
         </div>
-        <h2>Languages</h2>
-        <h2>Frameworks</h2>
-        <ul>
-          <li>
-            AngularJS
-            <RiAngularjsLine />
-          </li>
-          <li>
-            Angular
-            <FaAngular className="icon" />
-          </li>
-          <li>
-            React
-            <FaReact />
-            <Progress value={33}></Progress>
-          </li>
-          <li>
-            Flask
-            <SiFlask />
-          </li>
-        </ul>
-        <h2>Environment</h2>
-        <SiNeovim className="icon" />
-        <p>I am a big fan of Neovim.</p>
-        <p>
-          I primarily use Linux
-          <FaLinux />
-        </p>
       </div>
 
       <div className="section">
