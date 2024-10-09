@@ -1,5 +1,6 @@
 import TextWriter from '@/components/uiBeats/TextWriter'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { EvervaultCard } from './components/ui/evervault-card'
 
 export function Hero() {
   return (
@@ -7,8 +8,9 @@ export function Hero() {
       id="hero"
       className="min-h-screen bg-opacity-20 flex justify-center flex-col"
     >
+      <EvervaultCard text="hover" />
       <TextWriter text="Hello World" className="text-8xl mb-6" delay={0.2} />
-      <div className="max-w-[600px] ">
+      <div className="max-w-[600px] pb-24">
         <TextWriter
           text="
         My name is Nicholas Stafford. I am a web developer based in Cleveland,
