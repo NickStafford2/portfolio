@@ -27,6 +27,7 @@ export default function Header() {
       ),
       href: '#',
     },
+
     {
       title: 'Components',
       icon: (
@@ -34,18 +35,7 @@ export default function Header() {
       ),
       href: '#',
     },
-    {
-      title: 'Aceternity UI',
-      icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
-      ),
-      href: '#',
-    },
+
     {
       title: 'Beyond Code',
       icon: (
@@ -70,9 +60,12 @@ export default function Header() {
     },
   ]
   return (
-    <div className="fixed flex items-center justify-center w-full">
+    <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30">
       <FloatingDock items={links} />
-      <FaRegSnowflake />
+      <Button>
+        <span className="pr-4">Icebox Login</span>
+        <FaRegSnowflake className="w-7 h-6" />
+      </Button>
     </div>
   )
 }
