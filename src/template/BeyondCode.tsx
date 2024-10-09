@@ -10,7 +10,24 @@ export function BeyondCode() {
   return (
     <div id="beyond-code" className="min-h-screen">
       <h1>Beyond Code</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
+      <div className="flex flex-col gap-8">
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>All Things Nerd</CardTitle>
+            <CardDescription>physics, math, and nerd stuff</CardDescription>
+          </CardHeader>
+          <CardContent>
+            I was majoring in physics before i switched to computer science. i
+            plan to finish that degree once i complete my cs masters. i love
+            physics. i have performed yongue's famous double slit experiment,
+            and done the requisite calculations to witness the collapse of the
+            wave function. i have used an atomic force microscope and have seen
+            individual atoms. i took differential equations and lived to tell
+            the tale. studying quantum mechanics is my happy place. there is
+            <a href="">a fantastic youtube series</a> by sean carroll that i can
+            not reccomend more highly.
+          </CardContent>
+        </Card>
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>Weight Loss</CardTitle>
@@ -141,7 +158,6 @@ export function BeyondCode() {
             confermation bias?
           </CardContent>
         </Card>
-
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>Writing</CardTitle>
@@ -162,23 +178,6 @@ export function BeyondCode() {
             complete writing corpus, and an encyclopedic knowlege of ASOIAF.
             This experience has taught me immensely.
             <p>add a picture of my writing here.</p>
-          </CardContent>
-        </Card>
-        <Card className="ns-w-card">
-          <CardHeader>
-            <CardTitle>All Things Nerd</CardTitle>
-            <CardDescription>physics, math, and nerd stuff</CardDescription>
-          </CardHeader>
-          <CardContent>
-            i was majoring in physics before i switched to computer science. i
-            plan to finish that degree once i complete my cs masters. i love
-            physics. i have performed yongue's famous double slit experiment,
-            and done the requisite calculations to witness the collapse of the
-            wave function. i have used an atomic force microscope and have seen
-            individual atoms. i took differential equations and lived to tell
-            the tale. studying quantum mechanics is my happy place. there is
-            <a href="">a fantastic youtube series</a> by sean carroll that i can
-            not reccomend more highly.
           </CardContent>
         </Card>
       </div>
