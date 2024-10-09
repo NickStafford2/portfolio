@@ -69,7 +69,7 @@ export function Skills() {
     },
   ]
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <h1 className="text-5xl py-5">Skills</h1>
       <div className="flex flex-row flex-wrap justify-between gap-5">
         {skills.map((skill) => (

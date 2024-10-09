@@ -8,7 +8,7 @@ import {
 
 export function Projects() {
   return (
-    <div className="h-screen">
+    <div className="min-h-screen">
       <h1 className="text-5xl py-6">Projects</h1>
       <p>
         I love code. Below is a selection of some stuff I am working on in my
