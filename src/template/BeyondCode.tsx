@@ -1,6 +1,6 @@
 export function BeyondCode() {
   return (
-    <div>
+    <div className="h-screen">
       <h1>Beyond Code</h1>
       <div>
         <h2>Weight loss</h2>

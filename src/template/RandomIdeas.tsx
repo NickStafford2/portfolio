@@ -1,6 +1,6 @@
 export function RandomIdeas() {
   return (
-    <div className="section">
+    <div className="min-h-screen">
       <h1>Random Ideas</h1>
       <h2>Neural Network code injection</h2>
       <p>

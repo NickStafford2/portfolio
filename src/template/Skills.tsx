@@ -69,11 +69,11 @@ export function Skills() {
     },
   ]
   return (
-    <div className="section">
-      <h1>Skills</h1>
+    <div className="h-screen">
+      <h1 className="text-5xl py-5">Skills</h1>
       <div className="flex flex-row flex-wrap justify-between gap-5">
         {skills.map((skill) => (
-          <div className="w-96">
+          <div className="min-w-96">
             <SkillCard data={skill}></SkillCard>
           </div>
         ))}

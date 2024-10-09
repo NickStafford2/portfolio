@@ -1,6 +1,6 @@
 export function Projects() {
   return (
-    <div className="section">
+    <div className="h-scree">
       <h1>Pet Projects</h1>
       <p>
         I love code. Below is a selection of some stuff I am working on in my

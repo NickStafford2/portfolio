@@ -17,8 +17,9 @@ export interface SkillCardInput {
 }
 
 export function SkillCard({ data }: SkillCardInput) {
+  // idea: size boxes relative to how well I know the program
   return (
-    <Card className="w-96">
+    <Card className="">
       <CardHeader className="p-3">
         <CardTitle className="flex flex-row items-center">
           <span className="pr-8">{data.icon}</span>

@@ -1,6 +1,6 @@
 export function ProgrammingPhilosophy() {
   return (
-    <div className="section">
+    <div className="h-screen">
       <div>
         <h2>programming philosophy</h2>
         <p>
