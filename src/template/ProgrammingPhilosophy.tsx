@@ -8,8 +8,18 @@ import {
 export function ProgrammingPhilosophy() {
   return (
     <div className="min-h-screen">
-      <h2>Thoughts for other Nerds</h2>
+      <h2 className="text-6xl pb-10">Thoughts for other Nerds</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
+        <Card className="ns-w-card">
+          <CardHeader className="p-3">
+            <CardTitle>IDE Wars</CardTitle>
+            <CardDescription>The return of the king</CardDescription>
+          </CardHeader>
+          <CardContent>
+            VI is back with a vengence. All the cool kids are doing it. No more
+            mice.
+          </CardContent>
+        </Card>
         <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Limit Abstractions</CardTitle>

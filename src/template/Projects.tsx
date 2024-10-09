@@ -14,7 +14,8 @@ export function Projects() {
         I love code. Below is a selection of some stuff I am working on in my
         spare time.
       </p>
-      <div className="flex flex-row gap-4">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>IO Architecture rewrite</CardTitle>

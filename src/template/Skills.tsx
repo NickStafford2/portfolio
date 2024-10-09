@@ -9,73 +9,72 @@ import { FaPython } from 'react-icons/fa6'
 import { SiJavascript } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
 
+const skills = [
+  {
+    title: 'Neovim',
+    icon: <SiNeovim className="skillcard-icon" />,
+    description:
+      'Neovim has changed how I program. It has been years since I last used vi, and this time, I am not going back to the mouse. ',
+  },
+  {
+    title: 'Github',
+    icon: <FaGithub className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Javascript',
+    icon: <SiJavascript className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Typescript',
+    icon: <SiTypescript className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'C++',
+    icon: <TbBrandCpp className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Python',
+    icon: <FaPython className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'AngularJs',
+    icon: <RiAngularjsLine className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Angular',
+    icon: <FaAngular className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'React',
+    icon: <FaReact className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Flask',
+    icon: <SiFlask className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Linux',
+    icon: <FaLinux className="skillcard-icon" />,
+    description: 'check out all my code here',
+  },
+]
+
 export function Skills() {
-  const skills = [
-    {
-      title: 'Neovim',
-      icon: <SiNeovim className="skillcard-icon" />,
-      description:
-        'Neovim has changed how I program. It has been years since I last used vi, and this time, I am not going back to the mouse. ',
-    },
-    {
-      title: 'Github',
-      icon: <FaGithub className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Javascript',
-      icon: <SiJavascript className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Typescript',
-      icon: <SiTypescript className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'C++',
-      icon: <TbBrandCpp className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Python',
-      icon: <FaPython className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'AngularJs',
-      icon: <RiAngularjsLine className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Angular',
-      icon: <FaAngular className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'React',
-      icon: <FaReact className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Flask',
-      icon: <SiFlask className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-    {
-      title: 'Linux',
-      icon: <FaLinux className="skillcard-icon" />,
-      description: 'check out all my code here',
-    },
-  ]
   return (
     <div className="min-h-screen">
       <h1 className="text-5xl py-5">Skills</h1>
-      <div className="flex flex-row flex-wrap justify-between gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
         {skills.map((skill) => (
-          <div className="min-w-96">
-            <SkillCard data={skill}></SkillCard>
-          </div>
+          <SkillCard data={skill}></SkillCard>
         ))}
       </div>
     </div>
