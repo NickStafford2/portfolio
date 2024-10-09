@@ -61,6 +61,10 @@ export default function Header() {
   ]
   return (
     <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30">
+      <Button>
+        <FaRegSnowflake className="w-7 h-6" />
+        <span className="pr-4">Resume</span>
+      </Button>
       <FloatingDock items={links} />
       <Button>
         <span className="pr-4">Icebox Login</span>

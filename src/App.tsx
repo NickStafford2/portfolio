@@ -68,21 +68,6 @@ function App() {
       <Hero></Hero>
 
       <div className="section">
-        <ul>
-          <li>
-            <a>Github</a>
-          </li>
-          <li>
-            <a>Resume</a>
-          </li>
-          <li>
-            <a>Icebox</a>
-            <FaRegSnowflake />
-          </li>
-        </ul>
-      </div>
-
-      <div className="section">
         <h1>Skills</h1>
         <div className="flex flex-row flex-wrap justify-between gap-10">
           {skills.map((skill) => (
