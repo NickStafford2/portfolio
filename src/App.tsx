@@ -2,6 +2,7 @@ import './App.css'
 import { Hero } from './Hero'
 import { BeyondCode } from './template/BeyondCode'
 import { Education } from './template/Education'
+import { Experience } from './template/Experience'
 import { ProgrammingPhilosophy } from './template/ProgrammingPhilosophy'
 import { Projects } from './template/Projects'
 import { QuoteBox } from './template/QuoteBox'
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="content-wrapper flex flex-col gap-20 px-20">
       <Hero></Hero>
+      <Experience></Experience>
       <Skills></Skills>
       <Projects></Projects>
       <ProgrammingPhilosophy></ProgrammingPhilosophy>
