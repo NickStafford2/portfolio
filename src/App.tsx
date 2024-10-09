@@ -2,6 +2,7 @@ import './App.css'
 import { Hero } from './Hero'
 import { Education } from './template/Education'
 import { Projects } from './template/Projects'
+import { QuoteBox } from './template/QuoteBox'
 import { Skills } from './template/Skills'
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -12,16 +13,7 @@ function App() {
       <Skills></Skills>
       <Education></Education>
       <Projects></Projects>
-      <div className="section">
-        <h1>Keep in mind</h1>
-        <p className="quote-box">
-          If a programming language does not make you think. It isn't worth
-          using.
-        </p>
-        <p className="quote-box">
-          An eye for an eye makes the whole world blind.
-        </p>
-      </div>
+      <QuoteBox></QuoteBox>
       <div className="section">
         <h1>Beyond Code</h1>
         <div>
