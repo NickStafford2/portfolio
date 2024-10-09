@@ -108,6 +108,21 @@ export function BeyondCode() {
         </p>
       </div>
       <div>
+        <h2>Epistemology</h2>
+        <p>
+          I really nerd out about this. Epistemology is the most useful thing in
+          philosophy. I find that how you learn is more important that what you
+          know. I enjoy questioning the processes by which we learn. How would
+          you know if you were wrong? What method did you use to come to this
+          belief? Do you want this belief to be true? How do you avoid
+          confermation bias?
+        </p>
+        <p>
+          Me and my friends have these sorts of conversations. It is incredible
+          where they lead.{' '}
+        </p>
+      </div>
+      <div>
         <h2>Writing</h2>
         <p>
           I am part of a group working meticiously to finish the "A Song of Ice
