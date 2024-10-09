@@ -9,8 +9,8 @@ export function ProgrammingPhilosophy() {
   return (
     <div className="min-h-screen">
       <h2>Thoughts for other Nerds</h2>
-      <div className="flex flex-row gap-4">
-        <Card className="min-w-48">
+      <div className="flex flex-row flex-wrap flex-grow bg-sky-600 bg-opacity-35 gap-4">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Limit Abstractions</CardTitle>
             <CardDescription>Just get it done</CardDescription>
@@ -22,17 +22,17 @@ export function ProgrammingPhilosophy() {
             clever.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>DRY</CardTitle>
-            <CardDescription>Don't overdoo it.</CardDescription>
+            <CardDescription>Don't overdo it.</CardDescription>
           </CardHeader>
           <CardContent>
             Overuse of this has caused way too many headaches. Sometimes,
             repetition is worth the tradeoff if it helps with clarity.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Programing Paradigmn</CardTitle>
             <CardDescription>
@@ -48,7 +48,7 @@ export function ProgrammingPhilosophy() {
             and no simpler.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Object Oriented Programming</CardTitle>
             <CardDescription>
@@ -64,7 +64,7 @@ export function ProgrammingPhilosophy() {
             more natural? functions do things. objects are things.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Inheritance</CardTitle>
             <CardDescription>Why do we still teach this?</CardDescription>
@@ -78,7 +78,7 @@ export function ProgrammingPhilosophy() {
             obscure library if for some extraordinary reason you need it.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Frameworks</CardTitle>
             <CardDescription>Keep the relationship casual.</CardDescription>
@@ -89,7 +89,7 @@ export function ProgrammingPhilosophy() {
             vanilla typescript files without imports.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Too many Frameworks</CardTitle>
             <CardDescription>Keep the relationship casual.</CardDescription>
@@ -102,7 +102,7 @@ export function ProgrammingPhilosophy() {
             never use again.
           </CardContent>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>KISS</CardTitle>
             <CardDescription>Keep it Simple Stupid</CardDescription>
@@ -114,9 +114,6 @@ export function ProgrammingPhilosophy() {
             days. Design it to make sence when you are exhausted and hung over.
           </CardContent>
         </Card>
-        <p></p>
-        <p></p>
-        <p></p>
       </div>
       <div>
         <h2>Too many Frameworks</h2>

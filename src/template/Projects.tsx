@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-
+import '@/globals.css'
 export function Projects() {
   return (
     <div className="min-h-screen">
@@ -15,7 +15,16 @@ export function Projects() {
         spare time.
       </p>
       <div className="flex flex-row gap-4">
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>IO Architecture rewrite</CardTitle>
+            <CardDescription>
+              I can't believe this actually worked.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>Copy description from linkedin and fix it.</CardContent>
+        </Card>
+        <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>Visual NPM</CardTitle>
             <CardDescription>
@@ -24,7 +33,7 @@ export function Projects() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>NBA Goat Calculator</CardTitle>
             <CardDescription>
@@ -35,7 +44,7 @@ export function Projects() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="min-w-48">
+        <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>DotFiles</CardTitle>
             <CardDescription>
