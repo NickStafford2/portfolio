@@ -17,7 +17,7 @@ export default function Header() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: '#',
+      href: '#hero',
     },
 
     {
@@ -25,7 +25,7 @@ export default function Header() {
       icon: (
         <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: '#',
+      href: '#skills',
     },
 
     {
@@ -41,7 +41,7 @@ export default function Header() {
       icon: (
         <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: '#',
+      href: '#beyond-code',
     },
 
     {
