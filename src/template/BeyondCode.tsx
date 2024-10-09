@@ -48,16 +48,16 @@ export function BeyondCode() {
               The next step was obvious. Develop spreadsheets to track daily
               macronutrient intake, body weight, and waist circumferance. I
               tracked my results daily for 6 months, and adjusted my caloric
-              intake to achieve the desired 12 lbs a month.{' '}
+              intake to achieve the desired 12 lbs a month.
             </p>
             <p>
               I weighed all my food. Made my weekly meals in bulk. Purchased
               some excellent borosilicate glass meal prep containers which I use
               every day. All my weeks food is prepared ahead of time. This means
               I save time cooking. I don't eat out. Meals are super easy to cook
-              since I just pop them in the microwave for 4 minutes. I never
+              since I just pop them in the microwave for minutes. I never
               concern myself with what my next meal is. I just eat simple
-              healthy meals every day.{' '}
+              healthy meals every day.
             </p>
             <p>Macronutrient equations</p>
             <ul>
@@ -83,7 +83,7 @@ export function BeyondCode() {
               perfectly for me. After a month of eating the same foods every
               day, I found myself craving my meal prep more than anything. Since
               I never cheated on the diet, I was able to successfully adjust my
-              food preferences to align with my health goals. I love science.{' '}
+              food preferences to align with my health goals. I love science.
             </p>
             <p>The best part is that I have so much data to analyze</p>
             <p>Insert pictures here</p>
@@ -99,7 +99,7 @@ export function BeyondCode() {
                 your healthy meals. Make it as difficult as possible to eat
                 unhealthy. That way, you can use your own lazyness to your
                 advantage. Ensure that when you are in a bad mood and you are
-                hungry, the healthy option is the easy one. You{' '}
+                hungry, the healthy option is the easy one. You
                 <span>could</span> get into your car and drive to McDonalds and
                 gorge on greesy food. Or you could throw your tasty prepared
                 meals into the microwave and be satisfied in a few minutes.

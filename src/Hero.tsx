@@ -1,5 +1,4 @@
 import TextWriter from '@/components/uiBeats/TextWriter'
-import { Button } from './components/ui/button'
 
 export function Hero() {
   return (
@@ -34,8 +33,6 @@ export function Hero() {
             </span>
           </button>
         </div>
-        <Button>Learn more</Button>
-        <Button>Learn more</Button>
       </div>
       <TextWriter
         text="Full Stack Developer"
