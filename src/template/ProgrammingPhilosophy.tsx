@@ -9,7 +9,7 @@ export function ProgrammingPhilosophy() {
   return (
     <div className="min-h-screen">
       <h2>Thoughts for other Nerds</h2>
-      <div className="flex flex-row flex-wrap flex-grow bg-sky-600 bg-opacity-35 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
         <Card className="ns-w-card">
           <CardHeader className="p-3">
             <CardTitle>Limit Abstractions</CardTitle>
