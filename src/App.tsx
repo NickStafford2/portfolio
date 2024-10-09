@@ -14,13 +14,13 @@ function App() {
   return (
     <div className="content-wrapper flex flex-col gap-20 px-20">
       <Hero></Hero>
+      <Education></Education>
       <Experience></Experience>
       <Skills></Skills>
       <Projects></Projects>
       <ProgrammingPhilosophy></ProgrammingPhilosophy>
       <BeyondCode></BeyondCode>
       <QuoteBox></QuoteBox>
-      <Education></Education>
       <RandomIdeas></RandomIdeas>
     </div>
   )

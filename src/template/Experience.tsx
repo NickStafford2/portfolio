@@ -9,7 +9,7 @@ import {
 
 export function Experience() {
   return (
-    <div>
+    <div id="experience">
       <h1>Work Experience</h1>
       <Card className="ns-w-card">
         <CardHeader>

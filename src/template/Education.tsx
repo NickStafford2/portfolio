@@ -2,7 +2,7 @@ import { LuBrainCircuit } from 'react-icons/lu'
 
 export function Education() {
   return (
-    <div className="min-h-screen">
+    <div id="education" className="min-h-screen pt-30">
       <h1>Education</h1>
       <LuBrainCircuit />
       <h2>Masters of Computer Science - Kent State University</h2>
