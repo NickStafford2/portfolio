@@ -29,6 +29,36 @@ const skills = [
     icon: <FaGithub />,
     description: 'check out all my code here',
   },
+  {
+    title: 'Javascript',
+    icon: <SiJavascript />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Typescript',
+    icon: <SiTypescript />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'C++',
+    icon: <TbBrandCpp />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Python',
+    icon: <FaPython />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'AngularJs',
+    icon: <RiAngularjsLine />,
+    description: 'check out all my code here',
+  },
+  {
+    title: 'Angular',
+    icon: <FaAngular />,
+    description: 'check out all my code here',
+  },
 ]
 
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -54,27 +84,14 @@ function App() {
 
       <div className="section">
         <h1>Skills</h1>
-        <div className="flex flex-row flex-wrap justify-between gap-10"></div>
-        <SkillCard data={skills[0]}></SkillCard>
+        <div className="flex flex-row flex-wrap justify-between gap-10">
+          {skills.map((skill) => (
+            <div className="gap-10 p-4 w-96">
+              <SkillCard data={skill}></SkillCard>
+            </div>
+          ))}
+        </div>
         <h2>Languages</h2>
-        <ul>
-          <li>
-            Typescript
-            <SiTypescript />
-          </li>
-          <li>
-            Javascript
-            <SiJavascript />
-          </li>
-          <li>
-            C++
-            <TbBrandCpp />
-          </li>
-          <li>
-            Python
-            <FaPython />
-          </li>
-        </ul>
         <h2>Frameworks</h2>
         <ul>
           <li>

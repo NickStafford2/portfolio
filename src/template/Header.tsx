@@ -1,4 +1,6 @@
 import { FloatingDock } from '@/components/ui/floating-dock'
+import { Button } from '@/components/ui/button'
+import { FaRegSnowflake } from 'react-icons/fa'
 import {
   IconBrandGithub,
   IconBrandX,
@@ -70,6 +72,7 @@ export default function Header() {
   return (
     <div className="fixed flex items-center justify-center w-full">
       <FloatingDock items={links} />
+      <FaRegSnowflake />
     </div>
   )
 }
