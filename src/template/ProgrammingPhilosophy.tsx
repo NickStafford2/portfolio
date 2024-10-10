@@ -125,14 +125,6 @@ export function ProgrammingPhilosophy() {
           </CardContent>
         </Card>
       </div>
-      <div>
-        <h2>Too many Frameworks</h2>
-        <p></p>
-        <p>
-          Currently I am learning React. Angular has been far too slow and
-          opinionated for me.
-        </p>
-      </div>
     </div>
   )
 }

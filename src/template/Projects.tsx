@@ -60,14 +60,15 @@ export function Projects() {
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>CCounter Dev</CardTitle>
-            <CardDescription>I swear this counts.</CardDescription>
+            <CardDescription>
+              Too nerdy and useful to not mention.
+            </CardDescription>
           </CardHeader>
           <CardContent>
-            I would not usually mention this, but this program has made a bigger
-            impact on my life than anything one this list. I worked on this for
-            at least five minutes a day for seven months. Built with the
-            glorious power of google sheets, this solved a real life problem of
-            mine and I use it every day.{' '}
+            This program has made a bigger impact on my life than anything one
+            this list. I worked on this for at least five minutes a day for
+            seven months. Built with the glorious power of google sheets, this
+            solved a real life problem of mine and I use it every day.{' '}
           </CardContent>
         </Card>
         <Card className="ns-w-card">
@@ -83,7 +84,7 @@ export function Projects() {
             with the power of advanced analytics, ranks players accordingly.
             Written in C# and Asp.net. I became so frustrated at Microsoft
             Visual Studio, I ended up restarting the entire project in react,
-            and Python Flask.
+            and Python Flask.{' '}
           </CardContent>
         </Card>
         <Card className="ns-w-card">
@@ -121,6 +122,24 @@ export function Projects() {
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
+            <CardTitle>Syllahub</CardTitle>
+            <CardDescription>Undergrad Senior Project</CardDescription>
+          </CardHeader>
+          <CardContent>
+            Syllahub is a platform to standardize syllabus formats. Syllahub
+            scrapes uploaded syllabi, stores their content, indexes them, and
+            outputs them into a standardized format.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>Simple C++ Parcer</CardTitle>
+            <CardDescription>How I learned C++</CardDescription>
+          </CardHeader>
+          <CardContent>An undergrad project</CardContent>
+        </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
             <CardTitle>Rainmeter Desktop</CardTitle>
             <CardDescription>My first successful pet project</CardDescription>
           </CardHeader>
@@ -142,6 +161,31 @@ export function Projects() {
             completely overengineered, written in a 3d Vpython engine, and I
             absolutely loved it. I even made an opponent program that would play
             against you. It is great seeing how far I have come.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card bg-gray-400">
+          <CardHeader className="p-3">
+            <CardTitle>NN Code Injection</CardTitle>
+          </CardHeader>
+          <CardContent>
+            Project in planning. Experimental idea to do AI where nodes contain
+            pointers that execute arbitrary small code snippits and then pass
+            the result to the next node.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card bg-gray-400">
+          <CardHeader className="p-3">
+            <CardTitle>Physics Constant Checker</CardTitle>
+          </CardHeader>
+          <CardContent>
+            This may be crazy, but has anyone tried brute force approach to see
+            if any unexpected relationship exists between physics consants? Is
+            the plank's constant 1/2 of Newton's constant? how about the square
+            root? There are infinite potential relationships, but since the
+            number of constants is not too large, I think we can get away with a
+            brute force search with some dynamic programming. An api would also
+            exist so that more advanced relationships between constants could be
+            checked. Work in progress.
           </CardContent>
         </Card>
       </div>
