@@ -17,6 +17,10 @@ export function QuoteBox() {
       text: 'I saw the angel in the marbel, and I carved until I set him free.',
       source: 'Michelangelo',
     },
+    {
+      text: 'Do one thing every day that scares you.',
+      source: 'Eleanor Roosevelt',
+    },
   ]
   return (
     <div className="h-screen">
