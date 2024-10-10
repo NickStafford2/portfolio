@@ -15,7 +15,17 @@ export function Projects() {
         spare time.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>Portfolio 2</CardTitle>
+            <CardDescription>You are currently looking at it.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            I am starting simple. Hoping to make this pretty nice as time goes
+            on.
+          </CardContent>
+        </Card>
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>IO Architecture rewrite</CardTitle>
@@ -23,7 +33,11 @@ export function Projects() {
               I can't believe this actually worked.
             </CardDescription>
           </CardHeader>
-          <CardContent>Copy description from linkedin and fix it.</CardContent>
+          <CardContent>
+            Without a question, my most successful programming project of my
+            life. Currenty used by InflatableOffice.com. Copy description from
+            linkedin and fix it.
+          </CardContent>
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
@@ -33,17 +47,44 @@ export function Projects() {
               Coming soon. . .
             </CardDescription>
           </CardHeader>
+          <CardContent>
+            My current pet project. This is a collaboritive project that aims to
+            create a visualization of ego networks for npm dependencies. It
+            essentially dynamically searches npm packages by name to find
+            package.json files, and creates a network based on every dependency
+            that would appear in your package.lock.jsono. Luckily, I have been
+            able to incorperate three of my graduate course projects into this.
+            It is working great, and should be hosted online very soon.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>CCounter Dev</CardTitle>
+            <CardDescription>I swear this counts.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            I would not usually mention this, but this program has made a bigger
+            impact on my life than anything one this list. I worked on this for
+            at least five minutes a day for seven months. Built with the
+            glorious power of google sheets, this solved a real life problem of
+            mine and I use it every day.{' '}
+          </CardContent>
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
             <CardTitle>NBA Goat Calculator</CardTitle>
             <CardDescription>
-              Generations have argued. Is anyone right? Who you consider the
-              greatest depends on your values. This app asks what you value, and
-              with the power of advanced analytics, ranks players accordingly.
-              Coming soon. . .
+              Can I turn opinions into a math problem?
             </CardDescription>
           </CardHeader>
+          <CardContent>
+            Generations have argued. Is anyone right? Who you consider the
+            greatest depends on your values. This app asks what you value, and
+            with the power of advanced analytics, ranks players accordingly.
+            Written in C# and Asp.net. I became so frustrated at Microsoft
+            Visual Studio, I ended up restarting the entire project in react,
+            and Python Flask.
+          </CardContent>
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
@@ -67,6 +108,19 @@ export function Projects() {
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
+            <CardTitle>Portfolio 1</CardTitle>
+            <CardDescription>Great work for the time</CardDescription>
+          </CardHeader>
+          <CardContent>
+            Built entirely in Python flask and lots of very clever CSS, this was
+            my first serious website attempt. I was proud when I made this as an
+            undergrad, but I have no desire to make websites again with simple
+            templating engines. I no longer host this anymore, but I still have
+            some pretty pictures.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
             <CardTitle>Rainmeter Desktop</CardTitle>
             <CardDescription>My first successful pet project</CardDescription>
           </CardHeader>
@@ -75,6 +129,19 @@ export function Projects() {
             windows 8 customization options, I made my perfect desktop with
             every feature I ever wanted. Customizing the volume bars was a total
             pain.{' '}
+          </CardContent>
+        </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>Vpython TicTacToe</CardTitle>
+            <CardDescription>My first pet project</CardDescription>
+          </CardHeader>
+          <CardContent>
+            I wrote this before I knew what for loops were. I was so excited to
+            learn to program, I made the first thing that came to mind. This is
+            completely overengineered, written in a 3d Vpython engine, and I
+            absolutely loved it. I even made an opponent program that would play
+            against you. It is great seeing how far I have come.{' '}
           </CardContent>
         </Card>
       </div>
