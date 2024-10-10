@@ -2,26 +2,27 @@ import { FC, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import { cn } from '@/lib/utils'
+import { Quote } from '@/template/QuoteBox'
 
 interface Props {
-  words: string[]
+  quotes: Quote[]
   className?: string
 }
-const RotateBetween: FC<Props> = ({ words, className }) => {
+const RotateBetween: FC<Props> = ({ quotes, className }) => {
   const [index, setIndex] = useState(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % words.length)
+      setIndex((prevIndex) => (prevIndex + 1) % quotes.length)
     }, 4500)
 
     return () => clearInterval(interval)
-  }, [words.length])
+  }, [quotes.length])
 
   return (
     <AnimatePresence mode="wait">
       <motion.p
-        key={words[index]}
+        key={quotes[index].text}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
@@ -31,7 +32,7 @@ const RotateBetween: FC<Props> = ({ words, className }) => {
           className
         )}
       >
-        {words[index]}
+        {quotes[index].text} - {quotes[index].source}
       </motion.p>
     </AnimatePresence>
   )
