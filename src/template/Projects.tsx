@@ -65,6 +65,18 @@ export function Projects() {
             reverse
           </CardContent>
         </Card>
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle>Rainmeter Desktop</CardTitle>
+            <CardDescription>My first successful pet project</CardDescription>
+          </CardHeader>
+          <CardContent>
+            I wish I still had access to this. I was not happy with any of the
+            windows 8 customization options, I made my perfect desktop with
+            every feature I ever wanted. Customizing the volume bars was a total
+            pain.{' '}
+          </CardContent>
+        </Card>
       </div>
       <p></p>
       <div></div>
