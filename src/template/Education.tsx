@@ -1,11 +1,10 @@
-import { LuBrainCircuit } from 'react-icons/lu'
-
 export function Education() {
   return (
     <div id="education" className="min-h-screen pt-30">
-      <h1>Education</h1>
-      <LuBrainCircuit />
-      <h2>Masters of Computer Science - Kent State University</h2>
+      <h1 className="text-3xl pb-4">Education</h1>
+      <h2 className="text-xl">
+        M.S of Computer Science (in progress) - Kent State University
+      </h2>
       <p>
         In progress. I am a graduate student at Kent State. Currently studying
         Cryptography and AI.
@@ -17,7 +16,9 @@ export function Education() {
         <li>Graph Algorithms</li>
         <li>iOS Programming</li>
       </ul>
-      <h2>B.S Computer Science. GPA: 3.958 - Kent State University</h2>
+      <h2 className="text-xl pt-4">
+        B.S Computer Science. GPA: 3.958 - Kent State University
+      </h2>
       <p>You have no idea how much that A- in Latin class still urks me.</p>
     </div>
   )

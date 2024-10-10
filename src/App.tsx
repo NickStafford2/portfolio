@@ -14,8 +14,11 @@ function App() {
   return (
     <div className="content-wrapper flex flex-col gap-20 px-20">
       <Hero></Hero>
-      <Education></Education>
-      <Experience></Experience>
+      <h1 className="text-5xl">Experience</h1>
+      <div className="flex flex-row">
+        <Education></Education>
+        <Experience></Experience>
+      </div>
       <Skills></Skills>
       <Projects></Projects>
       <ProgrammingPhilosophy></ProgrammingPhilosophy>

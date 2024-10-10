@@ -10,10 +10,10 @@ import {
 export function Experience() {
   return (
     <div id="experience">
-      <h1>Work Experience</h1>
+      <h1 className="text-3xl pb-4">Work</h1>
       <Card className="ns-w-card">
         <CardHeader>
-          <CardTitle>All Things Nerd</CardTitle>
+          <CardTitle>InflatableOffice LLC</CardTitle>
           <CardDescription>Web Developer & Software Architect</CardDescription>
         </CardHeader>
         <CardContent>
