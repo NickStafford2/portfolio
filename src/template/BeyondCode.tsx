@@ -13,18 +13,18 @@ export function BeyondCode() {
       <div className="flex flex-col gap-8">
         <Card className="ns-w-card">
           <CardHeader>
-            <CardTitle>All Things Nerd</CardTitle>
+            <CardTitle>Things I love.</CardTitle>
             <CardDescription>physics, math, and nerd stuff</CardDescription>
           </CardHeader>
           <CardContent>
             I was majoring in physics before i switched to computer science. i
-            plan to finish that degree once i complete my cs masters. i love
-            physics. i have performed yongue's famous double slit experiment,
+            plan to finish that degree once I complete my cs masters. i love
+            physics. I have performed yongue's famous double slit experiment,
             and done the requisite calculations to witness the collapse of the
-            wave function. i have used an atomic force microscope and have seen
-            individual atoms. i took differential equations and lived to tell
+            wave function. I have used an atomic force microscope and have seen
+            individual atoms. I took differential equations and lived to tell
             the tale. studying quantum mechanics is my happy place. there is
-            <a href="">a fantastic youtube series</a> by sean carroll that i can
+            <a href="">a fantastic youtube series</a> by Sean Carroll that I can
             not reccomend more highly.
           </CardContent>
         </Card>
