@@ -1,6 +1,6 @@
 export function Education() {
   return (
-    <div id="education" className="min-h-screen pt-30">
+    <div className="min-h-screen pt-30">
       <h1 className="text-3xl pb-4">Education</h1>
       <h2 className="text-xl">
         M.S of Computer Science (in progress) - Kent State University

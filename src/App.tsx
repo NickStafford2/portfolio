@@ -15,12 +15,12 @@ function App() {
     <div className="content-wrapper flex flex-col gap-20 px-20">
       <Hero></Hero>
       <h1 className="text-5xl">Experience</h1>
-      <div className="flex flex-row">
+      <div id="experience" className="flex flex-row">
         <Education></Education>
         <Experience></Experience>
       </div>
-      <Skills></Skills>
       <Projects></Projects>
+      <Skills></Skills>
       <ProgrammingPhilosophy></ProgrammingPhilosophy>
       <BeyondCode></BeyondCode>
       <QuoteBox></QuoteBox>
