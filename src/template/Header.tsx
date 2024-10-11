@@ -59,9 +59,14 @@ const links = [
   },
 ]
 
-export default function Header() {
+export default function Header({
+  sendDataToParent,
+}: {
+  sendDataToParent: () => void
+}) {
   return (
     <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30 gap-3">
+      <Button onClick={() => sendDataToParent()}>Sidebar</Button>
       <h1 className="text-2xl">Nicholas Stafford</h1>
       <FloatingDock items={links} />
       <Button>
