@@ -74,7 +74,7 @@ export function Skills() {
       <h1 className="text-5xl py-5">Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
         {skills.map((skill) => (
-          <SkillCard data={skill}></SkillCard>
+          <SkillCard key={skill.title} data={skill}></SkillCard>
         ))}
       </div>
     </div>

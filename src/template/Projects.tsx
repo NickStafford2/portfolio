@@ -91,15 +91,13 @@ export function Projects() {
           <CardHeader>
             <CardTitle>DotFiles</CardTitle>
             <CardDescription>
-              No Joke, these configurations contain serious code.
-              <p>
-                I am returning to the church of vi after many years away. It is
-                glorious. I don't want to use the mouse ever again. I have spent
-                way too many hours configuring my neovim setup. I started with
-                kickstarter, then I ruined that configuration. Now I switched to
-                my own customized version of AstroVim. Week by week, I will
-                morph this beast into my perfect IDE.
-              </p>
+              No Joke, these configurations contain serious code. I am returning
+              to the church of vi after many years away. It is glorious. I don't
+              want to use the mouse ever again. I have spent way too many hours
+              configuring my neovim setup. I started with kickstarter, then I
+              ruined that configuration. Now I switched to my own customized
+              version of AstroVim. Week by week, I will morph this beast into my
+              perfect IDE.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -189,8 +187,6 @@ export function Projects() {
           </CardContent>
         </Card>
       </div>
-      <p></p>
-      <div></div>
     </div>
   )
 }
