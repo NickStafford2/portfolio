@@ -27,12 +27,14 @@ export function NsCard({
   className,
   childContainerClassName,
   title,
+  description,
   animate,
 }: {
   children?: React.ReactNode
   className?: string
   childContainerClassName?: string
   title?: string
+  description?: string
   animate?: boolean
 }) {
   const [isVisible, setIsVisible] = useState(false)
@@ -109,7 +111,8 @@ export function NsCard({
           animate={isVisible ? 'visible' : 'hidden'}
           variants={containerVarients}
         >
-          {!!title && <h2 className="text-xl">{title}</h2>}
+          {!!title && <h2 className="text-2xl">{title}</h2>}
+          {!!description && <h2 className="text-xl">{description}</h2>}
           <motion.div
             className="overflow-hidden"
             animate={isVisible ? 'visible' : 'hidden'}
