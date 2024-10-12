@@ -9,6 +9,13 @@ export function Hero() {
     <div
       id="hero"
       className="min-h-[calc(100vh-64px)] bg-opacity-20 flex  justify-between flex-col pt-[280px]"
+      style={{
+        width: '200%',
+        transform: 'translateX(-300px)',
+        paddingLeft: '300px',
+        backgroundImage:
+          'linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,255,0))',
+      }}
     >
       {/* <AuroraBackground> */}
       {/*   <motion.div */}
@@ -32,20 +39,33 @@ export function Hero() {
       {/*     </button> */}
       {/*   </motion.div> */}
       {/* </AuroraBackground>{' '} */}
-      <TextWriter text="Hello World" className="text-8xl mb-6" delay={0.2} />
-      <div className="max-w-[600px] pb-24">
+      <div
+        style={{
+          paddingLeft: '300px',
+          transform: 'translateX(-300px)',
+          // backgroundImage:
+          // 'linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,255,0))',
+        }}
+      >
         <TextWriter
-          text="
+          text="Hello World"
+          className="font-bold  py-8 text-8xl mb-6"
+          delay={0.2}
+        />
+        <div className="max-w-[600px] pb-4">
+          <TextWriter
+            text="
         My name is Nicholas Stafford. I am a web developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-          className="text-2xl mb-6"
-          delay={0.05}
-        />
+            className="text-2xl mb-6"
+            delay={0.05}
+          />
+        </div>
       </div>
-      <div className="flex flex-row w-full py-10 justify-between items-center ">
+      <div className="flex flex-row w-[60%] py-10 justify-between items-center ">
         <div className="flex flex-col flex-grow justify-center align-middle ">
-          <a href="#education">
+          <a href="#experience">
             <span className="text-5xl">Learn More:</span>
             <br />
             <FaChevronDown className="text-[10em] opacity-30"></FaChevronDown>{' '}

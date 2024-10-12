@@ -38,8 +38,10 @@ function App() {
       <div className="content-wrapper flex flex-col gap-0 px-20">
         <Hero></Hero>
         {/* <div className=" h-10 w-[200%] mb-16 animated-gradient"></div> */}
-        <h1 className="text-5xl pt-40">Experience</h1>
-        <div id="experience" className="flex flex-row">
+        <h1 id="experience" className="text-5xl pt-40">
+          Experience
+        </h1>
+        <div className="flex flex-row">
           <Education></Education>
           <Experience></Experience>
         </div>
