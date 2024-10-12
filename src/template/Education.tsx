@@ -17,7 +17,6 @@ const containerVarients = {
 export function Education() {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
-  const id = useId()
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
