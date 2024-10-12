@@ -9,7 +9,7 @@ import '@/globals.css'
 import { BackgroundGradient } from '@/components/ui/background-gradient.tsx'
 export function Projects() {
   return (
-    <div className="min-h-screen">
+    <div id="#projects" className="min-h-screen">
       <h1 className="text-5xl py-6">Projects</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 ">

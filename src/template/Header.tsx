@@ -20,19 +20,19 @@ const links = [
   },
 
   {
-    title: 'Products',
+    title: 'Experience',
     icon: (
       <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: '#skills',
+    href: '#experience',
   },
 
   {
-    title: 'Components',
+    title: 'Projects',
     icon: (
       <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: '#',
+    href: '#projects',
   },
 
   {
@@ -57,6 +57,20 @@ const links = [
     ),
     href: '#',
   },
+  {
+    title: 'resume',
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: '#',
+  },
+  {
+    title: 'Icebox Login',
+    icon: (
+      <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: '#',
+  },
 ]
 
 export default function Header({
@@ -65,18 +79,16 @@ export default function Header({
   sendDataToParent: () => void
 }) {
   return (
-    <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)]">
+    <div className="fixed flex items-center justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)]">
       {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
-      <h1 className="pl-4 text-2xl">Nicholas Stafford</h1>
-      <FloatingDock items={links} />
-      <Button>
-        <FaRegSnowflake className="w-7 h-6" />
-        <span className="pr-4">Resume</span>
-      </Button>
-      <Button>
-        <span className="pr-4">Icebox Login</span>
-        <FaRegSnowflake className="w-7 h-6" />
-      </Button>
+      <h1 className="pl-4 text-2xl">
+        <a href="#home">Nicholas Stafford</a>
+      </h1>
+      <div className=" flex flex-row h-full flex-grow justify-center items-center ">
+        <a className="text-center  ">Projects</a>
+      </div>
+      {/* <FloatingDock items={links} /> */}
+      <span className="pr-4">Icebox Login</span>
     </div>
   )
 }
