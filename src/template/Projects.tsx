@@ -7,29 +7,43 @@ import {
 } from '@/components/ui/card.tsx'
 import '@/globals.css'
 import { BackgroundGradient } from '@/components/ui/background-gradient.tsx'
+import { NsCard } from '@/components/ns/nsCard'
 export function Projects() {
   return (
     <div id="projects" className="min-h-screen">
       <h1 className="text-5xl py-6">Projects</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 ">
-        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
-          <h2>Portfolio 2</h2>
-          <p>You are currently looking at it.</p>
+        <NsCard title="Portfolio" description="You are currently looking at it">
           <p>
             I am starting simple. Hoping to make this pretty nice as time goes
             on.
           </p>
-        </BackgroundGradient>
-        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
-          <h2>IO Architecture rewrite</h2>
-          <p>I can't believe this actually worked.</p>
+        </NsCard>
+        <NsCard
+          title="IO Architecture rewrite"
+          description="I can't believe this actually worked."
+        >
           <p>
             Without a question, my most successful programming project of my
             life. Currenty used by InflatableOffice.com. Copy description from
             linkedin and fix it.
           </p>
-        </BackgroundGradient>
+        </NsCard>
+        <NsCard
+          title="Visual NPM"
+          description="Visualize the tools that power the web. See it change over time. Coming soon. . . "
+        >
+          <p>
+            My current pet project. This is a collaboritive project that aims to
+            create a visualization of ego networks for npm dependencies. It
+            essentially dynamically searches npm packages by name to find
+            package.json files, and creates a network based on every dependency
+            that would appear in your package.lock.jsono. Luckily, I have been
+            able to incorperate three of my graduate course projects into this.
+            It is working great, and should be hosted online very soon.{' '}
+          </p>
+        </NsCard>
         <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
           <h2>Visual NPM</h2>
           <p>
