@@ -13,6 +13,7 @@ import { Skills } from './template/Skills'
 // import sample from './assets/AbstractWaves.mp4'
 // too big. edid with kdenlive. maybe
 import sample from './assets/vecteezy_binary-code-with-numbers-moving-downward-on-screen_2015336.mov'
+import { transform } from 'framer-motion'
 // import sample from './assets/Particle_Wave_4K_Motion_Background_Loop.mp4'
 // <a href="https://www.vecteezy.com/free-videos/binary-code">Binary Code Stock Videos by Vecteezy</a>
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
@@ -27,13 +28,17 @@ function App() {
         style={{
           // transform: 'rotateX(180deg)',
           zIndex: -998,
+
+          boxShadow: '0px 0px 105px 45px rgba(46,213,255,0.9)',
         }}
       >
         <source src={sample} type="video/mp4" />
       </video>
+
       <div className="content-wrapper flex flex-col gap-0 px-20">
         <Hero></Hero>
-        <h1 className="text-5xl">Experience</h1>
+        {/* <div className=" h-10 w-[200%] mb-16 animated-gradient"></div> */}
+        <h1 className="text-5xl pt-40">Experience</h1>
         <div id="experience" className="flex flex-row">
           <Education></Education>
           <Experience></Experience>

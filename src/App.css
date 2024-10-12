@@ -1,3 +1,18 @@
+.animated-gradient {
+  transform: translateX(-200px);
+  animation: animateBg 20s linear infinite;
+  background-image: linear-gradient(90deg, #1c71d8, #5e5c64, #1c71d8, #5e5c64);
+  background-size: 300% 100%;
+}
+@keyframes animateBg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
 .skillcard-icon {
   --skillcard-icon-size: 44px;
   height: var(--skillcard-icon-size);
