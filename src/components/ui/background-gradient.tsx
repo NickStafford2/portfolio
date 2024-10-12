@@ -4,11 +4,13 @@ import { motion } from 'framer-motion'
 
 export const BackgroundGradient = ({
   children,
+  onClick,
   className,
   containerClassName,
   animate = true,
 }: {
   children?: React.ReactNode
+  onClick?: () => void
   className?: string
   containerClassName?: string
   animate?: boolean
@@ -22,7 +24,10 @@ export const BackgroundGradient = ({
     },
   }
   return (
-    <div className={cn('relative p-[4px] group w-full', containerClassName)}>
+    <div
+      onClick={onClick}
+      className={cn('relative p-[4px] group w-full', containerClassName)}
+    >
       <motion.div
         variants={animate ? variants : undefined}
         initial={animate ? 'initial' : undefined}
