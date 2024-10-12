@@ -2,6 +2,7 @@ import { BackgroundGradient } from '@/components/ui/background-gradient.tsx'
 import React, { useEffect, useId, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useOutsideClick } from '@/hooks/use-outside-click.tsx'
+import { NsCard } from '@/components/ns/nsCard'
 
 const varients = {
   hidden: { height: 0, cursor: 'pointer' },
@@ -33,6 +34,9 @@ export function Education() {
   return (
     <div className="min-h-screen pt-30">
       <h1 className="text-3xl pb-4">Education</h1>
+      <NsCard title="test">
+        <p>testing</p>
+      </NsCard>
       <BackgroundGradient
         onClick={() => setIsVisible(!isVisible)}
         className="h-full w-full rounded-[22px] p-4 sm:p-4 bg-white dark:bg-zinc-900"
