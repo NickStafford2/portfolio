@@ -22,7 +22,7 @@ export default function NsSkill({
         <h2 className="text-xl text-[var(--ns-primary)] font-semibold">
           {title}
         </h2>
-        {/* <p>{description}</p> */}
+        <p>{description}</p>
       </div>
     </div>
   )

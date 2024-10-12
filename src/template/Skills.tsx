@@ -1,5 +1,5 @@
 import { SkillCard } from '@/template/SkillCard'
-import { FaLinux } from 'react-icons/fa'
+import { FaGit, FaLinux } from 'react-icons/fa'
 import { SiFlask } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import { RiAngularjsLine } from 'react-icons/ri'
@@ -14,58 +14,75 @@ const skills = [
   {
     title: 'Neovim',
     icon: <SiNeovim className="skillcard-icon" />,
-    description:
-      'Neovim has changed how I program. It has been years since I last used vi, and this time, I am not going back to the mouse. ',
+    value: 40,
+    description: '3 months daily',
+  },
+
+  {
+    title: 'Git',
+    icon: <FaGit className="skillcard-icon" />,
+    value: 60,
+    description: '3 years',
   },
   {
-    title: 'Github',
+    title: 'GitHub',
     icon: <FaGithub className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 60,
+    description: '3 years',
   },
   {
     title: 'Javascript',
     icon: <SiJavascript className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 80,
+    description: '4 years',
   },
   {
     title: 'Typescript',
     icon: <SiTypescript className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 40,
+    description: '3 years',
   },
   {
     title: 'C++',
     icon: <TbBrandCpp className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 60,
+    description: '2 years',
   },
   {
     title: 'Python',
     icon: <FaPython className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 40,
+    description: '2 years infrequent',
   },
   {
     title: 'AngularJs',
     icon: <RiAngularjsLine className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 85,
+    description: '3 years',
   },
   {
     title: 'Angular',
     icon: <FaAngular className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 40,
+    description: '2 years',
   },
   {
     title: 'React',
     icon: <FaReact className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 25,
+    description: '2 months recent',
   },
   {
     title: 'Flask',
     icon: <SiFlask className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 30,
+    description: '4 months',
   },
   {
     title: 'Linux',
     icon: <FaLinux className="skillcard-icon" />,
-    description: 'check out all my code here',
+    value: 80,
+    description: '10 years',
   },
 ]
 
@@ -80,7 +97,7 @@ export function Skills() {
             svg={skill.icon}
             description={skill.description}
             title={skill.title}
-            skill={3}
+            skill={skill.value}
           ></NsSkill>
         ))}
       </div>
