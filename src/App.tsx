@@ -22,7 +22,7 @@ function App() {
     <div className="overflow-x-hidden" style={{}}>
       <div className="hero-video">
         <video
-          className="absolute min-h-full bottom-0 max-w-full  overflow-x-hidden "
+          className="absolute min-h-full bottom-0 min-w-[calc(100vh*16/9)] overflow-x-hidden "
           autoPlay
           loop
           muted
