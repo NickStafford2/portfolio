@@ -1,16 +1,7 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card.tsx'
-import '@/globals.css'
-import { BackgroundGradient } from '@/components/ui/background-gradient.tsx'
 import { NsCard } from '@/components/ns/nsCard'
 export function Projects() {
   return (
-    <div id="projects" className="min-h-screen">
+    <div id="projects" className="mt-48 pt-[var(--header-height)] min-h-screen">
       <h1 className="text-5xl py-6">Projects</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
