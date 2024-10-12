@@ -84,8 +84,22 @@ export default function Header({
       <h1 className="pl-4 text-2xl">
         <a href="#home">Nicholas Stafford</a>
       </h1>
-      <div className=" flex flex-row h-full flex-grow justify-center items-center ">
-        <a className="text-center  ">Projects</a>
+      <div className="flex flex-row h-full flex-grow justify-center items-center gap-10">
+        <a href="#experience" className="text-center  ">
+          Experience
+        </a>
+        <a href="#projects" className="text-center  ">
+          Projects
+        </a>
+        <a href="#skills" className="text-center  ">
+          Skills
+        </a>
+        <a href="#blog" className="text-center  ">
+          Blog
+        </a>
+        <a href="#aboutme" className="text-center  ">
+          About Me
+        </a>
       </div>
       {/* <FloatingDock items={links} /> */}
       <span className="pr-4">Icebox Login</span>
