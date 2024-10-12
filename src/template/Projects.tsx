@@ -1,4 +1,5 @@
 import { NsCard } from '@/components/ns/nsCard'
+// import nvimImage from '@/assets/NvimScreenshot.png'
 
 export function Projects() {
   return (
@@ -15,6 +16,8 @@ export function Projects() {
         <NsCard
           title="IO Architecture rewrite"
           description="I can't believe this actually worked."
+          img="IoLogo.png"
+          expandSection={true}
         >
           <p>
             Without a question, my most successful programming project of my
@@ -60,7 +63,12 @@ export function Projects() {
             and Python Flask.{' '}
           </p>
         </NsCard>
-        <NsCard title="DotFiles" description="Neovim configuration is no joke.">
+        <NsCard
+          title="DotFiles"
+          description="Neovim configuration is no joke."
+          img="NvimScreenshot.png"
+          expandSection={true}
+        >
           <p>
             These configurations contain serious code. I am returning to the
             church of vi after many years away. It is glorious. I don't want to
@@ -70,6 +78,7 @@ export function Projects() {
             version of AstroVim. Week by week, I will morph this beast into my
             perfect IDE.
           </p>
+          {/* <img src={nvimImage} alt="" /> */}
           <p>
             Insert image of google search "vi: did you mean emacs?" and the
             reverse

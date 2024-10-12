@@ -24,6 +24,8 @@ const borderVariants = {
 
 export function NsCard({
   children,
+  img,
+  expandSection,
   className,
   childContainerClassName,
   title,
@@ -31,6 +33,8 @@ export function NsCard({
   animate,
 }: {
   children?: React.ReactNode
+  img?: any
+  expandSection?: boolean
   className?: string
   childContainerClassName?: string
   title?: string
@@ -108,11 +112,16 @@ export function NsCard({
           'relative z-10 h-full w-full rounded-[22px] p-4 sm:p-4 bg-white dark:bg-zinc-900',
           childContainerClassName
         )}
+        style={{
+          backgroundImage: `url('/public/${img}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
       >
-        <div className="pb-6">
+        <div className="pb-6 ">
           {!!title && <h2 className="text-2xl">{title}</h2>}
           {!!description && (
-            <h2 className="text-large text-gray-400}">{description}</h2>
+            <h2 className="text-large text-gray-400 }">{description}</h2>
           )}
         </div>
         <motion.div
@@ -121,6 +130,7 @@ export function NsCard({
           variants={expandableVarients}
           transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
+          {!!expandSection && <div className="h-36"></div>}
           {children}
         </motion.div>
       </div>
