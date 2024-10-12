@@ -29,17 +29,17 @@ export function Hero() {
       <div className="flex flex-row  py-10 justify-between items-center ">
         <div className="flex flex-col flex-grow justify-center align-middle ">
           <a href="#experience">
-            <span className="text-[#7fe5ff] text-5xl">Learn More:</span>
+            <span className="text-[#7fe5ff] text-3xl">Learn More:</span>
             <br />
-            <FaChevronDown className="text-[#7fe5ff] text-[10em] opacity-30"></FaChevronDown>{' '}
+            <FaChevronDown className="text-[#7fe5ff] text-[8em] opacity-30"></FaChevronDown>{' '}
           </a>
         </div>
-        <span className="text-4xl align-center">- or -</span>
+        <span className="text-2xl align-center text-[#7fe5ff] ">- or -</span>
         <div className="flex flex-col flex-grow ">
           <a href="#" className="flex flex-col items-end align-bottom">
-            <FaChevronUp className="text-[#7fe5ff] text-[10em] opacity-30"></FaChevronUp>{' '}
+            <FaChevronUp className="text-[#7fe5ff] text-[8em] opacity-30"></FaChevronUp>{' '}
             <br />
-            <span className="text-[#7fe5ff] text-5xl">Contact Me</span>
+            <span className="text-[#7fe5ff] text-3xl">Contact Me</span>
           </a>
         </div>
       </div>
