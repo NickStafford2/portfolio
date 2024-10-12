@@ -58,7 +58,7 @@ export function Hero() {
         My name is Nicholas Stafford. I am a web developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-            className="text-2xl mb-6 text-[#7fe5ff] "
+            className="text-2xl mb-6 bg-[#7fe5ff] font-semibold  text-black p-3 mt-10"
             delay={0.05}
           />
         </div>
