@@ -35,6 +35,7 @@
   --skillcard-icon-size: 44px;
   height: var(--skillcard-icon-size);
   width: var(--skillcard-icon-size);
+  color: var(--ns-primary);
 }
 /*@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');*/
 /*@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300');*/

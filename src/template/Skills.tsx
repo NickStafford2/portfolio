@@ -8,6 +8,7 @@ import { FaAngular, FaGithub } from 'react-icons/fa'
 import { FaPython } from 'react-icons/fa6'
 import { SiJavascript } from 'react-icons/si'
 import { TbBrandCpp } from 'react-icons/tb'
+import NsSkill from '@/components/ns/NsSkill'
 
 const skills = [
   {
@@ -72,9 +73,15 @@ export function Skills() {
   return (
     <div id="skills" className="mt-48 min-h-screen pt-[var(--header-height)] ">
       <h1 className="text-5xl py-5">Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 ">
         {skills.map((skill) => (
-          <SkillCard key={skill.title} data={skill}></SkillCard>
+          <NsSkill
+            key={skill.title}
+            svg={skill.icon}
+            description={skill.description}
+            title={skill.title}
+            skill={3}
+          ></NsSkill>
         ))}
       </div>
     </div>

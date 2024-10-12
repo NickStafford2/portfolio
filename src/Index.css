@@ -55,6 +55,7 @@ body {
     --radius: 0.5rem;
 
     --header-height: 64px;
+    --ns-primary: #7fe5ff;
   }
   .dark {
     --background: 240 10% 3.9%;
