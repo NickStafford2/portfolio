@@ -70,7 +70,7 @@ const skills = [
 
 export function Skills() {
   return (
-    <div id="skills" className="min-h-screen">
+    <div id="skills" className="mt-48 min-h-screen pt-[var(--header-height)] ">
       <h1 className="text-5xl py-5">Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
         {skills.map((skill) => (
