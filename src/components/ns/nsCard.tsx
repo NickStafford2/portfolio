@@ -111,8 +111,12 @@ export function NsCard({
           animate={isVisible ? 'visible' : 'hidden'}
           variants={containerVarients}
         >
-          {!!title && <h2 className="text-2xl">{title}</h2>}
-          {!!description && <h2 className="text-xl">{description}</h2>}
+          <div className="pb-6">
+            {!!title && <h2 className="text-2xl">{title}</h2>}
+            {!!description && (
+              <h2 className="text-large text-gray-400}">{description}</h2>
+            )}
+          </div>
           <motion.div
             className="overflow-hidden"
             animate={isVisible ? 'visible' : 'hidden'}
