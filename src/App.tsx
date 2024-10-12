@@ -19,21 +19,23 @@ import { transform } from 'framer-motion'
 // idea. Make a terminal looking thing. use react to change text over time like someone is typing.
 function App() {
   return (
-    <div className="overflow-x-hidden">
-      <video
-        className="videoTag absolute h-full top-0 w-auto max-w-none overflow-x-hidden "
-        autoPlay
-        loop
-        muted
-        style={{
-          // transform: 'rotateX(180deg)',
-          zIndex: -998,
+    <div className="overflow-x-hidden" style={{}}>
+      <div className="hero-video">
+        <video
+          className="absolute min-h-full bottom-0 max-w-full  overflow-x-hidden "
+          autoPlay
+          loop
+          muted
+          style={{
+            // transform: 'rotateX(180deg)',
+            zIndex: -998,
 
-          boxShadow: '0px 0px 105px 45px rgba(46,213,255,0.9)',
-        }}
-      >
-        <source src={sample} type="video/mp4" />
-      </video>
+            boxShadow: '0px 0px 105px 45px rgba(46,213,255,0.9)',
+          }}
+        >
+          <source src={sample} type="video/mp4" />
+        </video>
+      </div>
 
       <div className="content-wrapper flex flex-col gap-0 px-20">
         <Hero></Hero>

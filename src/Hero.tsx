@@ -9,13 +9,6 @@ export function Hero() {
     <div
       id="hero"
       className="min-h-[calc(100vh-64px)] bg-opacity-20 flex  justify-between flex-col pt-[280px]"
-      style={{
-        width: '200%',
-        transform: 'translateX(-300px)',
-        paddingLeft: '300px',
-        backgroundImage:
-          'linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,255,0))',
-      }}
     >
       {/* <AuroraBackground> */}
       {/*   <motion.div */}
