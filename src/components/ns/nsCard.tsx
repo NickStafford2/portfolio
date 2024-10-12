@@ -24,12 +24,14 @@ const borderVariants = {
 
 export function NsCard({
   children,
-  containerClassName,
+  className,
+  childContainerClassName,
   title,
   animate,
 }: {
   children?: React.ReactNode
-  containerClassName?: string
+  className?: string
+  childContainerClassName?: string
   title?: string
   animate?: boolean
 }) {
@@ -51,7 +53,7 @@ export function NsCard({
   return (
     <div
       onClick={() => setIsVisible(!isVisible)}
-      className={cn(' relative p-[4px] group w-full', containerClassName)}
+      className={cn(' relative p-[4px] group w-full', className)}
     >
       <motion.div
         variants={animate ? borderVariants : undefined}
@@ -97,9 +99,10 @@ export function NsCard({
       />
 
       <div
-        className={
-          'relative z-10 h-full w-full rounded-[22px] p-4 sm:p-4 bg-white dark:bg-zinc-900'
-        }
+        className={cn(
+          'relative z-10 h-full w-full rounded-[22px] p-4 sm:p-4 bg-white dark:bg-zinc-900',
+          childContainerClassName
+        )}
       >
         <motion.div
           ref={ref}
