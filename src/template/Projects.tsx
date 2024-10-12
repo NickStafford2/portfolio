@@ -1,4 +1,5 @@
 import { NsCard } from '@/components/ns/nsCard'
+
 export function Projects() {
   return (
     <div id="projects" className="mt-48 pt-[var(--header-height)] min-h-screen">
@@ -59,11 +60,11 @@ export function Projects() {
             and Python Flask.{' '}
           </p>
         </NsCard>
-        <NsCard title="DotFiles">
+        <NsCard title="DotFiles" description="Neovim configuration is no joke.">
           <p>
-            No Joke, these configurations contain serious code. I am returning
-            to the church of vi after many years away. It is glorious. I don't
-            want to use the mouse ever again. I have spent way too many hours
+            These configurations contain serious code. I am returning to the
+            church of vi after many years away. It is glorious. I don't want to
+            use the mouse ever again. I have spent way too many hours
             configuring my neovim setup. I started with kickstarter, then I
             ruined that configuration. Now I switched to my own customized
             version of AstroVim. Week by week, I will morph this beast into my
