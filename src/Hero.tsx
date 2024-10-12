@@ -49,7 +49,7 @@ export function Hero() {
       >
         <TextWriter
           text="Hello World"
-          className="font-bold  py-8 text-8xl mb-6"
+          className="font-bold text-[#2ed5ff]  py-8 text-8xl mb-6"
           delay={0.2}
         />
         <div className="max-w-[600px] pb-4">
@@ -58,7 +58,7 @@ export function Hero() {
         My name is Nicholas Stafford. I am a web developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-            className="text-2xl mb-6"
+            className="text-2xl mb-6 text-[#2ed5ff] "
             delay={0.05}
           />
         </div>
@@ -66,17 +66,17 @@ export function Hero() {
       <div className="flex flex-row w-[60%] py-10 justify-between items-center ">
         <div className="flex flex-col flex-grow justify-center align-middle ">
           <a href="#experience">
-            <span className="text-5xl">Learn More:</span>
+            <span className="text-[#2ed5ff] text-5xl">Learn More:</span>
             <br />
-            <FaChevronDown className="text-[10em] opacity-30"></FaChevronDown>{' '}
+            <FaChevronDown className="text-[#2ed5ff] text-[10em] opacity-30"></FaChevronDown>{' '}
           </a>
         </div>
         <span className="text-4xl align-center">- or -</span>
         <div className="flex flex-col flex-grow ">
           <a href="#" className="flex flex-col items-end align-bottom">
-            <FaChevronUp className="text-[10em] opacity-30"></FaChevronUp>{' '}
+            <FaChevronUp className="text-[#2ed5ff] text-[10em] opacity-30"></FaChevronUp>{' '}
             <br />
-            <span className="text-5xl">Contact Me</span>
+            <span className="text-[#2ed5ff] text-5xl">Contact Me</span>
           </a>
         </div>
       </div>
