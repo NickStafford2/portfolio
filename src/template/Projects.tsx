@@ -4,50 +4,39 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '@/components/ui/card'
+} from '@/components/ui/card.tsx'
 import '@/globals.css'
+import { BackgroundGradient } from '@/components/ui/background-gradient.tsx'
 export function Projects() {
   return (
     <div className="min-h-screen">
       <h1 className="text-5xl py-6">Projects</h1>
-      <p>
-        I love code. Below is a selection of some stuff I am working on in my
-        spare time.
-      </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 bg-sky-600 bg-opacity-35">
-        <Card className="ns-w-card">
-          <CardHeader>
-            <CardTitle>Portfolio 2</CardTitle>
-            <CardDescription>You are currently looking at it.</CardDescription>
-          </CardHeader>
-          <CardContent>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 ">
+        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
+          <h2>Portfolio 2</h2>
+          <p>You are currently looking at it.</p>
+          <p>
             I am starting simple. Hoping to make this pretty nice as time goes
             on.
-          </CardContent>
-        </Card>
-        <Card className="ns-w-card">
-          <CardHeader>
-            <CardTitle>IO Architecture rewrite</CardTitle>
-            <CardDescription>
-              I can't believe this actually worked.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+          </p>
+        </BackgroundGradient>
+        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
+          <h2>IO Architecture rewrite</h2>
+          <p>I can't believe this actually worked.</p>
+          <p>
             Without a question, my most successful programming project of my
             life. Currenty used by InflatableOffice.com. Copy description from
             linkedin and fix it.
-          </CardContent>
-        </Card>
-        <Card className="ns-w-card">
-          <CardHeader>
-            <CardTitle>Visual NPM</CardTitle>
-            <CardDescription>
-              Visualize the tools that power the web. See it change over time.
-              Coming soon. . .
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+          </p>
+        </BackgroundGradient>
+        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
+          <h2>Visual NPM</h2>
+          <p>
+            Visualize the tools that power the web. See it change over time.
+            Coming soon. . .
+          </p>
+          <p>
             My current pet project. This is a collaboritive project that aims to
             create a visualization of ego networks for npm dependencies. It
             essentially dynamically searches npm packages by name to find
@@ -55,21 +44,24 @@ export function Projects() {
             that would appear in your package.lock.jsono. Luckily, I have been
             able to incorperate three of my graduate course projects into this.
             It is working great, and should be hosted online very soon.{' '}
-          </CardContent>
-        </Card>
-        <Card className="ns-w-card">
-          <CardHeader>
-            <CardTitle>CCounter Dev</CardTitle>
-            <CardDescription>
-              Too nerdy and useful to not mention.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+          </p>
+        </BackgroundGradient>
+        <BackgroundGradient className="h-full rounded-[22px] max-w-sm p-4 sm:p-4 bg-white dark:bg-zinc-900">
+          <h2 className="text-2xl pb-3 font-semibold">CCounter Dev</h2>
+          <p className="pb-2">Too nerdy and useful to not mention.</p>
+          <p>
             This program has made a bigger impact on my life than anything one
             this list. I worked on this for at least five minutes a day for
             seven months. Built with the glorious power of google sheets, this
             solved a real life problem of mine and I use it every day.{' '}
-          </CardContent>
+          </p>
+        </BackgroundGradient>
+        <Card className="ns-w-card">
+          <CardHeader>
+            <CardTitle></CardTitle>
+            <CardDescription></CardDescription>
+          </CardHeader>
+          <CardContent></CardContent>
         </Card>
         <Card className="ns-w-card">
           <CardHeader>
