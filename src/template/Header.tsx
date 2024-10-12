@@ -65,7 +65,7 @@ export default function Header({
   sendDataToParent: () => void
 }) {
   return (
-    <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30 gap-3">
+    <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)]">
       <Button onClick={() => sendDataToParent()}>Sidebar</Button>
       <h1 className="text-2xl">Nicholas Stafford</h1>
       <FloatingDock items={links} />
