@@ -53,9 +53,12 @@ export function NsCard({
   useOutsideClick(ref, () => setIsVisible(false))
 
   return (
-    <div
+    <motion.div
       onClick={() => setIsVisible(!isVisible)}
       className={cn(' relative p-[4px] group w-full', className)}
+      ref={ref}
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={containerVarients}
     >
       <motion.div
         variants={animate ? borderVariants : undefined}
@@ -106,27 +109,21 @@ export function NsCard({
           childContainerClassName
         )}
       >
+        <div className="pb-6">
+          {!!title && <h2 className="text-2xl">{title}</h2>}
+          {!!description && (
+            <h2 className="text-large text-gray-400}">{description}</h2>
+          )}
+        </div>
         <motion.div
-          ref={ref}
+          className="overflow-hidden"
           animate={isVisible ? 'visible' : 'hidden'}
-          variants={containerVarients}
+          variants={expandableVarients}
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
-          <div className="pb-6">
-            {!!title && <h2 className="text-2xl">{title}</h2>}
-            {!!description && (
-              <h2 className="text-large text-gray-400}">{description}</h2>
-            )}
-          </div>
-          <motion.div
-            className="overflow-hidden"
-            animate={isVisible ? 'visible' : 'hidden'}
-            variants={expandableVarients}
-            transition={{ duration: 0.3, ease: 'easeInOut' }}
-          >
-            {children}
-          </motion.div>
+          {children}
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
