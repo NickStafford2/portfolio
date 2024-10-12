@@ -29,7 +29,6 @@ function App() {
           style={{
             // transform: 'rotateX(180deg)',
             zIndex: -998,
-
             boxShadow: '0px 0px 105px 45px rgba(46,213,255,0.9)',
           }}
         >
@@ -43,7 +42,7 @@ function App() {
         <h1 id="experience" className="text-5xl pt-40">
           Experience
         </h1>
-        <div className="flex flex-row">
+        <div className="flex flex-col">
           <Education></Education>
           <Experience></Experience>
         </div>
