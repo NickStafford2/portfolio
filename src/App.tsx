@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="overflow-x-hidden">
       <video
-        className="videoTag absolute h-svh top-0 w-auto max-w-none overflow-x-hidden "
+        className="videoTag absolute h-full top-0 w-auto max-w-none overflow-x-hidden "
         autoPlay
         loop
         muted

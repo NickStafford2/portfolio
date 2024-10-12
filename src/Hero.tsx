@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <div
       id="hero"
-      className="min-h-screen bg-opacity-20 flex bg-red-100 justify-center flex-col"
+      className="min-h-[calc(100vh-64px)] bg-opacity-20 flex bg-red-100 justify-center flex-col"
     >
       {/* <AuroraBackground> */}
       {/*   <motion.div */}

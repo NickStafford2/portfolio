@@ -24,7 +24,7 @@ export function Portfolio() {
   return (
     <StrictMode>
       <Header sendDataToParent={handleDataFromChild}></Header>
-      <div className="py-[64px] flex flex-row">
+      <div className="py-[var(--header-height)] flex flex-row">
         <motion.aside
           animate={isOpen ? 'open' : 'closed'}
           variants={variants}
