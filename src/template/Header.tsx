@@ -66,8 +66,8 @@ export default function Header({
 }) {
   return (
     <div className="fixed flex items-center justify-center w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)]">
-      <Button onClick={() => sendDataToParent()}>Sidebar</Button>
-      <h1 className="text-2xl">Nicholas Stafford</h1>
+      {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
+      <h1 className="pl-4 text-2xl">Nicholas Stafford</h1>
       <FloatingDock items={links} />
       <Button>
         <FaRegSnowflake className="w-7 h-6" />
