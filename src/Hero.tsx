@@ -15,13 +15,13 @@ export function Hero() {
           className="font-bold text-[#7fe5ff]  py-0 text-8xl mb-10 shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
           delay={0.2}
         />
-        <div className="max-w-[600px] pb-4">
+        <div className="max-w-[600px] bg-[#7fe5ff] mb-6 min-h-32 mt-10">
           <TextWriter
             text="
         My name is Nicholas Stafford. I am a web developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-            className="text-2xl mb-6 bg-[#7fe5ff] font-semibold  text-black p-3 mt-10"
+            className="text-2xl   font-semibold  text-black p-3 "
             delay={0.05}
           />
         </div>
