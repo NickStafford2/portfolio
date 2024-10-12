@@ -19,7 +19,9 @@ export default function NsSkill({
       </div>
       <div className="flex flex-col w-full pt-4">
         <Progress className="color[var(--ns-primary)]" value={skill}></Progress>
-        <h2 className="text-xl text-[var(--ns-primary)]">{title}</h2>
+        <h2 className="text-xl text-[var(--ns-primary)] font-semibold">
+          {title}
+        </h2>
         {/* <p>{description}</p> */}
       </div>
     </div>
