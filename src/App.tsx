@@ -38,6 +38,7 @@ function App() {
           <Education></Education>
           <Experience></Experience>
         </div>
+        {/* idea. add a fancy svg animation here */}
         <Projects></Projects>
         <Skills></Skills>
         <ProgrammingPhilosophy></ProgrammingPhilosophy>
