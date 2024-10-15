@@ -1,7 +1,7 @@
-import App from './App'
+import App from './App.tsx'
 import { StrictMode, useState } from 'react'
-import Header from './template/Header'
-import Sidebar from './template/Sidebar'
+import Header from '@/Header/Header.tsx'
+import Sidebar from './template/Sidebar.tsx'
 import { motion } from 'framer-motion'
 import BackgroundGrid from '@/components/edil-ozi/background-grid'
 
@@ -23,7 +23,7 @@ export function Portfolio() {
   }
   return (
     <StrictMode>
-      <Header sendDataToParent={handleDataFromChild}></Header>
+      <Header></Header>
       <div className="py-[var(--header-height)] flex flex-row">
         <motion.aside
           animate={isOpen ? 'open' : 'closed'}
