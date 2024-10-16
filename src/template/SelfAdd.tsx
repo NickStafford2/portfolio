@@ -8,7 +8,7 @@ export default function SelfAdd() {
       <div className="flex flex-row gap-6 py-10 flex-grow">
         <img
           src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-          className="w-full basis-1/3"
+          className="w-full basis-1/3 max-h-[800px]"
           alt="profile-picture"
         />
         <div className="flex flex-col justify-between basis-2/3 font-semibold">
