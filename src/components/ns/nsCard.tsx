@@ -133,15 +133,17 @@ export function NsCard({
         <Collapsible open={isVisible} onOpenChange={setIsVisible}>
           <CollapsibleTrigger
             className={cn(
-              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px] [&[data-state=closed]]:border-b-[0px]',
+              'flex flex-row flex-1 text-left justify-between items-start py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px] [&[data-state=closed]]:border-b-[0px]',
               className
             )}
           >
-            {!!title && <h2 className="text-2xl">{title}</h2>}
-            {!!description && (
-              <h2 className="text-large text-gray-400 }">{description}</h2>
-            )}
-            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+            <div className="flex flex-col flex-grow">
+              {!!title && <h2 className="text-2xl ">{title}</h2>}
+              {!!description && (
+                <h2 className="text-large text-gray-400 }">{description}</h2>
+              )}
+            </div>
+            <ChevronDown className=" h-8 w-8 shrink-0 transition-transform duration-200 pl-3" />
           </CollapsibleTrigger>
           <CollapsibleContent className="overflow-hidden text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down p-4">
             {children}

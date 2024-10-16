@@ -46,12 +46,12 @@ export default function VisualNpmDemo() {
   return (
     <div>
       <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger asChild className="w-full bg-blue-300">
+        <PopoverTrigger asChild className="w-full ">
           <Button
             variant="outline"
             role="combobox"
             aria-expanded={open}
-            className="w-full bg-red-300 justify-between"
+            className="w-full justify-between"
           >
             {value
               ? frameworks.find((framework) => framework.value === value)?.label
@@ -89,7 +89,11 @@ export default function VisualNpmDemo() {
         </PopoverContent>
       </Popover>
 
-      <img className="w-full bg-blue-300" alt="visual npm image here" />
+      <img
+        className="w-full "
+        alt="visual npm image here"
+        src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
+      />
       <Button>Go to site</Button>
     </div>
   )

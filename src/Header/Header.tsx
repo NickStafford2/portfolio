@@ -1,5 +1,5 @@
 // import { FloatingDock } from '@/components/ui/floating-dock'
-// import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button'
 // import { FaRegSnowflake } from 'react-icons/fa'
 // import {
 //   IconBrandGithub,
@@ -76,6 +76,11 @@ import HeaderLink from './HeaderLink.tsx'
 // ]
 
 export default function Header() {
+  function changeTheme() {
+    const root = document.documentElement
+    if (root.classList.contains('dark')) root.classList.remove('dark')
+    else root.classList.add('dark')
+  }
   return (
     <div className="fixed flex items-center justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)] text-[var(--ns-primary)] border-b-border border-b-[1px]">
       {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
@@ -83,6 +88,7 @@ export default function Header() {
         <a href="#home" className="font-semibold">
           Nicholas Stafford
         </a>
+        <Button onClick={() => changeTheme()}>change theme</Button>
       </h1>
       <div className="flex flex-row h-full flex-grow justify-center items-center gap-0 align-middle">
         <HeaderLink href="#experience">Experience</HeaderLink>
