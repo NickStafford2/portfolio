@@ -4,7 +4,6 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from '@/components/ui/popover'
-import { Button } from '@/components/ui/button'
 // import { FaRegSnowflake } from 'react-icons/fa'
 // import {
 //   IconBrandGithub,
@@ -17,8 +16,7 @@ import { Button } from '@/components/ui/button'
 
 import HeaderLink from './HeaderLink.tsx'
 import IceboxLogin from '@/icebox/IceboxLogin.tsx'
-import { Label } from '@/components/ui/label.tsx'
-import { useState } from 'react'
+import ThemeSwitcher from './ThemeSwitcher.tsx'
 
 // const links = [
 //   {
@@ -29,7 +27,7 @@ import { useState } from 'react'
 //     href: '#home',
 //   },
 //
-//   {
+
 //     title: 'Experience',
 //     icon: (
 //       <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
@@ -84,19 +82,6 @@ import { useState } from 'react'
 // ]
 
 export default function Header() {
-  const themes = ['light', 'dark']
-  function changeTheme() {
-    console.log(theme)
-    let next
-    const root = document.documentElement
-    const current = theme
-    if (theme === themes[0]) next = themes[1]
-    else next = themes[0]
-    if (root.classList.contains(current)) root.classList.remove(current)
-    setTheme(next)
-    root.classList.add(next)
-  }
-  const [theme, setTheme] = useState('dark')
   return (
     <div className="fixed flex items-stretch justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)] text-[var(--ns-primary)] border-b-border border-b-[1px]">
       {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
@@ -105,10 +90,7 @@ export default function Header() {
           <h1 className="text-2xl font-semibold">Nicholas Stafford</h1>
         </HeaderLink>
       </div>
-      <div className="flex gap-2 flex-row flex-grow justify-center items-center align-middle">
-        <Label>Theme: {theme}</Label>
-        <Button onClick={() => changeTheme()}>{`Change Theme`}</Button>
-      </div>
+      <ThemeSwitcher></ThemeSwitcher>
       <div className="flex flex-row flex-grow justify-center items-center gap-0 align-middle">
         <HeaderLink href="#experience">Experience</HeaderLink>
         <HeaderLink href="#projects">Projects</HeaderLink>
