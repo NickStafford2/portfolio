@@ -1,4 +1,9 @@
 // import { FloatingDock } from '@/components/ui/floating-dock'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover'
 import { Button } from '@/components/ui/button'
 // import { FaRegSnowflake } from 'react-icons/fa'
 // import {
@@ -11,7 +16,7 @@ import { Button } from '@/components/ui/button'
 // } from '@tabler/icons-react'
 
 import HeaderLink from './HeaderLink.tsx'
-import { IceboxLogin } from '@/icebox/IceboxLogin.tsx'
+import IceboxLogin from '@/icebox/IceboxLogin.tsx'
 
 // const links = [
 //   {
@@ -98,9 +103,17 @@ export default function Header() {
         <HeaderLink href="#blog">Blog</HeaderLink>
         <HeaderLink href="#aboutme">About Me</HeaderLink>
       </div>
+      <div className="h-full">
+        <Popover>
+          <PopoverTrigger asChild>
+            <HeaderLink>Icebox Login</HeaderLink>
+          </PopoverTrigger>
+          <PopoverContent className="w-80">
+            <IceboxLogin></IceboxLogin>
+          </PopoverContent>
+        </Popover>
+      </div>
       {/* <FloatingDock items={links} /> */}
-      <a className="pr-4">Icebox Login</a>
-      <IceboxLogin></IceboxLogin>
     </div>
   )
 }
