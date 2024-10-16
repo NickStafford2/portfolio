@@ -3,7 +3,7 @@ import VisualNpmDemo from './VisualNpmDemo'
 
 export default function SelfAdd() {
   return (
-    <div className="min-h-[calc(100vh-var(--header-height))] flex flex-col">
+    <div className="min-h-[calc(100vh-var(--header-height)-4rem)] flex flex-col">
       <h1 className="text-5xl font-semibold">A Bit About Me</h1>
       <div className="flex flex-row gap-6 py-10 flex-grow">
         <img
