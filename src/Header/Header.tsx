@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button'
 // } from '@tabler/icons-react'
 
 import HeaderLink from './HeaderLink.tsx'
+import { IceboxLogin } from '@/icebox/IceboxLogin.tsx'
 
 // const links = [
 //   {
@@ -99,6 +100,7 @@ export default function Header() {
       </div>
       {/* <FloatingDock items={links} /> */}
       <a className="pr-4">Icebox Login</a>
+      <IceboxLogin></IceboxLogin>
     </div>
   )
 }
