@@ -7,6 +7,7 @@ import { ProgrammingPhilosophy } from './template/ProgrammingPhilosophy'
 import { Projects } from './template/Projects'
 import { QuoteBox } from './template/QuoteBox'
 import { RandomIdeas } from './template/RandomIdeas'
+import SelfAdd from './template/SelfAdd'
 import { Skills } from './template/Skills'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <div className="content-wrapper flex flex-col gap-6 px-20">
         <Hero></Hero>
         {/* <div className=" h-10 w-[200%] mb-16 animated-gradient"></div> */}
+        <SelfAdd></SelfAdd>
         <h1 id="experience" className="text-5xl pt-40">
           Experience
         </h1>

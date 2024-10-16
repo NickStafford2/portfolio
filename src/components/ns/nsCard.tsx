@@ -2,6 +2,18 @@ import { cn } from '@/lib/utils'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 import { useOutsideClick } from '@/hooks/use-outside-click.tsx'
+import { ChevronDown } from 'lucide-react'
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from '@/components/ui/collapsible'
 
 const expandableVarients = {
   hidden: { height: 0, cursor: 'pointer' },
@@ -54,11 +66,11 @@ export function NsCard({
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [isVisible])
-  useOutsideClick(ref, () => setIsVisible(false))
+  // useOutsideClick(ref, () => setIsVisible(false))
 
   return (
     <motion.div
-      onClick={() => setIsVisible(!isVisible)}
+      // onClick={() => setIsVisible(!isVisible)}
       className={cn(' relative p-[4px] group w-full', className)}
       ref={ref}
       animate={isVisible ? 'visible' : 'hidden'}
@@ -118,12 +130,34 @@ export function NsCard({
           backgroundPosition: 'center',
         }}
       >
-        <div className="pb-6 ">
-          {!!title && <h2 className="text-2xl">{title}</h2>}
-          {!!description && (
-            <h2 className="text-large text-gray-400 }">{description}</h2>
-          )}
-        </div>
+        <Collapsible open={isVisible} onOpenChange={setIsVisible}>
+          <CollapsibleTrigger
+            className={cn(
+              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
+              className
+            )}
+          >
+            {!!title && <h2 className="text-2xl">{title}</h2>}
+            {!!description && (
+              <h2 className="text-large text-gray-400 }">{description}</h2>
+            )}
+            <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+          </CollapsibleTrigger>
+          <CollapsibleContent className="overflow-hidden text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+            {children}
+          </CollapsibleContent>
+        </Collapsible>
+        {/* <Accordion type="single" collapsible className="w-full"> */}
+        {/*   <AccordionItem value="item-1"> */}
+        {/*     <AccordionTrigger> */}
+        {/*       {!!title && <h2 className="text-2xl">{title}</h2>} */}
+        {/*       {!!description && ( */}
+        {/*         <h2 className="text-large text-gray-400 }">{description}</h2> */}
+        {/*       )} */}
+        {/*     </AccordionTrigger> */}
+        {/*     <AccordionContent>{children}</AccordionContent> */}
+        {/*   </AccordionItem> */}
+        {/* </Accordion> */}
         <motion.div
           className="overflow-hidden"
           animate={isVisible ? 'visible' : 'hidden'}
@@ -131,7 +165,6 @@ export function NsCard({
           transition={{ duration: 0.3, ease: 'easeInOut' }}
         >
           {!!expandSection && <div className="h-36"></div>}
-          {children}
         </motion.div>
       </div>
     </motion.div>
