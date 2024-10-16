@@ -24,11 +24,11 @@ export function Portfolio() {
   return (
     <StrictMode>
       <Header></Header>
-      <div className="py-[var(--header-height)] flex flex-row">
+      <div className="flex flex-row py-[var(--header-height)]">
         <motion.aside
           animate={isOpen ? 'open' : 'closed'}
           variants={variants}
-          className="py-14 fixed left-0 top-[100px] bottom-0 w-[300px]"
+          className="fixed bottom-0 left-0 top-[100px] w-[300px] py-14"
         >
           <Sidebar></Sidebar>
         </motion.aside>
@@ -41,7 +41,7 @@ export function Portfolio() {
         </motion.div>
 
         <section
-          className="fixed top-0 bottom-0 left-0 right-0 bg-black dark:bg-black"
+          className="fixed bottom-0 left-0 right-0 top-0 bg-background"
           style={{ zIndex: -999 }}
         >
           <BackgroundGrid />

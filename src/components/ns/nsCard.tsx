@@ -71,7 +71,7 @@ export function NsCard({
   return (
     <motion.div
       // onClick={() => setIsVisible(!isVisible)}
-      className={cn(' relative p-[4px] group w-full', className)}
+      className={cn('group relative w-full p-[4px]', className)}
       ref={ref}
       animate={isVisible ? 'visible' : 'hidden'}
       variants={containerVarients}
@@ -93,8 +93,8 @@ export function NsCard({
           backgroundSize: animate ? '400% 400%' : undefined,
         }}
         className={cn(
-          'absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl  transition duration-500 will-change-transform',
-          ' bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]'
+          'absolute inset-0 z-[1] rounded-3xl opacity-60 blur-xl transition duration-500 will-change-transform group-hover:opacity-100',
+          'bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]'
         )}
       />
       <motion.div
@@ -114,14 +114,14 @@ export function NsCard({
           backgroundSize: animate ? '400% 400%' : undefined,
         }}
         className={cn(
-          'absolute inset-0 rounded-3xl z-[1] will-change-transform',
+          'absolute inset-0 z-[1] rounded-3xl will-change-transform',
           'bg-[radial-gradient(circle_farthest-side_at_0_100%,#00ccb1,transparent),radial-gradient(circle_farthest-side_at_100%_0,#7b61ff,transparent),radial-gradient(circle_farthest-side_at_100%_100%,#ffc414,transparent),radial-gradient(circle_farthest-side_at_0_0,#1ca0fb,#141316)]'
         )}
       />
 
       <div
         className={cn(
-          'relative z-10 h-full w-full rounded-[22px]  dark:bg-zinc-900',
+          'relative z-10 h-full w-full rounded-[22px] bg-background',
           childContainerClassName
         )}
         style={{
@@ -133,19 +133,19 @@ export function NsCard({
         <Collapsible open={isVisible} onOpenChange={setIsVisible}>
           <CollapsibleTrigger
             className={cn(
-              'flex flex-row flex-1 text-left justify-between items-start py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px] [&[data-state=closed]]:border-b-[0px]',
+              'flex w-full flex-1 flex-row items-start justify-between rounded-t-[22px] border-b-[1px] border-b-border bg-blue-700/15 p-4 py-4 text-left font-medium transition-all hover:underline [&[data-state=closed]]:border-b-[0px] [&[data-state=open]>svg]:rotate-180',
               className
             )}
           >
-            <div className="flex flex-col flex-grow">
-              {!!title && <h2 className="text-2xl ">{title}</h2>}
+            <div className="flex flex-grow flex-col">
+              {!!title && <h2 className="text-2xl">{title}</h2>}
               {!!description && (
-                <h2 className="text-large text-gray-400 }">{description}</h2>
+                <h2 className="text-large } text-gray-400">{description}</h2>
               )}
             </div>
-            <ChevronDown className=" h-8 w-8 shrink-0 transition-transform duration-200 pl-3" />
+            <ChevronDown className="h-8 w-8 shrink-0 pl-3 transition-transform duration-200" />
           </CollapsibleTrigger>
-          <CollapsibleContent className="overflow-hidden text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down p-4">
+          <CollapsibleContent className="overflow-hidden p-4 text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
             {children}
           </CollapsibleContent>
         </Collapsible>

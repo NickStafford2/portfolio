@@ -6,10 +6,10 @@
 
 html {
   scroll-behavior: smooth;
-  --primary: '#5c6a04';
-  --secondary: '#ecc94b';
-  --background: red;
-  --foreground: blue;
+  /* --primary: '#5c6a04'; */
+  /* --secondary: '#ecc94b'; */
+  /* --background: red; */
+  /* --foreground: blue; */
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -32,7 +32,7 @@ body {
 }
 @layer base {
   :root {
-    --background: 100% 0% 100%;
+    --background: 100 0% 100%;
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -48,7 +48,7 @@ body {
     --accent-foreground: 240 5.9% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
+    --border: 230 86.9% 2%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
     --chart-1: 12 76% 61%;
@@ -62,7 +62,7 @@ body {
     --ns-primary: #7fe5ff;
   }
   .dark {
-    --background: 192, 100%, 75%;
+    --background: 200 86% 2%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;

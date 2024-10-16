@@ -10,7 +10,7 @@ const HeaderLink = React.forwardRef<HTMLAnchorElement, HeaderLinkProps>(
     return (
       <a
         className={cn(
-          'h-full min-w-28 text-[var(--ns-prrimary)] border-[var(--ns-primary)] border-r-[1px] first:border-l-[1px] font-semibold flex flex-row justify-center items-center hover:bg-[var(--ns-primary)] hover:text-black transition-[background-color] hover:duration-0 duration-700',
+          'h-full min-w-28 text-[var(--ns-primary)] border-border border-r-[1px] first:border-l-[1px] font-semibold flex flex-row justify-center items-center hover:bg-[var(--ns-primary)] hover:text-black transition-[background-color] hover:duration-0 duration-700',
           className
         )}
         ref={ref}
