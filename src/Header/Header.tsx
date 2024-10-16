@@ -77,7 +77,7 @@ import HeaderLink from './HeaderLink.tsx'
 
 export default function Header() {
   return (
-    <div className="fixed flex items-center justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)] text-[var(--ns-primary)] border-b-[var(--ns-primary)] border-b-[1px]">
+    <div className="fixed flex items-center justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)] text-[var(--ns-primary)] border-b-border border-b-[1px]">
       {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
       <h1 className="pl-4 text-2xl">
         <a href="#home" className="font-semibold">

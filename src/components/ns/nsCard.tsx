@@ -121,7 +121,7 @@ export function NsCard({
 
       <div
         className={cn(
-          'relative z-10 h-full w-full rounded-[22px] p-4 sm:p-4 bg-white dark:bg-zinc-900',
+          'relative z-10 h-full w-full rounded-[22px]  dark:bg-zinc-900',
           childContainerClassName
         )}
         style={{
@@ -133,7 +133,7 @@ export function NsCard({
         <Collapsible open={isVisible} onOpenChange={setIsVisible}>
           <CollapsibleTrigger
             className={cn(
-              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180',
+              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px]',
               className
             )}
           >
@@ -143,7 +143,7 @@ export function NsCard({
             )}
             <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
           </CollapsibleTrigger>
-          <CollapsibleContent className="overflow-hidden text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+          <CollapsibleContent className="overflow-hidden text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down p-4">
             {children}
           </CollapsibleContent>
         </Collapsible>
