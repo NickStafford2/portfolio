@@ -25,7 +25,7 @@ function App() {
             boxShadow: '0px 0px 105px 45px rgba(46,213,255,0.9)',
           }}
         >
-          <source src="public/hero-binary-code.mov" type="video/mp4" />
+          <source src="hero-binary-code.mov" type="video/mp4" />
         </video>
       </div>
 

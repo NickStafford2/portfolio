@@ -125,7 +125,7 @@ export function NsCard({
           childContainerClassName
         )}
         style={{
-          backgroundImage: `url('/public/${img}')`,
+          backgroundImage: `url('${img}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
