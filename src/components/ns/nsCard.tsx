@@ -133,7 +133,7 @@ export function NsCard({
         <Collapsible open={isVisible} onOpenChange={setIsVisible}>
           <CollapsibleTrigger
             className={cn(
-              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px]',
+              'flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 w-full  p-4 rounded-t-[22px] bg-blue-700/15 border-b-border border-b-[1px] [&[data-state=closed]]:border-b-[0px]',
               className
             )}
           >
