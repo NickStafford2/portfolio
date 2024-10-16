@@ -6,7 +6,7 @@ import {
 
 import HeaderLink from './HeaderLink.tsx'
 import IceboxLogin from '@/icebox/IceboxLogin.tsx'
-import ThemeSwitcher from './ThemeSwitcher.tsx'
+// import ThemeSwitcher from './ThemeSwitcher.tsx'
 import ThemeSwitch from '@/ThemeSwitch.tsx'
 
 export default function Header() {
