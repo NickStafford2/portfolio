@@ -21,6 +21,7 @@
         "@radix-ui/react-popover": "^1.1.2",
         "@radix-ui/react-progress": "^1.1.0",
         "@radix-ui/react-slot": "^1.1.0",
+        "@radix-ui/react-switch": "^1.1.1",
         "@tabler/icons-react": "^3.19.0",
         "@types/jest": "^29.5.13",
         "@types/node": "^22.7.4",

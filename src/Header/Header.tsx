@@ -7,6 +7,7 @@ import {
 import HeaderLink from './HeaderLink.tsx'
 import IceboxLogin from '@/icebox/IceboxLogin.tsx'
 import ThemeSwitcher from './ThemeSwitcher.tsx'
+import ThemeSwitch from '@/ThemeSwitch.tsx'
 
 export default function Header() {
   return (
@@ -17,7 +18,8 @@ export default function Header() {
           <h1 className="text-2xl font-semibold">Nicholas Stafford</h1>
         </HeaderLink>
       </div>
-      <ThemeSwitcher></ThemeSwitcher>
+      {/* <ThemeSwitcher></ThemeSwitcher> */}
+      <ThemeSwitch></ThemeSwitch>
       <div className="flex flex-row flex-grow justify-center items-center gap-0 align-middle">
         <HeaderLink href="#experience">Experience</HeaderLink>
         <HeaderLink href="#projects">Projects</HeaderLink>
