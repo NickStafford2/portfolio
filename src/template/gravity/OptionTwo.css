@@ -1,3 +1,12 @@
+.icon-canvas {
+  border: 1px black solid;
+  background: rgb(77, 56, 56);
+  background: linear-gradient(
+    0deg,
+    rgba(77, 56, 56, 1) 0%,
+    rgba(29, 119, 184, 0.5284314409357493) 100%
+  );
+}
 .App {
   text-align: center;
 }

@@ -41,7 +41,7 @@ export const OptionTwo: React.FC = () => {
   const dt = 1000 / fps
 
   // use these to slow down or speed up the speed of the bouncing icons
-  const movementScaleFactor = 10 / fps
+  const movementScaleFactor = 20 / fps
   const rotationScaleFactor = fps / 300
 
   const ddy = (9.8 / 1000 / 2) * dt * movementScaleFactor
@@ -80,6 +80,42 @@ export const OptionTwo: React.FC = () => {
       for (const s of stateRef.current) {
         // console.log(s)
         s.rotate = s.rotate + s.dr
+
+        /*
+        for (const o of stateRef.current) {
+          if (o !== s) {
+            if (
+              Math.abs(s.x - o.x) < logoSize / 2 &&
+              Math.abs(s.y - o.y) < logoSize / 2
+            ) {
+              // they are colliding, but make sure they are moving toward each other.
+              console.log(`collision ${s}, ${o}`)
+              // function dotProduct(a, b) {
+              //   const result = a.reduce((acc, cur, index) => {
+              //     acc += cur * b[index]
+              //     return acc
+              //   }, 0)
+              //   return result
+              // }
+              // const a = [s.dx, s.dy]
+              // const b = [o.dx, o.dy]
+              // const c = dotProduct(a, b)
+              // console.log(c)
+              if (s.dx * o.dx > 0) {
+                console.log('reversing x')
+                s.dx *= -1
+                o.dx *= -1
+              }
+
+              if (s.dy * o.dy > 0) {
+                console.log('reversing y')
+                s.dy *= -1
+                o.dy *= -1
+              }
+            }
+          }
+        }
+*/
         // since the edges hit the border before the center, turn them around when their edge hits the canvas edge
         // use 1/3 instead of 1/2 because the overlap looks nicer
         s.x = s.x + s.dx
@@ -112,9 +148,12 @@ export const OptionTwo: React.FC = () => {
   }, [])
 
   return (
-    <div>
-      <p>I don't know why I made this. I was having too much fun. </p>
-      <canvas ref={canvas} width={960} height={640} />
+    <div className="py-8">
+      <p className="pb-4 text-2xl font-semibold">
+        I made this simple animation to describe the tools I use. (It's a
+        metaphore!)
+      </p>
+      <canvas ref={canvas} width={960} height={640} className="icon-canvas" />
     </div>
   )
 }
