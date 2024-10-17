@@ -17,6 +17,7 @@ const appVariants = {
 }
 
 export function Portfolio() {
+  // add this back If I want a sidebar.
   const [isOpen, setIsOpen] = useState(false)
 
   return (
