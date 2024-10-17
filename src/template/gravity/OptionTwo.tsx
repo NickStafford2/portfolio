@@ -89,8 +89,7 @@ export const OptionTwo: React.FC = () => {
           s.dx = Math.abs(s.dx)
         }
 
-        // s.dy = s.dy - ddy
-        s.dy += ddy
+        s.dy += ddy // gravity
         s.y = s.y + s.dy
         if (s.y > canvas.current.height - logoSize / 3) {
           s.dy = -1 * Math.abs(s.dy) - ddy
@@ -106,15 +105,6 @@ export const OptionTwo: React.FC = () => {
   }
 
   useEffect(() => {
-    // Load the images when the page mounts. Because we're using a ref,
-    // they don't need to be in the dependency array or trigger a re-render
-    // const background = new Image()
-    // background.src = backgroundPath
-    // background.style.width = '100'
-    // background.style.height = '100'
-    // background.onload = () => {
-    //   backgroundRef.current = background
-    // }
     // maybe load this once at start somehow?
     stateRef.current = initState()
     // Start the animation function
