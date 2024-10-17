@@ -11,7 +11,7 @@ import ThemeSwitch from '@/ThemeSwitch.tsx'
 
 export default function Header() {
   return (
-    <div className="fixed flex items-stretch justify-between w-full bg-gray-800 z-30 gap-3 h-[var(--header-height)] text-[var(--ns-primary)] border-b-border border-b-[1px]">
+    <div className="fixed z-30 flex h-[var(--header-height)] w-full items-stretch justify-between gap-3 border-b-[1px] border-b-border bg-gray-800 text-[var(--ns-primary)]">
       {/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
       <div>
         <HeaderLink href="#">
@@ -19,8 +19,7 @@ export default function Header() {
         </HeaderLink>
       </div>
       {/* <ThemeSwitcher></ThemeSwitcher> */}
-      <ThemeSwitch></ThemeSwitch>
-      <div className="flex flex-row flex-grow justify-center items-center gap-0 align-middle">
+      <div className="flex flex-grow flex-row items-center justify-center gap-0 align-middle">
         <HeaderLink href="#experience">Experience</HeaderLink>
         <HeaderLink href="#projects">Projects</HeaderLink>
         <HeaderLink href="#skills">Skills</HeaderLink>

@@ -2,29 +2,33 @@ import TextWriter from '@/components/uiBeats/TextWriter.tsx'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import React from 'react'
+import ThemeSwitch from './ThemeSwitch'
 
 export function Hero() {
   return (
     <div
       id="hero"
-      className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[280px]"
+      className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[60px]"
     >
-      <div>
-        <TextWriter
-          text="Hello World"
-          className="mb-10 py-0 text-8xl font-bold text-[#7fe5ff] shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
-          delay={0.2}
-        />
-        <div className="mb-6 mt-10 min-h-32 max-w-[600px] bg-[#7fe5ff]">
+      <div className="flex flex-grow flex-row justify-between">
+        <div className="flex flex-col justify-center">
           <TextWriter
-            text="
+            text="Hello World"
+            className="mb-10 py-0 text-8xl font-bold text-[#7fe5ff] shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
+            delay={0.2}
+          />
+          <div className="mb-6 mt-10 min-h-32 max-w-[600px] bg-[#7fe5ff]">
+            <TextWriter
+              text="
         My name is Nicholas Stafford. I am a developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-            className="p-3 text-2xl font-semibold text-black"
-            delay={0.05}
-          />
+              className="p-3 text-2xl font-semibold text-black"
+              delay={0.05}
+            />
+          </div>
         </div>
+        <ThemeSwitch></ThemeSwitch>
       </div>
       <div className="flex flex-row items-center justify-between py-10">
         <div className="flex flex-grow flex-col justify-center align-middle">
