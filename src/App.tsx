@@ -3,6 +3,7 @@ import { Hero } from './Hero'
 import { BeyondCode } from './template/BeyondCode'
 import { Education } from './template/Education'
 import { Experience } from './template/Experience'
+import { OptionTwo } from './template/gravity/OptionTwo'
 import { ProgrammingPhilosophy } from './template/ProgrammingPhilosophy'
 import { Projects } from './template/Projects'
 import { QuoteBox } from './template/QuoteBox'
@@ -33,6 +34,7 @@ function App() {
         <Hero></Hero>
         {/* <div className=" h-10 w-[200%] mb-16 animated-gradient"></div> */}
         <SelfAdd></SelfAdd>
+        <OptionTwo></OptionTwo>
         <h1 id="experience" className="pt-40 text-5xl">
           Experience
         </h1>

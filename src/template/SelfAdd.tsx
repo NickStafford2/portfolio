@@ -16,8 +16,6 @@ import { OptionTwo } from './gravity/OptionTwo'
 export default function SelfAdd() {
   return (
     <div className="flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground">
-      <OptionTwo></OptionTwo>
-
       <h1 className="text-5xl font-semibold">A Bit About Me</h1>
       <div className="flex flex-grow flex-row gap-6 py-10">
         <img
