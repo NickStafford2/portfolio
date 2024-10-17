@@ -139,9 +139,7 @@ export function NsCard({
           >
             <div className="flex flex-grow flex-col">
               {!!title && <h2 className="text-2xl">{title}</h2>}
-              {!!description && (
-                <h2 className="text-large } text-gray-400">{description}</h2>
-              )}
+              {!!description && <h2 className="text-large }">{description}</h2>}
             </div>
             <ChevronDown className="h-8 w-8 shrink-0 pl-3 transition-transform duration-200" />
           </CollapsibleTrigger>
