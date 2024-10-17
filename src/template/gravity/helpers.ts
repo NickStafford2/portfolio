@@ -16,7 +16,6 @@ export const draw = (props: DrawProps) => {
   const state = stateRef.current
   if (!ctx || !logo || !state) {
     console.error('oh no')
-    console.log('tt')
     return
   }
   const canvasWidth = canvas.current!.width

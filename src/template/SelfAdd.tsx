@@ -16,7 +16,6 @@ import { OptionTwo } from './gravity/OptionTwo'
 export default function SelfAdd() {
   return (
     <div className="flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground">
-      <h2>should be here</h2>
       <OptionTwo></OptionTwo>
 
       <h1 className="text-5xl font-semibold">A Bit About Me</h1>

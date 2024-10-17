@@ -14,7 +14,7 @@ export interface ItemState {
 }
 export const OptionTwo: React.FC = () => {
   const canvas = useRef<HTMLCanvasElement | null>(null)
-  const fps = 2
+  const fps = 30
   // Creating an imgRef to create an `Image` to draw the logo svg to
   const backgroundRef = useRef<HTMLImageElement | null>(null)
   const logoRef = useRef<HTMLImageElement | null>(null)
@@ -28,11 +28,11 @@ export const OptionTwo: React.FC = () => {
       const sign = Math.random() > 0.5 ? 1 : -1
       const s: ItemState = {
         x: Math.random() * canvas.current!.width,
-        dx: Math.random() / 100,
+        dx: (Math.random() - 0.5) / 1,
         y: Math.random() * canvas.current!.height,
-        dy: Math.random() / 100,
+        dy: (Math.random() - 0.5) / 1,
         rotate: Math.random() * sign,
-        dr: Math.random() * 0.2,
+        dr: (Math.random() * 0.05 * fps) / 60,
       }
       states.push(s)
     }
@@ -47,8 +47,14 @@ export const OptionTwo: React.FC = () => {
       for (const s of stateRef.current) {
         // console.log(s)
         s.rotate = s.rotate + s.dr
-        // s.x = s.x + s.dx
-        // s.y = s.y + s.dy
+        s.x = s.x + s.dx
+        s.y = s.y + s.dy
+        if (s.x > canvas.current.width || s.x < 0) {
+          s.dx = s.dx * -1
+        }
+        if (s.y > canvas.current.height || s.y < 0) {
+          s.dy = s.dy * -1
+        }
       }
       const rotation = rotationRef.current
       // console.log(stateRef)
