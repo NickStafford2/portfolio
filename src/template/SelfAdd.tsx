@@ -1,17 +1,32 @@
 import { NsCard } from '@/components/ns/nsCard'
 import VisualNpmDemo from './VisualNpmDemo'
+import angularLogo from '@public/logos/angularLogo.svg'
+import reactLogo from '@public/logos/reactLogo.svg'
+import javascriptLogo from '@public/logos/javascriptLogo.svg'
+import cPlusPlusLogo from '@public/logos/cPlusPlusLogo.svg'
+import pythonLogo from '@public/logos/pythonLogo.svg'
+import neovimLogo from '@public/logos/neovimLogo.svg'
+import viteLogo from '@public/logos/viteLogo.svg'
+import webpackLogo from '@public/logos/webpackLogo.svg'
+import githubLogo from '@public/logos/githubLogo.svg'
+import angularJsLogo from '@public/logos/angularJsLogo.svg'
+import GravitySimulation from './GravitySimulation'
+import { OptionTwo } from './gravity/OptionTwo'
 
 export default function SelfAdd() {
   return (
-    <div className="min-h-[calc(100vh-var(--header-height)-4rem)] flex flex-col">
+    <div className="flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground">
+      <h2>should be here</h2>
+      <OptionTwo></OptionTwo>
+
       <h1 className="text-5xl font-semibold">A Bit About Me</h1>
-      <div className="flex flex-row gap-6 py-10 flex-grow">
+      <div className="flex flex-grow flex-row gap-6 py-10">
         <img
           src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-          className="w-full basis-1/3 max-h-[800px]"
+          className="max-h-[800px] w-full basis-1/3"
           alt="profile-picture"
         />
-        <div className="flex flex-col justify-between basis-2/3 font-semibold">
+        <div className="flex basis-2/3 flex-col justify-between font-semibold">
           <p>
             I am a software developer. Solving problems and helping others are
             my true passions. When I have spare time, you will find me reading
@@ -32,7 +47,7 @@ export default function SelfAdd() {
           </div>
           <div>
             <h2 className="pt-5 text-3xl">My Best Work</h2>
-            <div className="flex flex-col items-start gap-3 ">
+            <div className="flex flex-col items-start gap-3">
               <NsCard
                 className="min-h-36"
                 title="Visual NPM"
@@ -45,6 +60,48 @@ export default function SelfAdd() {
                 title="InflatableOffice.com"
                 description="Hired as a web developer, I ended up working as a software architect. Successfully converted the companies main website from AngularJs to Angular."
               ></NsCard>
+            </div>
+            <div className="grid grid-cols-5 pt-6">
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={reactLogo} alt="React" />
+                <p>React</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={javascriptLogo} alt="Javascript" />
+                <p>Javascript</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={angularJsLogo} alt="AngularJs" />
+                <p>AngularJs</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={pythonLogo} alt="Python" />
+                <p>Python</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={neovimLogo} alt="Neovim" />
+                <p>Neovim</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={cPlusPlusLogo} alt="C++" />
+                <p>C++</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={angularLogo} alt="Angular" />
+                <p>Angular</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={githubLogo} alt="Github" />
+                <p>Github</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={webpackLogo} alt="Webpack" />
+                <p>Webpack</p>
+              </div>
+              <div className="bg-blue flex flex-col items-center justify-center">
+                <img className="w-12" src={viteLogo} alt="Vite" />
+                <p>Vite</p>
+              </div>
             </div>
           </div>
         </div>

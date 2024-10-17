@@ -12,10 +12,10 @@ import { Skills } from './template/Skills'
 
 function App() {
   return (
-    <div className="overflow-x-hidden" style={{}}>
+    <div className="overflow-x-hidden text-foreground" style={{}}>
       <div className="hero-video">
         <video
-          className="absolute min-h-full bottom-0 min-w-[calc(100vh*16/9)] overflow-x-hidden "
+          className="absolute bottom-0 min-h-full min-w-[calc(100vh*16/9)] overflow-x-hidden"
           autoPlay
           loop
           muted
@@ -33,7 +33,7 @@ function App() {
         <Hero></Hero>
         {/* <div className=" h-10 w-[200%] mb-16 animated-gradient"></div> */}
         <SelfAdd></SelfAdd>
-        <h1 id="experience" className="text-5xl pt-40">
+        <h1 id="experience" className="pt-40 text-5xl">
           Experience
         </h1>
         <div className="flex flex-col">
