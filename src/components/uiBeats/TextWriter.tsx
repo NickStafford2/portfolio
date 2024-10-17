@@ -15,7 +15,7 @@ interface TextWriterProps {
 
 const TextWriter: React.FC<TextWriterProps> = ({
   text,
-  delay = 0.05,
+  delay = 0.01,
   className = '',
   cursorColor = '#000',
   cursorWidth = '2px',
