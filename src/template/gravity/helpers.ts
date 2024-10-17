@@ -6,6 +6,7 @@ interface DrawProps {
   canvas: React.MutableRefObject<HTMLCanvasElement | null>
   backgroundRef: React.MutableRefObject<HTMLImageElement | null>
   stateRef: React.MutableRefObject<ItemState[] | undefined>
+  logoSize: number
 }
 export const draw = (props: DrawProps) => {
   const { canvas, stateRef } = props
@@ -34,7 +35,7 @@ export const draw = (props: DrawProps) => {
     // ctx.translate(x, y)
     ctx.rotate(s.rotate)
     // const { width, height } = logo
-    const width = 60
+    const width = props.logoSize
     const height = width
     // ctx.drawImage(logo, -width / 2, -height / 2, width, height)
     ctx.drawImage(s.logo, (width / 2) * -1, (height / 2) * -1, width, height)

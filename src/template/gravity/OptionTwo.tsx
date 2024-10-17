@@ -35,12 +35,16 @@ export interface ItemState {
   dr: number
 }
 export const OptionTwo: React.FC = () => {
+  const logoSize = 60
   const canvas = useRef<HTMLCanvasElement | null>(null)
   const fps = 30
+  const dt = 1000 / fps
 
   // use these to slow down or speed up the speed of the bouncing icons
-  const movementScaleFactor = 100 / fps
+  const movementScaleFactor = 10 / fps
   const rotationScaleFactor = fps / 300
+
+  const ddy = (9.8 / 1000 / 2) * dt * movementScaleFactor
 
   // Creating an imgRef to create an `Image` to draw the logo svg to
   const backgroundRef = useRef<HTMLImageElement | null>(null)
@@ -57,7 +61,7 @@ export const OptionTwo: React.FC = () => {
       const s: ItemState = {
         logo: logo2,
         x: Math.random() * canvas.current!.width,
-        dx: (Math.random() - 0.5) * movementScaleFactor,
+        dx: (Math.random() - 0.5) * movementScaleFactor * 9,
         y: Math.random() * canvas.current!.height,
         dy: (Math.random() - 0.5) * movementScaleFactor,
         rotate: Math.random() * sign,
@@ -76,21 +80,26 @@ export const OptionTwo: React.FC = () => {
       for (const s of stateRef.current) {
         // console.log(s)
         s.rotate = s.rotate + s.dr
+        // since the edges hit the border before the center, turn them around when their edge hits the canvas edge
+        // use 1/3 instead of 1/2 because the overlap looks nicer
         s.x = s.x + s.dx
-        if (s.x > canvas.current.width) {
+        if (s.x > canvas.current.width - logoSize / 3) {
           s.dx = -1 * Math.abs(s.dx)
-        } else if (s.x < 0) {
+        } else if (s.x < logoSize / 3) {
           s.dx = Math.abs(s.dx)
         }
+
+        // s.dy = s.dy - ddy
+        s.dy += ddy
         s.y = s.y + s.dy
-        if (s.y > canvas.current.height) {
-          s.dy = -1 * Math.abs(s.dy)
-        } else if (s.y < 0) {
+        if (s.y > canvas.current.height - logoSize / 3) {
+          s.dy = -1 * Math.abs(s.dy) - ddy
+        } else if (s.y < logoSize / 3) {
           s.dy = Math.abs(s.dy)
         }
       }
       // console.log(stateRef)
-      draw({ canvas, backgroundRef, stateRef })
+      draw({ canvas, backgroundRef, stateRef, logoSize })
 
       requestAnimationFrame(animate)
     }, 1000 / fps)
