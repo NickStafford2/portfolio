@@ -2,9 +2,31 @@ import React, { useEffect, useRef } from 'react'
 import './OptionTwo.css'
 import backgroundPath from '@public/logos/reactLogo.svg'
 import { draw, radian } from './helpers'
-import logoPath from '@public/logos/pythonLogo.svg'
+import angularLogo from '@public/logos/angularLogo.svg'
+import reactLogo from '@public/logos/reactLogo.svg'
+import javascriptLogo from '@public/logos/javascriptLogo.svg'
+import cPlusPlusLogo from '@public/logos/cPlusPlusLogo.svg'
+import pythonLogo from '@public/logos/pythonLogo.svg'
+import neovimLogo from '@public/logos/neovimLogo.svg'
+import viteLogo from '@public/logos/viteLogo.svg'
+import webpackLogo from '@public/logos/webpackLogo.svg'
+import githubLogo from '@public/logos/githubLogo.svg'
+import angularJsLogo from '@public/logos/angularJsLogo.svg'
 
+const logos = [
+  angularLogo,
+  reactLogo,
+  javascriptLogo,
+  cPlusPlusLogo,
+  pythonLogo,
+  neovimLogo,
+  viteLogo,
+  webpackLogo,
+  githubLogo,
+  angularJsLogo,
+]
 export interface ItemState {
+  logo: HTMLImageElement
   x: number
   dx: number
   y: number
@@ -22,16 +44,18 @@ export const OptionTwo: React.FC = () => {
 
   // Creating an imgRef to create an `Image` to draw the logo svg to
   const backgroundRef = useRef<HTMLImageElement | null>(null)
-  const logoRef = useRef<HTMLImageElement | null>(null)
   // Angle in radians
-  const rotationRef = useRef(0)
   const stateRef = useRef<ItemState[]>()
 
   function initState(): ItemState[] {
     const states = []
-    for (let i = 0; i < 10; i++) {
+    for (const logo of logos) {
+      // console.log(typeof logo)
       const sign = Math.random() > 0.5 ? 1 : -1
+      const logo2 = new Image()
+      logo2.src = logo
       const s: ItemState = {
+        logo: logo2,
         x: Math.random() * canvas.current!.width,
         dx: (Math.random() - 0.5) * movementScaleFactor,
         y: Math.random() * canvas.current!.height,
@@ -65,10 +89,8 @@ export const OptionTwo: React.FC = () => {
           s.dy = Math.abs(s.dy)
         }
       }
-      const rotation = rotationRef.current
       // console.log(stateRef)
-      draw({ canvas, backgroundRef, logoRef, rotation, stateRef })
-      rotationRef.current = rotation + radian(0.2)
+      draw({ canvas, backgroundRef, stateRef })
 
       requestAnimationFrame(animate)
     }, 1000 / fps)
@@ -84,11 +106,6 @@ export const OptionTwo: React.FC = () => {
     // background.onload = () => {
     //   backgroundRef.current = background
     // }
-    const logo = new Image()
-    logo.src = logoPath
-    logo.onload = () => {
-      logoRef.current = logo
-    }
     // maybe load this once at start somehow?
     stateRef.current = initState()
     // Start the animation function
