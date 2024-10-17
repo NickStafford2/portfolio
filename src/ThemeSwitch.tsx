@@ -31,7 +31,7 @@ function ThemeSwitch() {
 
   return (
     <div className="flex flex-col justify-center align-middle">
-      <h2 className="pb-2 text-2xl font-semibold text-[--ns-primary]">
+      <h2 className="text-text pb-2 text-2xl font-semibold">
         Toggle Fun Mode:
       </h2>
 
@@ -69,10 +69,6 @@ function ThemeSwitch() {
 
         {/* </span> */}
       </Switch>
-      <p className="text-center font-semibold text-[--ns-primary]">{theme}</p>
-      <p className="text-center font-semibold text-[--ns-primary]">
-        {theme === 'light' ? 'boring' : 'fun'}
-      </p>
     </div>
   )
 }

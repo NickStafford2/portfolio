@@ -2,6 +2,7 @@ import { ThemeContextType } from '@/context/theme'
 import { ThemeContext } from '@/context/ThemeProvider'
 import { cn } from '@/lib/utils'
 import { HTMLProps, useContext } from 'react'
+import './HeroBackgroundStars.css'
 
 export default function HeroBackground() {
   const { theme } = useContext(ThemeContext) as ThemeContextType
@@ -25,6 +26,16 @@ export default function HeroBackground() {
     )
   }
   return (
-    <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full"></div>
+    <div className="hero-stars absolute left-0 top-0 z-[-996] h-full w-full">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="title">
+        <span>PURE CSS</span>
+        <br />
+        <span>PARALLAX PIXEL STARS</span>
+      </div>
+    </div>
+    // <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full"></div>
   )
 }
