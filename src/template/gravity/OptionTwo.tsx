@@ -15,6 +15,11 @@ export interface ItemState {
 export const OptionTwo: React.FC = () => {
   const canvas = useRef<HTMLCanvasElement | null>(null)
   const fps = 30
+
+  // use these to slow down or speed up the speed of the bouncing icons
+  const movementScaleFactor = 100 / fps
+  const rotationScaleFactor = fps / 300
+
   // Creating an imgRef to create an `Image` to draw the logo svg to
   const backgroundRef = useRef<HTMLImageElement | null>(null)
   const logoRef = useRef<HTMLImageElement | null>(null)
@@ -28,11 +33,11 @@ export const OptionTwo: React.FC = () => {
       const sign = Math.random() > 0.5 ? 1 : -1
       const s: ItemState = {
         x: Math.random() * canvas.current!.width,
-        dx: (Math.random() - 0.5) / 1,
+        dx: (Math.random() - 0.5) * movementScaleFactor,
         y: Math.random() * canvas.current!.height,
-        dy: (Math.random() - 0.5) / 1,
+        dy: (Math.random() - 0.5) * movementScaleFactor,
         rotate: Math.random() * sign,
-        dr: (Math.random() * 0.05 * fps) / 60,
+        dr: Math.random() * rotationScaleFactor,
       }
       states.push(s)
     }
@@ -48,12 +53,16 @@ export const OptionTwo: React.FC = () => {
         // console.log(s)
         s.rotate = s.rotate + s.dr
         s.x = s.x + s.dx
-        s.y = s.y + s.dy
-        if (s.x > canvas.current.width || s.x < 0) {
-          s.dx = s.dx * -1
+        if (s.x > canvas.current.width) {
+          s.dx = -1 * Math.abs(s.dx)
+        } else if (s.x < 0) {
+          s.dx = Math.abs(s.dx)
         }
-        if (s.y > canvas.current.height || s.y < 0) {
-          s.dy = s.dy * -1
+        s.y = s.y + s.dy
+        if (s.y > canvas.current.height) {
+          s.dy = -1 * Math.abs(s.dy)
+        } else if (s.y < 0) {
+          s.dy = Math.abs(s.dy)
         }
       }
       const rotation = rotationRef.current
@@ -88,7 +97,7 @@ export const OptionTwo: React.FC = () => {
 
   return (
     <div>
-      <p>draw something</p>
+      <p>I don't know why I made this. I was having too much fun. </p>
       <canvas ref={canvas} width={960} height={640} />
     </div>
   )
