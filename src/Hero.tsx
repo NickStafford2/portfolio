@@ -24,7 +24,7 @@ export function Hero() {
         Ohio. Let me tell you a bit about myself. . .
       "
               className="p-3 text-2xl font-semibold text-background"
-              delay={0.05}
+              delay={0.01}
             />
           </div>
         </div>
