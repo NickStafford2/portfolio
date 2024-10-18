@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "nsportfoliobackend"
+version = "0.1.0"
+description = "a simple server for my portfolio"
+authors = ["Nicholas Stafford <ngstafford1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.3"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "types"
+poetry-types = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 90
+
+[tool.ruff.lint]
+# select = ["ALL"] # Only uncomment if we want to get pedantic
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
+
+[tool.ruff.format]
+quote-style = "double"
