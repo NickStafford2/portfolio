@@ -1,4 +1,4 @@
-import RotateBetween from '@/components/edil-ozi/rotate-between'
+// import RotateBetween from '@/components/edil-ozi/rotate-between'
 
 export type Quote = {
   text: string
@@ -24,7 +24,7 @@ export function QuoteBox() {
   ]
   return (
     <div className="h-screen">
-      <RotateBetween quotes={quotes} className="text-2xl"></RotateBetween>
+      {/* <RotateBetween quotes={quotes} className="text-2xl"></RotateBetween> */}
     </div>
   )
 }

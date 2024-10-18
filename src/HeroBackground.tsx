@@ -25,17 +25,22 @@ export default function HeroBackground() {
       </div>
     )
   }
+  //   if false {
+  //     return (
+  // <div className="hero-stars absolute left-0 top-0 z-[-996] h-full w-full">
+  //       <div id="stars"></div>
+  //       <div id="stars2"></div>
+  //       <div id="stars3"></div>
+  //       <div id="title">
+  //         <span>PURE CSS</span>
+  //         <br />
+  //         <span>PARALLAX PIXEL STARS</span>
+  //       </div>
+  //     </div>
+  //
+  //     )
+  //   }
   return (
-    <div className="hero-stars absolute left-0 top-0 z-[-996] h-full w-full">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-      <div id="title">
-        <span>PURE CSS</span>
-        <br />
-        <span>PARALLAX PIXEL STARS</span>
-      </div>
-    </div>
-    // <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full"></div>
+    <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full"></div>
   )
 }
