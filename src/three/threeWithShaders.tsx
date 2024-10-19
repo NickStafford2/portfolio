@@ -73,8 +73,9 @@ const CustomGeometryParticles = (props) => {
 
 const Scene = () => {
   return (
-    <div className="h-svh w-svw bg-gray-950">
+    <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full bg-gray-950">
       <Canvas camera={{ position: [2.0, 2.0, 2.0] }}>
+        <color attach="background" args={['black']} />
         <ambientLight intensity={0.5} />
         <CustomGeometryParticles count={4000} />
         <OrbitControls />
