@@ -5,12 +5,14 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    // "include": ["**/*.ts", "**/*.tsx", "glsl.d.ts"],
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@public/*": ["./public/*"]
-    }
+    },
+    "types": ["vite-plugin-glsl/ext"]
   }
 }
 // {
