@@ -1,30 +1,66 @@
 import { cn } from '@/lib/utils'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { useOutsideClick } from '@/hooks/use-outside-click.tsx'
 
-export const NsCard = ({
+const containerVarients = {
+  hidden: { cursor: 'pointer' },
+  visible: { cursor: 'default' },
+}
+
+const borderVariants = {
+  initial: {
+    backgroundPosition: '0 50%',
+  },
+  animate: {
+    backgroundPosition: ['0, 50%', '100% 50%', '0 50%'],
+  },
+}
+
+export function NsCard({
   children,
+  img,
+  expandSection,
   className,
-  containerClassName,
-  animate = true,
+  childContainerClassName,
+  title,
+  description,
+  animate,
 }: {
   children?: React.ReactNode
+  img?: any
+  expandSection?: boolean
   className?: string
-  containerClassName?: string
+  childContainerClassName?: string
+  title?: string
+  description?: string
   animate?: boolean
-}) => {
-  const variants = {
-    initial: {
-      backgroundPosition: '0 50%',
-    },
-    animate: {
-      backgroundPosition: ['0, 50%', '100% 50%', '0 50%'],
-    },
-  }
+}) {
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setIsVisible(false)
+      }
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [isVisible])
+  // useOutsideClick(ref, () => setIsVisible(false))
+
   return (
-    <div className={cn('group relative p-[4px]', containerClassName)}>
+    <motion.div
+      // onClick={() => setIsVisible(!isVisible)}
+      className={cn('group relative w-full p-[4px]', className)}
+      ref={ref}
+      animate={isVisible ? 'visible' : 'hidden'}
+      variants={containerVarients}
+    >
       <motion.div
-        variants={animate ? variants : undefined}
+        variants={animate ? borderVariants : undefined}
         initial={animate ? 'initial' : undefined}
         animate={animate ? 'animate' : undefined}
         transition={
@@ -45,7 +81,7 @@ export const NsCard = ({
         )}
       />
       <motion.div
-        variants={animate ? variants : undefined}
+        variants={animate ? borderVariants : undefined}
         initial={animate ? 'initial' : undefined}
         animate={animate ? 'animate' : undefined}
         transition={
@@ -66,7 +102,19 @@ export const NsCard = ({
         )}
       />
 
-      <div className={cn('relative z-10', className)}>{children}</div>
-    </div>
+      <div
+        className={cn(
+          'relative z-10 h-full w-full rounded-[22px] bg-background',
+          childContainerClassName
+        )}
+        style={{
+          backgroundImage: `url('${img}')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        {children}
+      </div>
+    </motion.div>
   )
 }
