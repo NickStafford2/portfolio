@@ -17,25 +17,17 @@ const borderVariants = {
   },
 }
 
-export function NsCard({
+export const NsCard = ({
   children,
-  img,
-  expandSection,
   className,
   childContainerClassName,
-  title,
-  description,
-  animate,
+  animate = true,
 }: {
   children?: React.ReactNode
-  img?: any
-  expandSection?: boolean
   className?: string
   childContainerClassName?: string
-  title?: string
-  description?: string
   animate?: boolean
-}) {
+}) => {
   const [isVisible, setIsVisible] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -107,11 +99,6 @@ export function NsCard({
           'relative z-10 h-full w-full rounded-[22px] bg-background',
           childContainerClassName
         )}
-        style={{
-          backgroundImage: `url('${img}')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
       >
         {children}
       </div>
