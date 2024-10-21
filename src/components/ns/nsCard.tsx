@@ -2,11 +2,6 @@ import { cn } from '@/lib/utils'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
-const containerVarients = {
-  hidden: { cursor: 'pointer' },
-  visible: { cursor: 'default' },
-}
-
 const borderVariants = {
   initial: {
     backgroundPosition: '0 50%',
@@ -27,28 +22,12 @@ export const NsCard = ({
   childContainerClassName?: string
   animate?: boolean
 }) => {
-  const [isVisible, setIsVisible] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    function onKeyDown(event: KeyboardEvent) {
-      if (event.key === 'Escape') {
-        setIsVisible(false)
-      }
-    }
-
-    window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  }, [isVisible])
   // useOutsideClick(ref, () => setIsVisible(false))
 
   return (
     <motion.div
       // onClick={() => setIsVisible(!isVisible)}
       className={cn('group relative w-full p-[4px]', className)}
-      ref={ref}
-      animate={isVisible ? 'visible' : 'hidden'}
-      variants={containerVarients}
     >
       <motion.div
         variants={animate ? borderVariants : undefined}

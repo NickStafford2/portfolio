@@ -11,6 +11,7 @@ import viteLogo from '/logos/viteLogo.svg'
 import webpackLogo from '/logos/webpackLogo.svg'
 import githubLogo from '/logos/githubLogo.svg'
 import angularJsLogo from '/logos/angularJsLogo.svg'
+import { NsCard } from '@/components/ns/nsCard'
 
 const logos = [
   angularLogo,
@@ -148,16 +149,20 @@ export const OptionTwo: React.FC = () => {
 
   return (
     <div className="py-8">
-      <p className="pb-4 text-2xl font-semibold">
-        I made this simple animation to describe the tools I use. (It's a
-        metaphore!)
-      </p>
-      <canvas
-        ref={canvas}
-        width={960}
-        height={640}
-        className="bg-gradient-to-t from-gray-700 to-cyan-800"
-      />
+      <NsCard>
+        <div className="p-4">
+          <p className="pb-4 text-2xl font-semibold">
+            I made this simple animation to describe the tools I use. (It's a
+            metaphore!)
+          </p>
+          <canvas
+            ref={canvas}
+            width={860}
+            height={640}
+            className="bg-gradient-to-t from-gray-700 to-cyan-800"
+          />
+        </div>
+      </NsCard>
     </div>
   )
 }
