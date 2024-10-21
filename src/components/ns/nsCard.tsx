@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export const BackgroundGradient = ({
+export const NsCard = ({
   children,
   className,
   containerClassName,
