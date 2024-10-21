@@ -22,7 +22,7 @@ export default function SelfAdd() {
         <img
           src={casualHeadshot}
           // src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-          className="max-h-[800px] w-full basis-1/3"
+          className="max-h-[800px] w-full basis-1/3 object-cover"
           alt="profile-picture"
         />
         <div className="flex basis-2/3 flex-col justify-between font-semibold">
