@@ -23,7 +23,9 @@ function App() {
       <div className="content-wrapper flex flex-col gap-6 px-20">
         <Hero></Hero>
         <SelfAdd></SelfAdd>
-        <OptionTwo></OptionTwo>
+        <div className="flex flex-row">
+          <OptionTwo></OptionTwo>
+        </div>
         <h1 id="experience" className="pt-40 text-5xl">
           Experience
         </h1>
