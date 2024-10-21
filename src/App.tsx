@@ -20,24 +20,24 @@ function App() {
       {/* <HeroBackground></HeroBackground> */}
       {/* <Three></Three> */}
       <Scene></Scene>
-      {/* <div className="content-wrapper flex flex-col gap-6 px-20"> */}
-      {/*   <Hero></Hero> */}
-      {/*   <SelfAdd></SelfAdd> */}
-      {/*   <OptionTwo></OptionTwo> */}
-      {/*   <h1 id="experience" className="pt-40 text-5xl"> */}
-      {/*     Experience */}
-      {/*   </h1> */}
-      {/*   <div className="flex flex-col"> */}
-      {/*     <Education></Education> */}
-      {/*     <Experience></Experience> */}
-      {/*   </div> */}
-      {/*   <Projects></Projects> */}
-      {/*   <Skills></Skills> */}
-      {/*   <ProgrammingPhilosophy></ProgrammingPhilosophy> */}
-      {/*   <BeyondCode></BeyondCode> */}
-      {/*   <QuoteBox></QuoteBox> */}
-      {/*   <RandomIdeas></RandomIdeas> */}
-      {/* </div> */}
+      <div className="content-wrapper flex flex-col gap-6 px-20">
+        <Hero></Hero>
+        <SelfAdd></SelfAdd>
+        <OptionTwo></OptionTwo>
+        <h1 id="experience" className="pt-40 text-5xl">
+          Experience
+        </h1>
+        <div className="flex flex-col">
+          <Education></Education>
+          <Experience></Experience>
+        </div>
+        <Projects></Projects>
+        <Skills></Skills>
+        <ProgrammingPhilosophy></ProgrammingPhilosophy>
+        <BeyondCode></BeyondCode>
+        <QuoteBox></QuoteBox>
+        <RandomIdeas></RandomIdeas>
+      </div>
     </div>
   )
 }
