@@ -27,7 +27,7 @@ export const NsCard = ({
   return (
     <motion.div
       // onClick={() => setIsVisible(!isVisible)}
-      className={cn('group relative w-full p-[4px]', className)}
+      className={cn('group relative w-full p-[2px]', className)}
     >
       <motion.div
         variants={animate ? borderVariants : undefined}
