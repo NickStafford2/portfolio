@@ -1,7 +1,6 @@
 import { cn } from '@/lib/utils'
 import React, { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import { useOutsideClick } from '@/hooks/use-outside-click.tsx'
 
 const containerVarients = {
   hidden: { cursor: 'pointer' },
@@ -21,7 +20,7 @@ export const NsCard = ({
   children,
   className,
   childContainerClassName,
-  animate = true,
+  animate,
 }: {
   children?: React.ReactNode
   className?: string

@@ -25,7 +25,6 @@ export function Projects() {
             title="IO Architecture rewrite"
             description="I can't believe this actually worked."
             img="IoLogo.png"
-            expandSection={true}
           >
             <p>
               Without a question, my most successful programming project of my
@@ -84,7 +83,6 @@ export function Projects() {
             title="DotFiles"
             description="Neovim configuration is no joke."
             img="NvimScreenshot.png"
-            expandSection={true}
           >
             <p>
               These configurations contain serious code. I am returning to the

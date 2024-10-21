@@ -1,36 +1,12 @@
 import { ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import React, { useEffect, useRef, useState } from 'react'
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion'
+import React, { useEffect, useState } from 'react'
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from '@/components/ui/collapsible'
 
-const expandableVarients = {
-  hidden: { height: 0, cursor: 'pointer' },
-  visible: { height: 'auto', cursor: 'default' },
-}
-
-const containerVarients = {
-  hidden: { cursor: 'pointer' },
-  visible: { cursor: 'default' },
-}
-
-const borderVariants = {
-  initial: {
-    backgroundPosition: '0 50%',
-  },
-  animate: {
-    backgroundPosition: ['0, 50%', '100% 50%', '0 50%'],
-  },
-}
 const NsCollapse = ({
   children,
   className,
