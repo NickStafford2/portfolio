@@ -136,7 +136,7 @@ const WarpingOrbScene = () => {
   const orbitControlsRef = useRef()
   return (
     <div className="hero-gradient fixed left-0 top-0 z-[-996] h-full w-full bg-gray-950">
-      <Canvas camera={{ position: [1.5, 1.5, 1.5] }}>
+      <Canvas camera={{ position: [0, 0, 2] }}>
         <color attach="background" args={['black']} />
         <ambientLight intensity={0.5} />
         <FBOParticles size={128} />
@@ -145,6 +145,7 @@ const WarpingOrbScene = () => {
           enablePan={false} // Disable panning
           enableRotate={true} // Keep rotation enabled if needed
           ref={orbitControlsRef}
+          target={[-0.7, 0, 0]}
         />
         {/* <gridHelper args={[10, 10, 0xff0000, 'teal']} /> */}
         {/* <axesHelper /> */}
