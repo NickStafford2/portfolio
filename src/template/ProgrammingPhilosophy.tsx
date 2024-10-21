@@ -4,7 +4,7 @@ import NsCollapse from '@/components/ns/NsCollapse'
 export function ProgrammingPhilosophy() {
   return (
     <div className="min-h-screen">
-      <h2 className="pb-10 text-6xl">Thoughts for other Nerds</h2>
+      <h2 className="pb-10 text-6xl">Programming Hot Takes</h2>
       <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <NsCard>
           <NsCollapse title="IDE Wars" description="The return of the king">
