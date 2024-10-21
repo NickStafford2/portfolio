@@ -136,7 +136,7 @@ const FBOParticles = (props) => {
 const Scene = () => {
   const orbitControlsRef = useRef()
   return (
-    <div className="hero-gradient absolute left-0 top-0 z-[-996] h-full w-full bg-gray-950">
+    <div className="hero-gradient fixed left-0 top-0 z-[-996] h-full w-full bg-gray-950">
       <Canvas camera={{ position: [1.5, 1.5, 1.5] }}>
         <color attach="background" args={['black']} />
         <ambientLight intensity={0.5} />
