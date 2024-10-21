@@ -30,10 +30,8 @@ function ThemeSwitch() {
   }
 
   return (
-    <div className="flex flex-col justify-center align-middle">
-      <h2 className="text-text pb-2 text-2xl font-semibold">
-        Toggle Fun Mode:
-      </h2>
+    <div className="flex flex-col items-end justify-start">
+      <h2 className="text-text text- pb-2">Toggle graphics:</h2>
 
       <Switch checked={enabled} onCheckedChange={handleThemeChange}>
         {/* <span className="sr-only">Use setting</span> */}

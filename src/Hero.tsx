@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import ThemeSwitch from './ThemeSwitch'
 
+import './HeroBackgroundStars.css'
+
 export function Hero() {
   return (
     <div
@@ -11,19 +13,19 @@ export function Hero() {
       className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[60px]"
     >
       <div className="flex flex-grow flex-row justify-between">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-between">
           <TextWriter
             text="Hello World"
-            className="text-text h-32 px-6 py-0 text-8xl font-bold shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
-            delay={0.2}
+            className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text px-6 py-0 text-8xl font-bold text-transparent shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
+            delay={0.1}
           />
-          <div className="mb-6 mt-0 min-h-32 max-w-[600px] bg-foreground px-6">
+          <div className="mb-6 mt-0 min-h-32 max-w-[600px] px-6">
             <TextWriter
               text="
         My name is Nicholas Stafford. I am a developer based in Cleveland,
         Ohio. Let me tell you a bit about myself. . .
       "
-              className="p-3 text-2xl font-semibold text-background"
+              className="bg-clip-text p-3 text-2xl font-medium text-foreground"
               delay={0.01}
             />
           </div>
