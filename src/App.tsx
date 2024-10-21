@@ -12,14 +12,14 @@ import { RandomIdeas } from './template/RandomIdeas'
 import SelfAdd from './template/SelfAdd'
 import { Skills } from './template/Skills'
 // import Three from './Three'
-import Scene from './three/MyLoop/threeWithShaders.tsx'
+import WarpingOrbScene from './three/MyLoop/threeWithShaders.tsx'
 
 function App() {
   return (
     <div className="overflow-x-hidden text-foreground" style={{}}>
       {/* <HeroBackground></HeroBackground> */}
       {/* <Three></Three> */}
-      <Scene></Scene>
+      <WarpingOrbScene></WarpingOrbScene>
       <div className="content-wrapper flex flex-col gap-6 px-20">
         <Hero></Hero>
         <SelfAdd></SelfAdd>

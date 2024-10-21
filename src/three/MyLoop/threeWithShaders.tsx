@@ -132,7 +132,7 @@ const FBOParticles = (props) => {
   )
 }
 
-const Scene = () => {
+const WarpingOrbScene = () => {
   const orbitControlsRef = useRef()
   return (
     <div className="hero-gradient fixed left-0 top-0 z-[-996] h-full w-full bg-gray-950">
@@ -153,4 +153,4 @@ const Scene = () => {
   )
 }
 
-export default Scene
+export default WarpingOrbScene
