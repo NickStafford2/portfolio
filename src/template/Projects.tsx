@@ -3,14 +3,15 @@ import { NsCard } from '@/components/ns/nsCard'
 
 export function Projects() {
   return (
-    <div id="projects" className="mt-48 pt-[var(--header-height)] min-h-screen">
-      <h1 className="text-5xl py-6">Projects</h1>
+    <div id="projects" className="mt-48 min-h-screen pt-[var(--header-height)]">
+      <h1 className="py-6 text-5xl">Projects</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 items-start">
+      <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
         <NsCard title="Portfolio" description="You are currently looking at it">
           <p>
             I am starting simple. Hoping to make this pretty nice as time goes
-            on.
+            on. I am working on the animations currently with three.js. Written
+            in React, Typescript, and GLSL.
           </p>
         </NsCard>
         <NsCard
