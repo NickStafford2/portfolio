@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import './OptionTwo.css'
 import { draw, radian } from './helpers'
 import backgroundPath from '/logos/reactLogo.svg'
 import angularLogo from '/logos/angularLogo.svg'
@@ -12,6 +11,7 @@ import viteLogo from '/logos/viteLogo.svg'
 import webpackLogo from '/logos/webpackLogo.svg'
 import githubLogo from '/logos/githubLogo.svg'
 import angularJsLogo from '/logos/angularJsLogo.svg'
+import './OptionTwo.css'
 
 const logos = [
   angularLogo,
