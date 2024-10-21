@@ -26,15 +26,17 @@ export default function SelfAdd() {
           className="max-h-[800px] w-full basis-1/3 object-cover"
           alt="profile-picture"
         />
-        <div className="flex basis-2/3 flex-col justify-between font-semibold">
+        <div className="flex basis-2/3 flex-col justify-between gap-4 font-semibold">
+          <NsCard>
+            <p className="p-4">
+              I am a software developer. Solving problems and helping others are
+              my true passions. When I have spare time, you will find me reading
+              about some obscure subject. Ancient history, quantum mechanics, I
+              love it all.
+            </p>
+          </NsCard>
           <NsCard>
             <div className="p-4">
-              <p>
-                I am a software developer. Solving problems and helping others
-                are my true passions. When I have spare time, you will find me
-                reading about some obscure subject. Ancient history, quantum
-                mechanics, I love it all.
-              </p>
               <div>
                 <h2 className="text-3xl">Education</h2>
                 <ul className="text-xl">
