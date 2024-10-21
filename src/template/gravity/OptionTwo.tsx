@@ -11,7 +11,6 @@ import viteLogo from '/logos/viteLogo.svg'
 import webpackLogo from '/logos/webpackLogo.svg'
 import githubLogo from '/logos/githubLogo.svg'
 import angularJsLogo from '/logos/angularJsLogo.svg'
-import './OptionTwo.css'
 
 const logos = [
   angularLogo,
@@ -153,7 +152,12 @@ export const OptionTwo: React.FC = () => {
         I made this simple animation to describe the tools I use. (It's a
         metaphore!)
       </p>
-      <canvas ref={canvas} width={960} height={640} className="icon-canvas" />
+      <canvas
+        ref={canvas}
+        width={960}
+        height={640}
+        className="bg-gradient-to-t from-gray-700 to-cyan-800"
+      />
     </div>
   )
 }
