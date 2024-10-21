@@ -1,17 +1,18 @@
 import { NsCard } from '@/components/ns/nsCard'
 import VisualNpmDemo from './VisualNpmDemo'
-import angularLogo from '@public/logos/angularLogo.svg'
-import reactLogo from '@public/logos/reactLogo.svg'
+import angularLogo from '/logos/angularLogo.svg'
+import reactLogo from '/logos/reactLogo.svg'
 import javascriptLogo from '@public/logos/javascriptLogo.svg'
-import cPlusPlusLogo from '@public/logos/cPlusPlusLogo.svg'
-import pythonLogo from '@public/logos/pythonLogo.svg'
-import neovimLogo from '@public/logos/neovimLogo.svg'
-import viteLogo from '@public/logos/viteLogo.svg'
-import webpackLogo from '@public/logos/webpackLogo.svg'
-import githubLogo from '@public/logos/githubLogo.svg'
-import angularJsLogo from '@public/logos/angularJsLogo.svg'
+import cPlusPlusLogo from '/logos/cPlusPlusLogo.svg'
+import pythonLogo from '/logos/pythonLogo.svg'
+import neovimLogo from '/logos/neovimLogo.svg'
+import viteLogo from '/logos/viteLogo.svg'
+import webpackLogo from '/logos/webpackLogo.svg'
+import githubLogo from '/logos/githubLogo.svg'
+import angularJsLogo from '/logos/angularJsLogo.svg'
 import GravitySimulation from './GravitySimulation'
 import { OptionTwo } from './gravity/OptionTwo'
+import casualHeadshot from '/casualHeadshot.jpg'
 
 export default function SelfAdd() {
   return (
@@ -19,7 +20,8 @@ export default function SelfAdd() {
       <h1 className="text-5xl font-semibold">A Bit About Me</h1>
       <div className="flex flex-grow flex-row gap-6 py-10">
         <img
-          src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
+          src={casualHeadshot}
+          // src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
           className="max-h-[800px] w-full basis-1/3"
           alt="profile-picture"
         />
