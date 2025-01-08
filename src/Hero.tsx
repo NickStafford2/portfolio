@@ -10,7 +10,7 @@ export function Hero() {
 	return (
 		<div
 			id="hero"
-			className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[60px] bg-red-300"
+			className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[60px] "
 		>
 			<div className="flex flex-grow flex-row justify-between">
 				<div className="flex flex-col justify-between">
