@@ -14,11 +14,14 @@ export function Hero() {
 		>
 			<div className="flex flex-grow flex-row justify-between">
 				<div className="flex flex-col justify-between">
-					<TextWriter
-						text="Hello World"
-						className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text px-6 py-0 text-8xl font-bold text-transparent shadow-[0_35px_45px_-35px_rgba(127,229,255,0.9),inset_0_-55px_35px_-35px_rgba(0,0,0,0.9)]"
-						delay={0.1}
-					/>
+					<div>
+						<TextWriter
+							text="Hello World"
+							// className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text px-6 py-0 text-8xl font-bold text-transparent shadow-[0_55px_65px_-25px_rgba(127,229,255,0.9)]"
+							className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text px-6 py-0 text-8xl font-bold text-transparent"
+							delay={0.1}
+						/>
+					</div>
 					<div className="mb-6 mt-0 min-h-32 max-w-[600px] px-6">
 						<TextWriter
 							text="
@@ -40,7 +43,7 @@ export function Hero() {
 						<FaChevronDown className="text-text text-[8em] opacity-30"></FaChevronDown>{" "}
 					</a>
 				</div>
-				<span className="align-center text-text text-2xl">- or -</span>
+				<span className="align-center text-text text-3xl">- or -</span>
 				<div className="flex flex-grow flex-col">
 					<a href="#" className="flex flex-col items-end align-bottom">
 						<FaChevronUp className="text-text text-[8em] opacity-30"></FaChevronUp>{" "}
