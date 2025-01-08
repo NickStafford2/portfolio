@@ -13,12 +13,12 @@ export function Hero() {
 			className="flex min-h-[calc(100vh-64px)] flex-col justify-between bg-opacity-20 pt-[60px] "
 		>
 			<div className="flex flex-grow flex-row justify-between">
-				<div className="flex flex-col justify-between">
+				<div className="flex flex-col justify-between pt-12">
 					<div>
 						<TextWriter
 							text="Hello World"
 							// className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text px-6 py-0 text-8xl font-bold text-transparent shadow-[0_55px_65px_-25px_rgba(127,229,255,0.9)]"
-							className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text py-0 text-8xl font-bold text-transparent"
+							className="text-text h-32 bg-gradient-to-t from-border to-black bg-clip-text  text-[7em] font-bold text-transparent"
 							delay={0.1}
 						/>
 					</div>
@@ -35,20 +35,20 @@ export function Hero() {
 				</div>
 				{/* <ThemeSwitch></ThemeSwitch> */}
 			</div>
-			<div className="flex flex-row items-center justify-between py-10  font-light ">
+			<div className="flex flex-row items-center justify-between py-10  font-light text-[var(--ns-primary)]">
 				<a
 					href="#experience"
-					className="flex flex-row justify-start flex-grow hover:bg-primary"
+					className="flex flex-row justify-start flex-grow hover:translate-y-4 transition-transform duration-100 hover:font-bold"
 				>
 					<div className="flex flex-col justify-center items-center ">
-						<span className="text-text text-3xl font-light ">Learn More:</span>
+						<span className="text-text text-3xl">Learn More:</span>
 						<BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "}
 					</div>
 				</a>
 				<span className="align-center text-text text-3xl">- or -</span>
 				<a
 					href="#"
-					className="flex flex-row justify-end flex-grow hover:bg-primary"
+					className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-100 hover:font-bold"
 				>
 					<div className="flex flex-col justify-center items-center ">
 						<BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "}
