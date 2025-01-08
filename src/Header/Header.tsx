@@ -24,7 +24,7 @@ export default function Header() {
 				<HeaderLink href="#experience">Experience</HeaderLink>
 				<HeaderLink href="#projects">Projects</HeaderLink>
 				<HeaderLink href="#skills">Skills</HeaderLink>
-				<HeaderLink href="#blog">Blog</HeaderLink>
+				<HeaderLink href="#thoughts">Thoughts</HeaderLink>
 			</div>
 			<div className="">
 				<Popover>

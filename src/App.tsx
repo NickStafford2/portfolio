@@ -7,8 +7,8 @@ import { Experience } from "./template/Experience";
 import { OptionTwo } from "./template/gravity/OptionTwo";
 import { ProgrammingPhilosophy } from "./template/ProgrammingPhilosophy";
 import { Projects } from "./template/Projects";
-import { QuoteBox } from "./template/QuoteBox";
-import { RandomIdeas } from "./template/RandomIdeas";
+// import { QuoteBox } from "./template/QuoteBox";
+// import { RandomIdeas } from "./template/RandomIdeas";
 import SelfAdd from "./template/SelfAdd";
 import { Skills } from "./template/Skills";
 // import Three from './Three'
@@ -37,8 +37,7 @@ function App() {
 				<Skills></Skills>
 				<ProgrammingPhilosophy></ProgrammingPhilosophy>
 				<BeyondCode></BeyondCode>
-				<QuoteBox></QuoteBox>
-				<RandomIdeas></RandomIdeas>
+				{/* <QuoteBox></QuoteBox> */}
 			</div>
 		</div>
 	);

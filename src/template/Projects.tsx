@@ -170,11 +170,11 @@ export function Projects() {
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
-					<NsCollapse title="Hidden Physics Finder">
+					<NsCollapse title="Physics Fundamental Finder">
 						<p>
 							This may be crazy, but has anyone tried brute force approach to
 							see if any unexpected relationship exists between physics
-							consants? Is the plank's constant 1/2 of Newton's constant? how
+							consants? Is the plank's constant 1/2 of Newton's constant? How
 							about the square root? There are infinite potential relationships,
 							but since the number of constants is not too large, I think we can
 							get away with a brute force search with some dynamic programming.
