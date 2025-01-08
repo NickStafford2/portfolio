@@ -20,16 +20,16 @@ export default function Header() {
 			</div>
 			{/* <ThemeSwitcher></ThemeSwitcher> */}
 			<div className="flex flex-grow flex-row items-center justify-center gap-0 align-middle">
+				<HeaderLink href="#aboutme">About Me</HeaderLink>
 				<HeaderLink href="#experience">Experience</HeaderLink>
 				<HeaderLink href="#projects">Projects</HeaderLink>
 				<HeaderLink href="#skills">Skills</HeaderLink>
 				<HeaderLink href="#blog">Blog</HeaderLink>
-				<HeaderLink href="#aboutme">About Me</HeaderLink>
 			</div>
 			<div className="">
 				<Popover>
 					<PopoverTrigger asChild>
-						<HeaderLink>Icebox Login</HeaderLink>
+						<HeaderLink className="text-accent">Icebox Login</HeaderLink>
 					</PopoverTrigger>
 					<PopoverContent className="w-80">
 						<IceboxLogin></IceboxLogin>
