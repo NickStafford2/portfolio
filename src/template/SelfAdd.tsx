@@ -14,6 +14,7 @@ import angularJsLogo from "/logos/angularJsLogo.svg";
 // import { OptionTwo } from "./gravity/OptionTwo";
 import casualHeadshot from "/casualHeadshotBlue.png";
 import NsCollapse from "@/components/ns/NsCollapse";
+import Title from "@/Title";
 
 export default function SelfAdd() {
 	return (
@@ -21,7 +22,7 @@ export default function SelfAdd() {
 			id="aboutme"
 			className="scroll-mt-32 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
 		>
-			<h1 className="text-5xl font-semibold">A Bit About Me</h1>
+			<Title text="A Bit About Me"></Title>
 			<div className="flex flex-grow flex-row gap-6 py-10">
 				<img
 					src={casualHeadshot}
@@ -29,49 +30,40 @@ export default function SelfAdd() {
 					className="max-h-[800px] w-full basis-1/3 object-cover"
 					alt="profile-picture"
 				/>
-				<div className="flex basis-2/3 flex-col justify-between gap-4 font-semibold">
-					<NsCard>
-						<p className="p-4">
-							I am a software developer. Solving problems and helping others are
-							my true passions. When I have spare time, you will find me reading
-							about some obscure subject. Ancient history, quantum mechanics, I
-							love it all.
-						</p>
-					</NsCard>
-					<NsCard>
-						<div className="p-4">
-							<div>
-								<h2 className="text-3xl">Education</h2>
-								<ul className="text-xl">
-									<li className="text-xl">
-										M.S in Computer Science from Kent State University. (in
-										progress)
-									</li>
-									<li>
-										B.S in Computer Science from Kent State University. GPA:
-										3.98
-									</li>
-								</ul>
-							</div>
+				<NsCard className="flex basis-2/3 flex-col justify-between gap-4 font-semibold">
+					<p className="p-4">
+						I am a software developer. Solving problems and helping others are
+						my true passions. When I have spare time, you will find me reading
+						about some obscure subject. Ancient history, quantum mechanics, I
+						love it all.
+					</p>
+					<div className="p-4">
+						<div>
+							<h2 className="text-3xl">Education</h2>
+							<ul className="text-xl">
+								<li className="text-xl">
+									M.S in Computer Science from Kent State University. GPA: 3.8
+									(in progress)
+								</li>
+								<li>
+									B.S in Computer Science from Kent State University. GPA: 3.98
+								</li>
+							</ul>
 						</div>
-					</NsCard>
+					</div>
 					<div>
 						<h2 className="pt-5 text-3xl">My Best Work</h2>
 						<div className="flex flex-col items-start gap-3">
-							<NsCard>
-								<NsCollapse
-									title="Visual NPM"
-									description="My current side project. Analyzes and visualizes NPM packages. Try it out. . . "
-								>
-									<VisualNpmDemo></VisualNpmDemo>
-								</NsCollapse>
-							</NsCard>
-							<NsCard>
-								<NsCollapse
-									title="InflatableOffice.com"
-									description="Hired as a web developer, I ended up working as a software architect. Successfully converted the companies main website from AngularJs to Angular."
-								></NsCollapse>
-							</NsCard>
+							<NsCollapse
+								title="Dependency Inspection"
+								description="Analyzes and visualizes NPM dependency graph."
+							>
+								<VisualNpmDemo></VisualNpmDemo>
+							</NsCollapse>
+							<NsCollapse
+								title="InflatableOffice.com"
+								description="Hired as a web developer, I ended up working as a software architect. Successfully converted the companies main website from AngularJs to Angular."
+							></NsCollapse>
 						</div>
 						<div className="grid grid-cols-5 pt-6">
 							<div className="bg-blue flex flex-col items-center justify-center">
@@ -116,7 +108,7 @@ export default function SelfAdd() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</NsCard>
 			</div>
 		</div>
 	);
