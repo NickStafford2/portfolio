@@ -28,27 +28,33 @@ export function Hero() {
                 My name is Nicholas Stafford. I am a developer based in Cleveland,
                 Ohio. Let me tell you a bit about myself. . .
               "
-							className="bg-clip-text p-3 text-2xl font-medium text-foreground"
+							className="bg-clip-text p-3 text-2xl font-medium foreground text-accent"
 							delay={0.01}
 						/>
 					</div>
 				</div>
 				{/* <ThemeSwitch></ThemeSwitch> */}
+				<span className="text-destructive text-3xl font-bold text-right">
+					Work in progress. <br />
+					Definitly not finished!
+				</span>
 			</div>
 			<div className="flex flex-row items-center justify-between py-10  font-light text-[var(--ns-primary)]">
 				<a
 					href="#experience"
-					className="flex flex-row justify-start flex-grow hover:translate-y-4 transition-transform duration-100 hover:font-bold"
+					className="flex flex-row justify-start flex-grow hover:translate-y-4 transition-transform duration-300 hover:font-bold"
 				>
 					<div className="flex flex-col justify-center items-center ">
 						<span className="text-text text-3xl">Learn More:</span>
 						<BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "}
 					</div>
 				</a>
-				<span className="align-center text-text text-3xl">- or -</span>
+				<span className="align-center text-text text-3xl text-accent">
+					- or -
+				</span>
 				<a
 					href="#"
-					className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-100 hover:font-bold"
+					className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 hover:font-bold"
 				>
 					<div className="flex flex-col justify-center items-center ">
 						<BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "}
