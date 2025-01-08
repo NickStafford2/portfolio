@@ -30,7 +30,7 @@ export function Hero() {
 						/>
 					</div>
 				</div>
-				<ThemeSwitch></ThemeSwitch>
+				{/* <ThemeSwitch></ThemeSwitch> */}
 			</div>
 			<div className="flex flex-row items-center justify-between py-10">
 				<div className="flex flex-grow flex-col justify-center align-middle">
