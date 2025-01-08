@@ -10,14 +10,17 @@ import viteLogo from "/logos/viteLogo.svg";
 import webpackLogo from "/logos/webpackLogo.svg";
 import githubLogo from "/logos/githubLogo.svg";
 import angularJsLogo from "/logos/angularJsLogo.svg";
-import GravitySimulation from "./GravitySimulation";
-import { OptionTwo } from "./gravity/OptionTwo";
+// import GravitySimulation from "./GravitySimulation";
+// import { OptionTwo } from "./gravity/OptionTwo";
 import casualHeadshot from "/casualHeadshotBlue.png";
 import NsCollapse from "@/components/ns/NsCollapse";
 
 export default function SelfAdd() {
 	return (
-		<div className="flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground">
+		<div
+			id="aboutme"
+			className="scroll-mt-32 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
+		>
 			<h1 className="text-5xl font-semibold">A Bit About Me</h1>
 			<div className="flex flex-grow flex-row gap-6 py-10">
 				<img

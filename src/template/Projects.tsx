@@ -4,10 +4,30 @@ import NsCollapse from "@/components/ns/NsCollapse";
 
 export function Projects() {
 	return (
-		<div id="projects" className="mt-48 min-h-screen pt-[var(--header-height)]">
+		<div
+			id="projects"
+			className="scroll-mt-9 mt-48 min-h-screen pt-[var(--header-height)]"
+		>
 			<h1 className="py-6 text-5xl">Projects</h1>
 
 			<div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+				<NsCard id="dependencyInspection">
+					<NsCollapse
+						title="Dependency Inspection"
+						description="Visualize the tools that power the web. See it change over time. Coming soon. . . "
+					>
+						<p>
+							My current pet project. This is a collaboritive project that aims
+							to create a visualization of ego networks for npm dependencies. It
+							essentially dynamically searches npm packages by name to find
+							package.json files, and creates a network based on every
+							dependency that would appear in your package.lock.jsono. Luckily,
+							I have been able to incorperate three of my graduate course
+							projects into this. It is working great, and should be hosted
+							online very soon.{" "}
+						</p>
+					</NsCollapse>
+				</NsCard>
 				<NsCard>
 					<NsCollapse
 						title="Portfolio"
@@ -33,23 +53,7 @@ export function Projects() {
 						</p>
 					</NsCollapse>
 				</NsCard>
-				<NsCard>
-					<NsCollapse
-						title="Visual NPM"
-						description="Visualize the tools that power the web. See it change over time. Coming soon. . . "
-					>
-						<p>
-							My current pet project. This is a collaboritive project that aims
-							to create a visualization of ego networks for npm dependencies. It
-							essentially dynamically searches npm packages by name to find
-							package.json files, and creates a network based on every
-							dependency that would appear in your package.lock.jsono. Luckily,
-							I have been able to incorperate three of my graduate course
-							projects into this. It is working great, and should be hosted
-							online very soon.{" "}
-						</p>
-					</NsCollapse>
-				</NsCard>
+
 				<NsCard>
 					<NsCollapse
 						title="CCounter Dev"

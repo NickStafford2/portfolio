@@ -16,16 +16,19 @@ export const NsCard = ({
 	className,
 	childContainerClassName,
 	animate,
+	id,
 }: {
 	children?: React.ReactNode;
 	className?: string;
 	childContainerClassName?: string;
 	animate?: boolean;
+	id?: string;
 }) => {
 	// useOutsideClick(ref, () => setIsVisible(false))
 
 	return (
 		<motion.div
+			id={id}
 			// onClick={() => setIsVisible(!isVisible)}
 			className={cn("group relative w-full p-[2px]", className)}
 		>
