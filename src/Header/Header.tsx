@@ -11,7 +11,7 @@ import IceboxLogin from "@/icebox/IceboxLogin.tsx";
 
 export default function Header() {
 	return (
-		<div className="fixed z-30 flex h-[var(--header-height)] w-full items-stretch justify-between gap-3 border-b-[1px] border-b-border bg-gray-800 text-[var(--ns-primary)]">
+		<div className="fixed z-30 flex h-[var(--header-height)] w-full items-stretch justify-between gap-3 border-b-[1px] border-b-border bg-gray-900 text-[var(--ns-primary)]">
 			{/* <Button onClick={() => sendDataToParent()}>Sidebar</Button> */}
 			<div>
 				<HeaderLink href="#">

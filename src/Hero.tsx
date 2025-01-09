@@ -43,14 +43,14 @@ export function Hero() {
 					vertex shaders, <br /> so for now, you get this.
 				</span>
 			</div>
-			<div className="flex flex-row items-center justify-between py-10  font-light text-[var(--ns-primary)]">
+			<div className="flex flex-row items-center justify-between py-10 font-light text-[var(--ns-primary)]">
 				<a
 					href="#aboutme"
-					className="flex flex-row justify-start flex-grow hover:translate-y-4 transition-transform duration-300 hover:font-bold"
+					className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] bg-gray-900 transition-transform duration-300 "
 				>
 					<div className="flex flex-col justify-center items-center ">
 						<span className="text-text text-3xl">Learn More:</span>
-						<BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "}
+						{/* <BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "} */}
 					</div>
 				</a>
 				<span className="align-center text-text text-3xl text-accent">
@@ -58,10 +58,10 @@ export function Hero() {
 				</span>
 				<a
 					href="#"
-					className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 hover:font-bold"
+					className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 "
 				>
 					<div className="flex flex-col justify-center items-center ">
-						<BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "}
+						{/* <BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "} */}
 						<span className="text-text text-3xl">Contact Me</span>
 					</div>
 				</a>
