@@ -4,7 +4,7 @@ import { Title1 } from "@/Title";
 
 export function ProgrammingPhilosophy() {
 	return (
-		<div id="thoughts" className="scroll-mt-32 min-h-screen">
+		<div id="thoughts" className="scroll-mt-2 min-h-screen">
 			<Title1 className="scroll-mt-48 pt-32 pb-16">
 				Programming Hot Takes
 			</Title1>
