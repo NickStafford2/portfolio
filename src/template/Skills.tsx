@@ -1,106 +1,141 @@
-import { SkillCard } from '@/template/SkillCard'
-import { FaGit, FaLinux } from 'react-icons/fa'
-import { SiFlask } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import { RiAngularjsLine } from 'react-icons/ri'
-import { SiNeovim, SiTypescript } from 'react-icons/si'
-import { FaAngular, FaGithub } from 'react-icons/fa'
-import { FaPython } from 'react-icons/fa6'
-import { SiJavascript } from 'react-icons/si'
-import { TbBrandCpp } from 'react-icons/tb'
-import NsSkill from '@/components/ns/NsSkill'
+import { SkillCard } from "@/template/SkillCard";
+import { FaFlask, FaGit, FaLinux } from "react-icons/fa";
+import { SiFlask } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { RiAngularjsLine } from "react-icons/ri";
+import { SiNeovim, SiTypescript } from "react-icons/si";
+import { FaAngular, FaGithub } from "react-icons/fa";
+import { FaPython } from "react-icons/fa6";
+import { SiJavascript } from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import NsSkill from "@/components/ns/NsSkill";
+import { OptionTwo } from "./gravity/OptionTwo";
+import { Title1, Title2 } from "@/Title";
+import { NsCard } from "@/components/ns/nsCard";
+import NsIcon from "@/components/ns/NsIcon";
 
 const skills = [
-  {
-    title: 'Neovim',
-    icon: <SiNeovim className="skillcard-icon" />,
-    value: 40,
-    description: '3 months daily',
-  },
-
-  {
-    title: 'Git',
-    icon: <FaGit className="skillcard-icon" />,
-    value: 60,
-    description: '3 years',
-  },
-  {
-    title: 'GitHub',
-    icon: <FaGithub className="skillcard-icon" />,
-    value: 60,
-    description: '3 years',
-  },
-  {
-    title: 'Javascript',
-    icon: <SiJavascript className="skillcard-icon" />,
-    value: 80,
-    description: '4 years',
-  },
-  {
-    title: 'Typescript',
-    icon: <SiTypescript className="skillcard-icon" />,
-    value: 40,
-    description: '3 years',
-  },
-  {
-    title: 'C++',
-    icon: <TbBrandCpp className="skillcard-icon" />,
-    value: 60,
-    description: '2 years',
-  },
-  {
-    title: 'Python',
-    icon: <FaPython className="skillcard-icon" />,
-    value: 40,
-    description: '2 years infrequent',
-  },
-  {
-    title: 'AngularJs',
-    icon: <RiAngularjsLine className="skillcard-icon" />,
-    value: 85,
-    description: '3 years',
-  },
-  {
-    title: 'Angular',
-    icon: <FaAngular className="skillcard-icon" />,
-    value: 40,
-    description: '2 years',
-  },
-  {
-    title: 'React',
-    icon: <FaReact className="skillcard-icon" />,
-    value: 25,
-    description: '2 months recent',
-  },
-  {
-    title: 'Flask',
-    icon: <SiFlask className="skillcard-icon" />,
-    value: 30,
-    description: '4 months',
-  },
-  {
-    title: 'Linux',
-    icon: <FaLinux className="skillcard-icon" />,
-    value: 80,
-    description: '10 years',
-  },
-]
+	{
+		title: "Javascript",
+		icon: <SiJavascript />,
+		value: 80,
+		description: "4 years",
+	},
+	{
+		title: "Python",
+		icon: <FaPython />,
+		value: 40,
+		description: "2 years",
+	},
+	{
+		title: "Typescript",
+		icon: <SiTypescript />,
+		value: 40,
+		description: "3 years",
+	},
+	{
+		title: "Neovim",
+		icon: <SiNeovim />,
+		value: 40,
+		description: "6 months daily",
+	},
+	{
+		title: "Git",
+		icon: <FaGit />,
+		value: 80,
+		description: "5 years",
+	},
+	// {
+	// 	title: "GitHub",
+	// 	icon: <FaGithub  />,
+	// 	value: 60,
+	// 	description: "3 years",
+	// },
+	// {
+	// 	title: "C++",
+	// 	icon: <TbBrandCpp  />,
+	// 	value: 60,
+	// 	description: "2 years",
+	// },
+	// {
+	// 	title: "AngularJs",
+	// 	icon: <RiAngularjsLine  />,
+	// 	value: 85,
+	// 	description: "3 years",
+	// },
+	// {
+	// 	title: "Angular",
+	// 	icon: <FaAngular  />,
+	// 	value: 40,
+	// 	description: "2 years",
+	// },
+	// {
+	// 	title: "React",
+	// 	icon: <FaReact  />,
+	// 	value: 25,
+	// 	description: "2 months recent",
+	// },
+	// {
+	// 	title: "Flask",
+	// 	icon: <SiFlask  />,
+	// 	value: 30,
+	// 	description: "4 months",
+	// },
+	{
+		title: "Linux",
+		icon: <FaLinux />,
+		value: 80,
+		description: "10 years",
+	},
+];
 
 export function Skills() {
-  return (
-    <div id="skills" className="mt-48 min-h-screen pt-[var(--header-height)] ">
-      <h1 className="text-5xl py-5">Skills</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 ">
-        {skills.map((skill) => (
-          <NsSkill
-            key={skill.title}
-            svg={skill.icon}
-            description={skill.description}
-            title={skill.title}
-            skill={skill.value}
-          ></NsSkill>
-        ))}
-      </div>
-    </div>
-  )
+	return (
+		<div
+			id="skills"
+			className="mt-48 min-h-screen scroll-mt-36 flex flex-col gap-3"
+		>
+			<Title1>Skills</Title1>
+			<NsCard className="w-full flex flex-col" childContainerClassName="p-4">
+				<Title2>Current Stack</Title2>
+				<div className="flex flex-row">
+					<div>
+						<p>For most code, I use Python. (until Mojo is ready)</p>
+						<p>
+							For websites, I use React with Typescript for the frontend, and
+							Python with Flask for the Backend.
+						</p>
+					</div>
+					<div className="flex flex-row">
+						<NsIcon svg={<FaReact></FaReact>}></NsIcon>
+						<NsIcon svg={<SiTypescript></SiTypescript>}></NsIcon>
+						<NsIcon svg={<SiFlask></SiFlask>}></NsIcon>
+						<NsIcon svg={<FaPython></FaPython>}></NsIcon>
+					</div>
+				</div>
+			</NsCard>
+			<Title2 className="pt-16">I always keep in mind:</Title2>
+			<div className="flex flex-row gap-6">
+				<div className="py-8">
+					<NsCard>
+						<OptionTwo></OptionTwo>
+					</NsCard>
+				</div>
+				<div className="flex flex-col pt-12 justify-between">
+					<Title2 className="pb-6">
+						But the important stuff you remember.
+					</Title2>
+					{skills.map((skill) => (
+						<NsSkill
+							key={skill.title}
+							svg={skill.icon}
+							description={skill.description}
+							title={skill.title}
+							skill={skill.value}
+						></NsSkill>
+					))}
+				</div>
+			</div>
+		</div>
+	);
 }

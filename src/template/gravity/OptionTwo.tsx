@@ -11,18 +11,24 @@ import viteLogo from "/logos/viteLogo.svg";
 import webpackLogo from "/logos/webpackLogo.svg";
 import githubLogo from "/logos/githubLogo.svg";
 import angularJsLogo from "/logos/angularJsLogo.svg";
-import { NsCard } from "@/components/ns/nsCard";
+import flaskLogo from "/logos/flaskLogo.svg";
+import vueLogo from "/logos/vueLogo.svg";
+import laravelLogo from "/logos/laravelLogo.svg";
+import { Title2 } from "@/Title";
 
 const logos = [
 	angularLogo,
+	laravelLogo,
 	reactLogo,
+	flaskLogo,
+	vueLogo,
 	javascriptLogo,
-	cPlusPlusLogo,
-	pythonLogo,
-	neovimLogo,
+	// cPlusPlusLogo,
+	// pythonLogo,
+	// neovimLogo,
 	viteLogo,
 	webpackLogo,
-	githubLogo,
+	// githubLogo,
 	angularJsLogo,
 ];
 export interface ItemState {
@@ -148,21 +154,14 @@ export const OptionTwo: React.FC = () => {
 	}, []);
 
 	return (
-		<div className="py-8">
-			<NsCard>
-				<div className="p-4">
-					<p className="pb-4 text-2xl font-semibold">
-						I made this simple animation to describe the tools I use. (It's a
-						metaphore!)
-					</p>
-					<canvas
-						ref={canvas}
-						width={860}
-						height={640}
-						className="bg-gradient-to-t from-primary to-background"
-					/>
-				</div>
-			</NsCard>
+		<div className="p-4">
+			<Title2>Frameworks come and go. . .</Title2>
+			<canvas
+				ref={canvas}
+				width={860}
+				height={640}
+				className="bg-gradient-to-t from-primary to-background"
+			/>
 		</div>
 	);
 };

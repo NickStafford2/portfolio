@@ -1,5 +1,47 @@
-const Title = ({ text }: { text: string }) => {
-	return <h1 className="text-accent font-semibold text-5xl">{text}</h1>;
-};
+import { cn } from "@/lib/utils";
+import React from "react";
 
-export default Title;
+export const Title1 = React.forwardRef<
+	HTMLDivElement,
+	React.HTMLAttributes<HTMLDivElement>
+>(({ className, children, ...props }, ref) => {
+	return (
+		<h1
+			ref={ref}
+			className={cn("text-primary font-semibold text-7xl", className)}
+			{...props}
+		>
+			{children}
+		</h1>
+	);
+});
+
+export const Title2 = React.forwardRef<
+	HTMLDivElement,
+	React.HTMLAttributes<HTMLDivElement>
+>(({ className, children, ...props }, ref) => {
+	return (
+		<h2
+			ref={ref}
+			className={cn("text-accent font-semibold text-3xl", className)}
+			{...props}
+		>
+			{children}
+		</h2>
+	);
+});
+
+export const Title3 = React.forwardRef<
+	HTMLDivElement,
+	React.HTMLAttributes<HTMLDivElement>
+>(({ className, children, ...props }, ref) => {
+	return (
+		<h3
+			ref={ref}
+			className={cn("text-primary font-semibold text-xl", className)}
+			{...props}
+		>
+			{children}
+		</h3>
+	);
+});

@@ -1,20 +1,6 @@
 import { NsCard } from "@/components/ns/nsCard";
-import VisualNpmDemo from "./VisualNpmDemo";
-import angularLogo from "/logos/angularLogo.svg";
-import reactLogo from "/logos/reactLogo.svg";
-import javascriptLogo from "@public/logos/javascriptLogo.svg";
-import cPlusPlusLogo from "/logos/cPlusPlusLogo.svg";
-import pythonLogo from "/logos/pythonLogo.svg";
-import neovimLogo from "/logos/neovimLogo.svg";
-import viteLogo from "/logos/viteLogo.svg";
-import webpackLogo from "/logos/webpackLogo.svg";
-import githubLogo from "/logos/githubLogo.svg";
-import angularJsLogo from "/logos/angularJsLogo.svg";
-// import GravitySimulation from "./GravitySimulation";
-// import { OptionTwo } from "./gravity/OptionTwo";
 import casualHeadshot from "/casualHeadshotBlue.png";
-import NsCollapse from "@/components/ns/NsCollapse";
-import Title from "@/Title";
+import { Title1, Title2, Title3 } from "@/Title";
 
 export default function SelfAdd() {
 	return (
@@ -22,7 +8,7 @@ export default function SelfAdd() {
 			id="aboutme"
 			className="scroll-mt-32 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
 		>
-			<Title text="A Bit About Me"></Title>
+			<Title1>A Bit About Me</Title1>
 			<div className="flex flex-grow flex-row gap-6 py-10">
 				<img
 					src={casualHeadshot}
@@ -30,82 +16,58 @@ export default function SelfAdd() {
 					className="max-h-[800px] w-full basis-1/3 object-cover"
 					alt="profile-picture"
 				/>
-				<NsCard className="flex basis-2/3 flex-col justify-between gap-4 font-semibold">
-					<p className="p-4">
-						I am a software developer. Solving problems and helping others are
-						my true passions. When I have spare time, you will find me reading
-						about some obscure subject. Ancient history, quantum mechanics, I
-						love it all.
-					</p>
-					<div className="p-4">
+				<NsCard className="basis-2/3 ">
+					<div className="p-4 flex h-full flex-col justify-between">
 						<div>
-							<h2 className="text-3xl">Education</h2>
-							<ul className="text-xl">
-								<li className="text-xl">
+							<Title2>I write code and do nerd stuff</Title2>
+							<p className="py-4">
+								Solving problems and helping others are my true passions. When I
+								have spare time, you will find me reading about some obscure
+								subject. Ancient history, quantum mechanics, I love it all.
+							</p>
+						</div>
+						<div className="py-4">
+							<div>
+								<Title2>Education</Title2>
+								<Title3>
 									M.S in Computer Science from Kent State University. GPA: 3.8
 									(in progress)
-								</li>
-								<li>
+								</Title3>
+								<p>Full time graduate student while working at Amazon. </p>
+								Current Courses:
+								<ul className="list-desc">
+									<li>- Artificial Intelligence</li>
+									<li>- Secure Programming</li>
+									<li>- Cryptography</li>
+									<li>- Graph Algorithms</li>
+									<li>- iOS Programming</li>
+								</ul>
+								<Title3 className="pt-4">
 									B.S in Computer Science from Kent State University. GPA: 3.98
-								</li>
-							</ul>
+								</Title3>
+								<p>
+									You have no idea how much that A- in Latin class still urks
+									me.
+								</p>
+							</div>
 						</div>
-					</div>
-					<div>
-						<h2 className="pt-5 text-3xl">My Best Work</h2>
-						<div className="flex flex-col items-start gap-3">
-							<NsCollapse
-								title="Dependency Inspection"
-								description="Analyzes and visualizes NPM dependency graph."
-							>
-								<VisualNpmDemo></VisualNpmDemo>
-							</NsCollapse>
-							<NsCollapse
-								title="InflatableOffice.com"
-								description="Hired as a web developer, I ended up working as a software architect. Successfully converted the companies main website from AngularJs to Angular."
-							></NsCollapse>
-						</div>
-						<div className="grid grid-cols-5 pt-6">
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={reactLogo} alt="React" />
-								<p>React</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={javascriptLogo} alt="Javascript" />
-								<p>Javascript</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={angularJsLogo} alt="AngularJs" />
-								<p>AngularJs</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={pythonLogo} alt="Python" />
-								<p>Python</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={neovimLogo} alt="Neovim" />
-								<p>Neovim</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={cPlusPlusLogo} alt="C++" />
-								<p>C++</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={angularLogo} alt="Angular" />
-								<p>Angular</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={githubLogo} alt="Github" />
-								<p>Github</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={webpackLogo} alt="Webpack" />
-								<p>Webpack</p>
-							</div>
-							<div className="bg-blue flex flex-col items-center justify-center">
-								<img className="w-12" src={viteLogo} alt="Vite" />
-								<p>Vite</p>
-							</div>
+						<div className="py-4">
+							<Title2>My Best Work</Title2>
+							<Title3 className="pt-2">
+								<a href="#dependencyInspection" className="underline">
+									Dependecy Inspection
+								</a>
+							</Title3>
+							Analyzes and visualizes NPM dependency graph.
+							<br />
+							<Title3 className="pt-4">
+								<a href="#inflatableOffice" className="underline">
+									InflatableOffice.com
+								</a>
+							</Title3>
+							Hired as a web developer, I ended up working as a software
+							architect. Successfully converted the companies main website from
+							AngularJs to Angular.
 						</div>
 					</div>
 				</NsCard>
