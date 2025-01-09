@@ -34,9 +34,13 @@ export function Hero() {
 					</div>
 				</div>
 				{/* <ThemeSwitch></ThemeSwitch> */}
-				<span className="text-destructive text-3xl font-bold text-right">
+				<span className="text-destructive text-3xl font-bold text-right bg-black/50 h-fit">
 					Work in progress. <br />
 					Definitly not finished!
+					<br />
+					<br />I am still playing around <br />
+					with the background <br />
+					vertex shaders, <br /> so for now, you get this.
 				</span>
 			</div>
 			<div className="flex flex-row items-center justify-between py-10  font-light text-[var(--ns-primary)]">

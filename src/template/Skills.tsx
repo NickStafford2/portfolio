@@ -93,12 +93,12 @@ export function Skills() {
 	return (
 		<div
 			id="skills"
-			className="mt-48 min-h-screen scroll-mt-36 flex flex-col gap-3"
+			className="mt-48 min-h-screen scroll-mt-36 flex flex-col gap-10"
 		>
 			<Title1>Skills</Title1>
 			<NsCard className="w-full flex flex-col" childContainerClassName="p-4">
-				<Title2>Current Stack</Title2>
-				<div className="flex flex-row">
+				<Title2 className="pb-4">Current Stack</Title2>
+				<div className="flex flex-row justify-between">
 					<div>
 						<p>For most code, I use Python. (until Mojo is ready)</p>
 						<p>
@@ -106,7 +106,7 @@ export function Skills() {
 							Python with Flask for the Backend.
 						</p>
 					</div>
-					<div className="flex flex-row">
+					<div className="flex flex-row gap-2">
 						<NsIcon svg={<FaReact></FaReact>}></NsIcon>
 						<NsIcon svg={<SiTypescript></SiTypescript>}></NsIcon>
 						<NsIcon svg={<SiFlask></SiFlask>}></NsIcon>
@@ -114,8 +114,7 @@ export function Skills() {
 					</div>
 				</div>
 			</NsCard>
-			<Title2 className="pt-16">I always keep in mind:</Title2>
-			<div className="flex flex-row gap-6">
+			<div className="flex flex-row gap-6 pt-10">
 				<div className="py-8">
 					<NsCard>
 						<OptionTwo></OptionTwo>
