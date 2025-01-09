@@ -1,5 +1,4 @@
 import { NsCard } from "@/components/ns/nsCard";
-import casualHeadshot from "/casualHeadshotBlue.png";
 import { Title1, Title2, Title3 } from "@/Title";
 
 export default function SelfAdd() {
@@ -8,16 +7,10 @@ export default function SelfAdd() {
 			id="aboutme"
 			className="scroll-mt-32 py-48 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
 		>
-			<Title1>A Bit About Me</Title1>
-			<div className="flex flex-grow flex-row gap-6 py-10">
-				<img
-					src={casualHeadshot}
-					// src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-					className="max-h-[800px] w-full basis-1/3 object-cover"
-					alt="profile-picture"
-				/>
-				<NsCard className="basis-2/3 ">
-					<div className="p-4 flex h-full flex-col justify-between">
+			<div className="w-[80vw] relative left-[-10em]">
+				<NsCard>
+					<div className=" pl-[10em] flex flex-grow flex-col gap-2 py-10 pr-4">
+						<Title1 className="">A Bit About Me</Title1>
 						<div>
 							<Title2>I write code and do nerd stuff</Title2>
 							<p className="py-4">
@@ -26,7 +19,7 @@ export default function SelfAdd() {
 								subject. Ancient history, quantum mechanics, I love it all.
 							</p>
 						</div>
-						<div className="py-4">
+						<div className="">
 							<div>
 								<Title2>Education</Title2>
 								<Title3>
