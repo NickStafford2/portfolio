@@ -46,7 +46,7 @@ export function Hero() {
 			<div className="flex flex-row items-center justify-between py-10 font-light text-[var(--ns-primary)]">
 				<a
 					href="#aboutme"
-					className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] bg-gray-900 transition-transform duration-300 "
+					className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] transition-transform duration-300 "
 				>
 					<div className="flex flex-col justify-center items-center ">
 						<span className="text-text text-3xl">Learn More:</span>

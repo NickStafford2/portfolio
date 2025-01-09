@@ -6,7 +6,7 @@ export default function SelfAdd() {
 	return (
 		<div
 			id="aboutme"
-			className="scroll-mt-32 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
+			className="scroll-mt-32 py-48 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
 		>
 			<Title1>A Bit About Me</Title1>
 			<div className="flex flex-grow flex-row gap-6 py-10">
