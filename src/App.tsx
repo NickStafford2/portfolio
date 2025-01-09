@@ -12,11 +12,11 @@ import WarpingOrbScene from "./three/MyLoop/threeWithShaders.tsx";
 
 function App() {
 	return (
-		<div className=" text-foreground" style={{}}>
+		<div className=" text-foreground w-svw max-w-[100vw]" style={{}}>
 			{/* <HeroBackground></HeroBackground> */}
 			{/* <Three></Three> */}
 			<WarpingOrbScene></WarpingOrbScene>
-			<div className="content-wrapper flex flex-col gap-6 px-20">
+			<div className="flex flex-col gap-6 px-20">
 				<Hero></Hero>
 				<SelfAdd></SelfAdd>
 				<Skills></Skills>

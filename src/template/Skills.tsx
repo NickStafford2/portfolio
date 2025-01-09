@@ -97,24 +97,29 @@ export function Skills() {
 			className="mt-48 min-h-screen scroll-mt-36 flex flex-col gap-10"
 		>
 			<Title1>Skills</Title1>
-			<NsCard className="w-full flex flex-col" childContainerClassName="p-4">
-				<Title2 className="pb-4">Current Stack</Title2>
-				<div className="flex flex-row justify-between">
-					<div>
-						<p>For most code, I use Python. (until Mojo is ready)</p>
-						<p>
-							For websites, I use React with Typescript for the frontend, and
-							Python with Flask for the Backend.
-						</p>
+			<div className="w-svw">
+				<NsCard
+					className="w-full flex flex-col"
+					childContainerClassName="p-4 pr-[10vw]"
+				>
+					<Title2 className="pb-4">Current Stack</Title2>
+					<div className="flex flex-row justify-between">
+						<div>
+							<p>For most code, I use Python. (until Mojo is ready)</p>
+							<p>
+								For websites, I use React with Typescript for the frontend, and
+								Python with Flask for the Backend.
+							</p>
+						</div>
+						<div className="flex flex-row gap-2">
+							<NsIcon svg={<FaReact></FaReact>}></NsIcon>
+							<NsIcon svg={<SiTypescript></SiTypescript>}></NsIcon>
+							<NsIcon svg={<SiFlask></SiFlask>}></NsIcon>
+							<NsIcon svg={<FaPython></FaPython>}></NsIcon>
+						</div>
 					</div>
-					<div className="flex flex-row gap-2">
-						<NsIcon svg={<FaReact></FaReact>}></NsIcon>
-						<NsIcon svg={<SiTypescript></SiTypescript>}></NsIcon>
-						<NsIcon svg={<SiFlask></SiFlask>}></NsIcon>
-						<NsIcon svg={<FaPython></FaPython>}></NsIcon>
-					</div>
-				</div>
-			</NsCard>
+				</NsCard>
+			</div>
 			<div className="flex flex-row gap-6 pt-10">
 				<div className="py-8">
 					<NsCard>

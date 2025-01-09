@@ -3,14 +3,13 @@ import { Title1, Title2, Title3 } from "@/Title";
 
 export default function SelfAdd() {
 	return (
-		<div
-			id="aboutme"
-			className="scroll-mt-32 py-48 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground"
-		>
+		<div className="  py-48 flex min-h-[calc(100vh-var(--header-height)-4rem)] flex-col text-foreground">
 			<div className="w-[80vw] relative left-[-10em]">
 				<NsCard>
 					<div className=" pl-[10em] flex flex-grow flex-col gap-2 py-10 pr-4">
-						<Title1 className="">A Bit About Me</Title1>
+						<Title1 id="aboutme" className="scroll-mt-36">
+							A Bit About Me
+						</Title1>
 						<div>
 							<Title2>I write code and do nerd stuff</Title2>
 							<p className="py-4">
