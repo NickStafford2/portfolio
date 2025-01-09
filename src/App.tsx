@@ -12,7 +12,7 @@ import WarpingOrbScene from "./three/MyLoop/threeWithShaders.tsx";
 
 function App() {
 	return (
-		<div className="overflow-x-hidden text-foreground" style={{}}>
+		<div className=" text-foreground" style={{}}>
 			{/* <HeroBackground></HeroBackground> */}
 			{/* <Three></Three> */}
 			<WarpingOrbScene></WarpingOrbScene>
