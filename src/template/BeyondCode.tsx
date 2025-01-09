@@ -1,17 +1,11 @@
 import { NsCard } from "@/components/ns/nsCard";
 import NsCollapse from "@/components/ns/NsCollapse";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
+import { Title1, Title2 } from "@/Title";
 
 export function BeyondCode() {
 	return (
 		<div id="beyond-code" className="min-h-screen">
-			<h1>Beyond Code</h1>
+			<Title1 className="scroll-mt-48 pt-32 pb-16">Beyond Code</Title1>
 			<div className="flex flex-col gap-8">
 				<NsCard>
 					<NsCollapse
@@ -55,7 +49,7 @@ export function BeyondCode() {
 							concern myself with what my next meal is. I just eat simple
 							healthy meals every day.
 						</p>
-						<p>Macronutrient equations</p>
+						<Title2 className="pt-4">Macronutrient equations</Title2>
 						<ul>
 							<li>
 								Protein: 1g / lb body weight. Essential for building muscle and
@@ -70,6 +64,8 @@ export function BeyondCode() {
 								with carbs. (4 calories / gram)
 							</li>
 						</ul>
+
+						<Title2 className="pt-4">Adaptation</Title2>
 						<p>
 							Everything went exactly accoring to plan. My food preferences
 							adapted to my new diet. My understanding of the gut microbiome is
@@ -82,16 +78,18 @@ export function BeyondCode() {
 							food preferences to align with my health goals. I love science.
 						</p>
 						<p>The best part is that I have so much data to analyze</p>
+						<br />
 						<p>Insert pictures here</p>
-						<p>Some helpful things I learned.</p>
+						<br />
+						<Title2 className="pt-4">Some helpful things I learned.</Title2>
 						<ul>
 							<li>
-								It is very very difficult to gain weight eating only healthy
+								- It is very very difficult to gain weight eating only healthy
 								foods. Sumo wrestlers and professional strongmen can't reach
 								their size eating clean. Healthy food is too filling.
 							</li>
 							<li>
-								Plan for you at your worst. Make it as easy as possible to eat
+								- Plan for you at your worst. Make it as easy as possible to eat
 								your healthy meals. Make it as difficult as possible to eat
 								unhealthy. That way, you can use your own lazyness to your
 								advantage. Ensure that when you are in a bad mood and you are
@@ -102,9 +100,9 @@ export function BeyondCode() {
 								Because I planned ahead, I always found myself lazily eating
 								healthy.
 							</li>
-							<li>Don't drink alcohol. It doesn't help.</li>
+							<li>- Don't drink alcohol. It doesn't help.</li>
 							<li>
-								Cheat with conditions. Cheat meals absolutly ruin diets.
+								- Cheat with conditions. Cheat meals absolutly ruin diets.
 								However, willpower is limited and some days you will mess up. I
 								cheated 4 times on my weight loss journey. But every time, I
 								followed the following rule: You are allowed to cheat, but
@@ -115,16 +113,16 @@ export function BeyondCode() {
 							</li>
 							<li>Find four meals to cook weekly, and stick to that.</li>
 							<li>
-								Eat to Live, don't Live to Eat. I had to change my relationship
-								with food. Food should not be your source of happyness. Think of
-								it as fuel, and nothing else.
+								- Eat to Live, don't Live to Eat. I had to change my
+								relationship with food. Food should not be your source of
+								happyness. Think of it as fuel, and nothing else.
 							</li>
 							<li>
-								Lift heavy weights. Muscle burns calories. Cardio simply changes
-								your non-exercise activity thermogenisis (neat). With cardio,
-								the reduced movement after you exercise seems to completely
-								negate the calories burned while exercising. The body adjusts
-								your activity to keep calorie expenditure consistent.
+								- Lift heavy weights. Muscle burns calories. Cardio simply
+								changes your non-exercise activity thermogenisis (neat). With
+								cardio, the reduced movement after you exercise seems to
+								completely negate the calories burned while exercising. The body
+								adjusts your activity to keep calorie expenditure consistent.
 							</li>
 						</ul>
 						<p>Add some pictures here. Before and after.</p>
@@ -156,13 +154,7 @@ export function BeyondCode() {
 				</NsCard>
 
 				<NsCard>
-					<NsCollapse
-						title="Writing"
-						description="
-							Me and my friends have these sorts of conversations. It is
-							incredible where they lead.
-						"
-					>
+					<NsCollapse title="Writing" description="">
 						I am part of a group working meticiously to finish the "A Song of
 						Ice and Fire" book series. I have written four chapters so far.
 						Submissions require extensive peer review and editing. The author,

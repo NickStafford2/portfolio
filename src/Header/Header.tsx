@@ -21,9 +21,8 @@ export default function Header() {
 			{/* <ThemeSwitcher></ThemeSwitcher> */}
 			<div className="flex flex-grow flex-row items-center justify-center gap-0 align-middle">
 				<HeaderLink href="#aboutme">About Me</HeaderLink>
-				<HeaderLink href="#experience">Experience</HeaderLink>
-				<HeaderLink href="#projects">Projects</HeaderLink>
 				<HeaderLink href="#skills">Skills</HeaderLink>
+				<HeaderLink href="#projects">Projects</HeaderLink>
 				<HeaderLink href="#thoughts">Thoughts</HeaderLink>
 			</div>
 			<div className="">

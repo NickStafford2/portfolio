@@ -1,4 +1,5 @@
 import { SkillCard } from "@/template/SkillCard";
+import { FaPhp } from "react-icons/fa";
 import { FaFlask, FaGit, FaLinux } from "react-icons/fa";
 import { SiFlask } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
@@ -135,6 +136,25 @@ export function Skills() {
 					))}
 				</div>
 			</div>
+			<NsCard className="w-full flex flex-col" childContainerClassName="p-4">
+				<Title2 className="pb-4">So much rust.</Title2>
+				<div className="flex flex-row justify-between">
+					<div>
+						<p>
+							I have been programming for years. I have used a ton of frameworks
+							and languages. I use to know C++ incredibly well, but I haven't
+							used it in years. I am glad I started with C, because it really
+							made me learn the fundimentals.
+						</p>
+					</div>
+					<div className="flex flex-row gap-2">
+						<NsIcon svg={<TbBrandCpp></TbBrandCpp>}></NsIcon>
+						<NsIcon svg={<FaPhp></FaPhp>}></NsIcon>
+						<NsIcon svg={<FaAngular></FaAngular>}></NsIcon>
+						<NsIcon svg={<RiAngularjsLine></RiAngularjsLine>}></NsIcon>
+					</div>
+				</div>
+			</NsCard>
 		</div>
 	);
 }

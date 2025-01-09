@@ -1,14 +1,12 @@
 import { NsCard } from "@/components/ns/nsCard";
 import NsCollapse from "@/components/ns/NsCollapse";
+import { Title1 } from "@/Title";
 // import nvimImage from '@/assets/NvimScreenshot.png'
 
 export function Projects() {
 	return (
-		<div
-			id="projects"
-			className="scroll-mt-9 mt-48 min-h-screen pt-[var(--header-height)]"
-		>
-			<h1 className="py-6 text-5xl">Projects</h1>
+		<div id="projects" className="scroll-mt-9 pt-48 min-h-screen ">
+			<Title1 className="pb-16">Projects</Title1>
 
 			<div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
 				<NsCard id="dependencyInspection">

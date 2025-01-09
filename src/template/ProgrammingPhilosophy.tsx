@@ -1,10 +1,13 @@
 import { NsCard } from "@/components/ns/nsCard";
 import NsCollapse from "@/components/ns/NsCollapse";
+import { Title1 } from "@/Title";
 
 export function ProgrammingPhilosophy() {
 	return (
 		<div id="thoughts" className="scroll-mt-32 min-h-screen">
-			<h2 className="pb-10 text-6xl">Programming Hot Takes</h2>
+			<Title1 className="scroll-mt-48 pt-32 pb-16">
+				Programming Hot Takes
+			</Title1>
 			<div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
 				<NsCard>
 					<NsCollapse title="IDE Wars" description="The return of the king">
