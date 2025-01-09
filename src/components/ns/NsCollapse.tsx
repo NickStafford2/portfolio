@@ -20,7 +20,7 @@ const NsCollapse = ({
 	title?: string;
 	description?: string;
 }) => {
-	const [isVisible, setIsVisible] = useState(false);
+	const [isVisible, setIsVisible] = useState(true);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
