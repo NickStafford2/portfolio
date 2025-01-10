@@ -4,9 +4,14 @@ import { Title1, Title2 } from "@/Title";
 
 export function BeyondCode() {
 	return (
-		<div id="beyond-code" className="min-h-screen">
-			<Title1 className="scroll-mt-48 pt-32 pb-16">Beyond Code</Title1>
-			<div className="flex flex-col gap-8">
+		<>
+			<Title1
+				id="beyond-code"
+				className="row-start-11 col-start-2 col-span-10 scroll-mt-48 pt-32 pb-16"
+			>
+				Beyond Code
+			</Title1>
+			<div className="row-start-12 col-start-2 col-span-10 flex flex-col gap-8">
 				<NsCard>
 					<NsCollapse
 						title="Things I love"
@@ -169,6 +174,6 @@ export function BeyondCode() {
 					</NsCollapse>
 				</NsCard>
 			</div>
-		</div>
+		</>
 	);
 }

@@ -4,11 +4,14 @@ import { Title1 } from "@/Title";
 
 export function ProgrammingPhilosophy() {
 	return (
-		<div id="thoughts" className="scroll-mt-2 min-h-screen">
-			<Title1 className="scroll-mt-48 pt-32 pb-16">
+		<>
+			<Title1
+				id="thoughts"
+				className=" col-start-2 row-start-9 col-span-10 scroll-mt-8 pt-32 pb-16"
+			>
 				Programming Hot Takes
 			</Title1>
-			<div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+			<div className="col-start-2 row-start-10 col-span-10 grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
 				<NsCard>
 					<NsCollapse title="IDE Wars" description="The return of the king">
 						<p className="p-4">
@@ -111,6 +114,6 @@ export function ProgrammingPhilosophy() {
 					</NsCollapse>
 				</NsCard>
 			</div>
-		</div>
+		</>
 	);
 }

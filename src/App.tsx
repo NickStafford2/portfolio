@@ -8,24 +8,18 @@ import { Projects } from "./template/Projects";
 import SelfAdd from "./template/SelfAdd";
 import { Skills } from "./template/Skills";
 // import Three from './Three'
-import WarpingOrbScene from "./three/MyLoop/threeWithShaders.tsx";
 
 function App() {
 	return (
-		<div className=" text-foreground w-svw max-w-[100vw]" style={{}}>
+		<div className="grid grid-cols-12 lg:grid-cols-[minmax(100px,_1fr),repeat(10,_1fr),minmax(100px,_1fr)] grid-rows-[minmax(100vh,_auto)] overflow-x-hidden py-[var(--header-height)] text-foreground w-svw text-xl">
 			{/* <HeroBackground></HeroBackground> */}
 			{/* <Three></Three> */}
-			<WarpingOrbScene></WarpingOrbScene>
-			<div className="flex flex-col gap-6 px-20">
-				<Hero></Hero>
-				<SelfAdd></SelfAdd>
-				<Skills></Skills>
-
-				<Projects></Projects>
-				<ProgrammingPhilosophy></ProgrammingPhilosophy>
-				<BeyondCode></BeyondCode>
-				{/* <QuoteBox></QuoteBox> */}
-			</div>
+			<Hero></Hero>
+			<SelfAdd></SelfAdd>
+			<Skills></Skills>
+			<Projects></Projects>
+			<ProgrammingPhilosophy></ProgrammingPhilosophy>
+			<BeyondCode></BeyondCode>
 		</div>
 	);
 }

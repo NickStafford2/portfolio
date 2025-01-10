@@ -11,7 +11,7 @@ export function Hero() {
 	return (
 		<div
 			id="hero"
-			className="flex items-start h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between bg-opacity-20  "
+			className="col-start-2 col-span-10 flex items-start h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between bg-opacity-20  "
 		>
 			<div className="flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end">
 				<img

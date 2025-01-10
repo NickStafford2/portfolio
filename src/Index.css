@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,13 +13,18 @@ html {
 	/* --foreground: blue; */
 }
 body {
-	font-family: "Raleway", sans-serif;
-	font-family: "Raleway Variable", sans-serif;
+	font-family: "Roboto", serif;
 	font-optical-sizing: auto;
-	font-weight: 100;
+	font-weight: 300;
 	font-style: normal;
-	margin: 0;
-	overflow-x: hidden;
+	font-variation-settings: "wdth" 100;
+	/* font-family: "Raleway", sans-serif; */
+	/* font-family: "Raleway Variable", sans-serif; */
+	/* font-optical-sizing: auto; */
+	/* font-weight: 100; */
+	/* font-style: normal; */
+	/* margin: 0; */
+	/* overflow-x: hidden; */
 	/* background: rgb(87, 39, 102); */
 	/* background: radial-gradient( */
 	/*   circle, */

@@ -92,12 +92,11 @@ const skills = [
 
 export function Skills() {
 	return (
-		<div
-			id="skills"
-			className="mt-48 min-h-screen scroll-mt-36 flex flex-col gap-10"
-		>
-			<Title1>Skills</Title1>
-			<div className="w-svw">
+		<>
+			<Title1 id="skills" className="scroll-mt-6 pb-6 col-start-2 pt-36">
+				Skills
+			</Title1>
+			<div className="col-start-2 row-start-4 col-span-11">
 				<NsCard
 					className="w-full flex flex-col"
 					childContainerClassName="p-4 pr-[10vw]"
@@ -120,7 +119,7 @@ export function Skills() {
 					</div>
 				</NsCard>
 			</div>
-			<div className="flex flex-row gap-6 pt-10">
+			<div className="col-start-2 row-start-5 col-span-10 flex flex-row gap-6 pt-10">
 				<div className="py-8">
 					<NsCard>
 						<OptionTwo></OptionTwo>
@@ -141,25 +140,32 @@ export function Skills() {
 					))}
 				</div>
 			</div>
-			<NsCard className="w-full flex flex-col" childContainerClassName="p-4">
-				<Title2 className="pb-4">So much rust.</Title2>
-				<div className="flex flex-row justify-between">
-					<div>
-						<p>
-							I have been programming for years. I have used a ton of frameworks
-							and languages. I use to know C++ incredibly well, but I haven't
-							used it in years. I am glad I started with C, because it really
-							made me learn the fundimentals.
-						</p>
-					</div>
-					<div className="flex flex-row gap-2">
-						<NsIcon svg={<TbBrandCpp></TbBrandCpp>}></NsIcon>
-						<NsIcon svg={<FaPhp></FaPhp>}></NsIcon>
-						<NsIcon svg={<FaAngular></FaAngular>}></NsIcon>
-						<NsIcon svg={<RiAngularjsLine></RiAngularjsLine>}></NsIcon>
-					</div>
+			<div className="col-start-2 row-start-6 col-span-11 my-6">
+				<div>
+					<NsCard
+						className="w-full flex flex-col "
+						childContainerClassName="p-4"
+					>
+						<Title2 className="pb-4">So much rust.</Title2>
+						<div className="flex flex-row justify-between">
+							<div>
+								<p>
+									I have been programming for years. I have used a ton of
+									frameworks and languages. I use to know C++ incredibly well,
+									but I haven't used it in years. I am glad I started with C,
+									because it really made me learn the fundimentals.
+								</p>
+							</div>
+							<div className="flex flex-row gap-2">
+								<NsIcon svg={<TbBrandCpp></TbBrandCpp>}></NsIcon>
+								<NsIcon svg={<FaPhp></FaPhp>}></NsIcon>
+								<NsIcon svg={<FaAngular></FaAngular>}></NsIcon>
+								<NsIcon svg={<RiAngularjsLine></RiAngularjsLine>}></NsIcon>
+							</div>
+						</div>
+					</NsCard>
 				</div>
-			</NsCard>
-		</div>
+			</div>
+		</>
 	);
 }
