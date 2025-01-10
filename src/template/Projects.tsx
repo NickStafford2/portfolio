@@ -89,13 +89,12 @@ export function Projects() {
 					>
 						<img className="pb-4" src="NvimScreenshot.png" />
 						<p>
-							These configurations contain serious code. I am returning to the
-							church of vi after many years away. It is glorious. I don't want
-							to use the mouse ever again. I have spent way too many hours
+							These configurations contain serious Lua code. I am returning to
+							the church of vi after many years away. It is glorious. I don't
+							want to use the mouse ever again. I have spent way too many hours
 							configuring my neovim setup. I started with kickstarter, then I
 							ruined that configuration. Now I switched to my own customized
-							version of AstroVim. Week by week, I will morph this beast into my
-							perfect IDE.
+							version. My perfect IDE.
 						</p>
 						{/* <img src={nvimImage} alt="" /> */}
 						<br />
@@ -139,11 +138,13 @@ export function Projects() {
 						title="Rainmeter Desktop"
 						description="My first successful pet project"
 					>
+						<img src="desktop_lg.jpg" />
 						<p>
-							I wish I still had access to this. I was not happy with any of the
-							windows 8 customization options, I made my perfect desktop with
-							every feature I ever wanted. Customizing the volume bars was a
-							total pain.{" "}
+							A whole lot of Lua code. I wish I still had access to this old
+							passion project. I was not happy with any of the windows 8
+							customization options, I made my perfect desktop with every
+							feature I ever wanted. Customizing the volume bars was a total
+							pain.{" "}
 						</p>
 					</NsCollapse>
 				</NsCard>
