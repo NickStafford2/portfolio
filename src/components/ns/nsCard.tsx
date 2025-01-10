@@ -30,7 +30,7 @@ export const NsCard = ({
 		<motion.div
 			id={id}
 			// onClick={() => setIsVisible(!isVisible)}
-			className={cn("group relative w-full p-[2px]", className)}
+			className={cn("group relative min-h[50px] w-full p-[2px]", className)}
 		>
 			<motion.div
 				variants={animate ? borderVariants : undefined}
@@ -77,9 +77,13 @@ export const NsCard = ({
 
 			<div
 				className={cn(
-					"relative z-10 h-full w-full rounded-[22px] bg-background overflow-auto",
+					"relative z-10 h-full w-full rounded-[22px] overflow-auto bg-cover ",
 					childContainerClassName,
 				)}
+				style={{
+					background: `linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), 
+    url(/backgrounds/pexels-cottonbro2.png)`,
+				}}
 			>
 				{children}
 			</div>
