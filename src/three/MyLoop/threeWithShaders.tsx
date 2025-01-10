@@ -84,7 +84,8 @@ const FBOParticles = (props) => {
 		// and send that data to the final shaderMaterial via the `uPositions` uniform
 		points.current.material.uniforms.uPositions.value = renderTarget.texture;
 		// console.log(simulationMaterialRef)
-		simulationMaterialRef.current.uniforms.uTime.value = clock.elapsedTime;
+		simulationMaterialRef.current.uniforms.uTime.value =
+			clock.elapsedTime * 0.25;
 	});
 
 	return (
