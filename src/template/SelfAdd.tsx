@@ -5,12 +5,12 @@ export default function SelfAdd() {
 	return (
 		<>
 			<div className="contents">
-				<div className="col-start-1 col-span-7 z-10 row-start-2">
+				<div className="col-start-1 col-span-7 z-10 row-start-2 pt-28">
 					<NsCard className="h-full"></NsCard>
 				</div>
 			</div>
 			<div className="contents">
-				<div className="col-start-2 col-span-6 row-start-2 z-20 my-8 mr-8">
+				<div className="col-start-2 col-span-6 row-start-2 z-20 pt-28 my-12 mr-8">
 					<Title1 id="aboutme" className="pb-12 scroll-mt-36">
 						A Bit About Me
 					</Title1>
