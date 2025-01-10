@@ -6,6 +6,7 @@ import TextWriter from "@/components/uiBeats/TextWriter.tsx";
 import casualHeadshot from "/casualHeadshotBlue.png";
 
 import "./HeroBackgroundStars.css";
+import { NsCard } from "./components/ns/nsCard";
 
 export function Hero() {
 	return (
@@ -22,37 +23,38 @@ export function Hero() {
 				/>
 			</div>
 			<div className="flex flex-col flex-grow justify-between h-full">
-				<TextWriter
-					className="relative top-12 left-[-11rem] text-right min-w-[20em] max-w-[20em] w-[20em]  bg-clip-text p-3 text-2xl font-medium foreground text-accent"
-					text="
-                My name is Nicholas Stafford. I am a developer based in Cleveland,
-                Ohio. Let me tell you a bit about myself.
-              "
-					delay={0.02}
-				/>
-				<div className="flex flex-row items-center justify-between py-10 font-light text-[var(--ns-primary)]">
-					<a
-						href="#aboutme"
-						className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] transition-transform duration-300 "
-					>
-						<div className="flex flex-col justify-center items-center ">
-							<span className="text-text text-3xl">Learn More</span>
-							{/* <BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "} */}
-						</div>
-					</a>
-					<span className="align-center text-text text-3xl text-accent">
-						- or -
-					</span>
-					<a
-						href="#"
-						className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 "
-					>
-						<div className="flex flex-col justify-center items-center ">
-							{/* <BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "} */}
-							<span className="text-text text-3xl">Contact Me</span>
-						</div>
-					</a>
+				<div className="relative top-12 left-[-7rem] text-right min-w-[19em] max-w-[19em] w-[19em]  bg-clip-text p-3 text-2xl font-medium foreground text-accent">
+					<NsCard childContainerClassName="p-4">
+						My name is Nicholas Stafford. I am a developer based in Cleveland,
+						Ohio. Let me tell you a bit about myself.
+					</NsCard>
 				</div>
+
+				<NsCard>
+					<div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
+						<a
+							href="#aboutme"
+							className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] transition-transform duration-300 "
+						>
+							<div className="flex flex-col justify-center items-center ">
+								<span className="text-text text-3xl">Learn More</span>
+								{/* <BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "} */}
+							</div>
+						</a>
+						<span className="align-center text-text text-3xl text-accent">
+							- or -
+						</span>
+						<a
+							href="#"
+							className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 "
+						>
+							<div className="flex flex-col justify-center items-center ">
+								{/* <BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "} */}
+								<span className="text-text text-3xl">Contact Me</span>
+							</div>
+						</a>
+					</div>
+				</NsCard>
 			</div>
 			{/* <div className="flex flex-grow flex-row justify-between bg-red-600/50"> */}
 			{/* 	<div className="flex flex-col justify-between pt-12"> */}
@@ -67,12 +69,14 @@ export function Hero() {
 			{/* 	<ThemeSwitch></ThemeSwitch> */}
 			{/* </div> */}
 			<span className=" absolute top-64 right-12 text-destructive text-3xl font-bold text-right bg-black/50 h-fit">
-				Work in progress. <br />
-				Definitly not finished!
-				<br />
-				<br />I am still playing around <br />
-				with the background <br />
-				vertex shaders, <br /> so for now, you get this.
+				<NsCard childContainerClassName="p-4">
+					Work in progress. <br />
+					Definitly not finished!
+					<br />
+					<br />I am still playing around <br />
+					with the background <br />
+					vertex shaders, <br /> so for now, you get this.
+				</NsCard>
 			</span>
 		</div>
 	);
