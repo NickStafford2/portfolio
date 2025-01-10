@@ -11,7 +11,7 @@ export default function SelfAdd() {
 			</div>
 			<div className="contents">
 				<div className="col-start-2 col-span-6 row-start-2 z-20 my-8 mr-8">
-					<Title1 id="aboutme" className=" scroll-mt-36">
+					<Title1 id="aboutme" className="pb-12 scroll-mt-36">
 						A Bit About Me
 					</Title1>
 					<div>
