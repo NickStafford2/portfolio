@@ -44,8 +44,8 @@ export function Projects() {
 					<NsCollapse
 						title="IO Architecture rewrite"
 						description="I can't believe this actually worked."
-						img="IoLogo.png"
 					>
+						<img className="pb-4" src="IoLogo.png" />
 						<p>
 							Without a question, my most successful programming project of my
 							life. Currenty used by InflatableOffice.com. Copy description from
@@ -86,8 +86,8 @@ export function Projects() {
 					<NsCollapse
 						title="NSVim"
 						description="Neovim configuration is no joke."
-						img="NvimScreenshot.png"
 					>
+						<img className="pb-4" src="NvimScreenshot.png" />
 						<p>
 							These configurations contain serious code. I am returning to the
 							church of vi after many years away. It is glorious. I don't want
@@ -98,6 +98,7 @@ export function Projects() {
 							perfect IDE.
 						</p>
 						{/* <img src={nvimImage} alt="" /> */}
+						<br />
 						<p>
 							Insert image of google search "vi: did you mean emacs?" and the
 							reverse
