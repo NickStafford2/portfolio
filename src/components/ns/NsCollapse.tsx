@@ -13,14 +13,16 @@ const NsCollapse = ({
 	img,
 	title,
 	description,
+	startVisible = false,
 }: {
 	children?: React.ReactNode;
 	img?: any;
 	className?: string;
 	title?: string;
 	description?: string;
+	startVisible?: boolean;
 }) => {
-	const [isVisible, setIsVisible] = useState(false);
+	const [isVisible, setIsVisible] = useState(startVisible);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {

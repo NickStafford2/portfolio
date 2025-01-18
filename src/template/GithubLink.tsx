@@ -17,14 +17,16 @@ export const GithubLink = ({
 	return (
 		<a className={cn("", className)} {...props} href={href}>
 			<NsCard
-				className="w-fit"
-				childContainerClassName="flex flex-row min-w-48 rounded-3xl py-2 px-3 gap-3 w-fit"
+				className="h-full"
+				childContainerClassName="gird place-items-center pt-2"
 				showImage={false}
 			>
-				<FaGithub className="h-12 w-12 text-primary" />
-				<div className="flex flex-col">
-					<h3 className="text-2xl">Github:</h3>
-					<span className="text-sm">{name}</span>
+				<div className="flex flex-row min-w-48 rounded-3xl py-2 px-3 gap-3 w-fit">
+					<FaGithub className="h-12 w-12 text-primary" />
+					<div className="flex flex-col">
+						<h3 className="text-2xl">Github:</h3>
+						<span className="text-nowrap text-sm">{name}</span>
+					</div>
 				</div>
 			</NsCard>
 		</a>

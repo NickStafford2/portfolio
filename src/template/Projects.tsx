@@ -1,7 +1,17 @@
 import { NsCard } from "@/components/ns/nsCard";
+import { PiNetworkX } from "react-icons/pi";
 import NsCollapse from "@/components/ns/NsCollapse";
 import { Title1 } from "@/Title";
 import { GithubLink } from "./GithubLink";
+import NsIcon from "@/components/ns/NsIcon";
+import {
+	SiFlask,
+	SiNeo4J,
+	SiPython,
+	SiReact,
+	SiTypescript,
+} from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 // import nvimImage from '@/assets/NvimScreenshot.png'
 
 export function Projects() {
@@ -16,31 +26,34 @@ export function Projects() {
 					<NsCollapse
 						title="Dependency Inspection"
 						description="Inspect and visualize your NPM dependencies."
+						startVisible={true}
 					>
-						<div className="flex flex-row justify-end gap-8 ">
-							<GithubLink
-								name="Dependency Inspection"
-								href="https://github.com/NickStafford2/DependencyInspection"
-							/>
-							<NsCard
-								className="w-fit"
-								childContainerClassName="p-4 flex flex-col"
-								showImage={false}
-							>
-								Currently in Development{" "}
-								<a
-									className="text-xl text-accent hover:text-destructive underline"
-									href="dependencyinspection.com"
+						<div className="flex flex-row justify-between py-3 pb-6">
+							<p className="py-4 pr-4">
+								Visualize and inspect the resulting ego network of their npm
+								dependencies. Analyzes the network and searches for
+								vulnerabilities.
+							</p>
+							<div className="flex flex-row justify-end gap-8">
+								<GithubLink
+									name="Dependency Inspection"
+									href="https://github.com/NickStafford2/DependencyInspection"
+								/>
+								<NsCard
+									className="w-fit"
+									childContainerClassName="p-4 flex flex-col"
+									showImage={false}
 								>
-									dependencyinspection.com
-								</a>
-							</NsCard>
+									Currently in Development{" "}
+									<a
+										className="text-xl text-accent hover:text-destructive underline"
+										href="dependencyinspection.com"
+									>
+										dependencyinspection.com
+									</a>
+								</NsCard>
+							</div>
 						</div>
-						<p className="pt-4">
-							Allows users to visualize and inspect the resulting ego network of
-							their npm dependencies. Analyzes the network and searches for
-							vulnerabilities.
-						</p>
 						<div className="flex flex-row py-3 gap-4">
 							<img className="w-50em " src="dependencyInspectionGraph.png" />
 							<div className="min-w-48 flex flex-col gap-4">
@@ -50,7 +63,7 @@ export function Projects() {
 									update all the time to identify security vulnerabilities.
 								</p>
 								<img
-									className=" pt-4 w-80 float-right"
+									className="pt-4 w-80 float-right self-end"
 									src="dependencyInspectionMotivation2.png"
 								/>
 								<p>
@@ -59,17 +72,29 @@ export function Projects() {
 								</p>
 							</div>
 						</div>
-						<p className="pt-4">
-							DependencyInspection acceps the name of any number of npm
-							repository names, and recursivly scrapes relevant data for all
-							packages and dependencies.{" "}
-						</p>
-						<p className="pt-4">
-							A cypher graph database stores project data. Frontend written in
-							React+Typescript. Backend written in Python and Quart (async
-							Flask). Neomodel is used as an ORM. Pydantic is used for data
-							validation.{" "}
-						</p>
+						<div className="flex flex-row gap-3 items-end">
+							<div className="min-w-48">
+								<p className="pt-4">
+									DependencyInspection acceps the name of any number of npm
+									repository names, and recursivly scrapes relevant data for all
+									packages and dependencies.{" "}
+								</p>
+								<p className="pt-4">
+									A cypher graph database stores project data. Frontend written
+									in React+Typescript. Backend written in Python and Quart
+									(async Flask). Neomodel is used as an ORM. Pydantic is used
+									for data validation.{" "}
+								</p>
+							</div>
+							<div className="flex flex-row gap-3">
+								<NsIcon name="Flask/Quart" svg={<SiFlask />} />
+								<NsIcon name="Python" svg={<SiPython />} />
+								<NsIcon name="NetworkX" svg={<PiNetworkX />} />
+								<NsIcon name="Typescript" svg={<SiTypescript />} />
+								<NsIcon name="React" svg={<SiReact />} />
+								<NsIcon name="Neo4j" svg={<SiNeo4J />} />
+							</div>
+						</div>
 						{/* <img src="dependencyInspectionLogo.png" width={70} height={70} /> */}
 					</NsCollapse>
 				</NsCard>
@@ -84,6 +109,20 @@ export function Projects() {
 							on. I am working on the animations currently with three.js.
 							Written in React, Typescript, and GLSL.
 						</p>
+						<div className="flex flex-row justify-between gap-4">
+							<p className="pt-4">
+								Used Gpu Acceleration for animations. Writing the fragment and
+								vertex shaders for animations has been plenty of fun. I am still
+								working on it though.
+							</p>
+							<div className=" pt-4 flex flex-row gap-3">
+								<NsIcon name="ThreeJs" svg={<TbBrandThreejs />} />
+								<NsIcon name="React" svg={<SiReact />} />
+								<NsIcon name="Typescript" svg={<SiTypescript />} />
+								<NsIcon name="Flask/Quart" svg={<SiFlask />} />
+								<NsIcon name="Python" svg={<SiPython />} />
+							</div>
+						</div>
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
