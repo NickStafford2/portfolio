@@ -7,14 +7,14 @@ export default function SelfAdd() {
 		<>
 			<div
 				id="aboutme"
-				className="scroll-mt-16 col-start-1 col-span-12 flex items-start gap-6 h-[calc(100vh-84px)] min-h-[calc(100vh-84px)] "
+				className="scroll-mt-16 col-start-1 col-span-12 xl:col-start-2 xl:col-span-10 flex items-start gap-6 h-[calc(100vh-84px)] min-h-[calc(100vh-84px)] "
 			>
 				<NsCard
-					className="h-full"
-					childContainerClassName="p-6 flex flex-col justify-between"
+					className="h-full "
+					childContainerClassName="p-6 flex flex-col justify-between "
 				>
-					<Title1 className="pb-12 ">A Bit About Me</Title1>
 					<div>
+						<Title1 className="pb-12 ">A Bit About Me</Title1>
 						<p className="py-4">
 							Solving problems and helping others are my true passions. When I
 							have spare time, you will find me reading about some obscure
