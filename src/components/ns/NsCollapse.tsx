@@ -44,13 +44,15 @@ const NsCollapse = ({
 			<Collapsible open={isVisible} onOpenChange={setIsVisible}>
 				<CollapsibleTrigger
 					className={cn(
-						"flex w-full flex-1 flex-row items-start justify-between rounded-t-[22px] border-b-[1px] border-b-border bg-blue-700/15 p-4 py-4 text-left font-medium transition-all  [&[data-state=closed]]:border-b-[0px] [&[data-state=open]>svg]:rotate-180",
+						"flex w-full flex-1 flex-row items-start justify-between rounded-t-[22px] border-b-[1px] border-b-border  p-4 py-4 text-left font-medium transition-all  [&[data-state=closed]]:border-b-[0px] [&[data-state=open]>svg]:rotate-180",
 						className,
 					)}
 				>
-					<div className="flex flex-grow flex-col">
-						{!!title && <h2 className="text-2xl">{title}</h2>}
-						{!!description && <h2 className="text-lg}">{description}</h2>}
+					<div className="flex flex-grow flex-col gap-2">
+						{!!title && <h2 className="text-3xl text-accent">{title}</h2>}
+						{!!description && (
+							<h3 className="text-lg text-primary">{description}</h3>
+						)}
 					</div>
 					<ChevronDown className="h-8 w-8 shrink-0 pl-3 transition-transform duration-200" />
 				</CollapsibleTrigger>

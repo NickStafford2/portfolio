@@ -16,22 +16,48 @@ export function Projects() {
 						title="Dependency Inspection"
 						description="Inspect and visualize your NPM dependencies."
 					>
+						Currently in Development:{" "}
 						<a
-							className="text-xl hover:text-accent underline"
+							className="text-xl text-accent hover:text-destructive underline"
 							href="dependencyinspection.com"
 						>
 							dependencyinspection.com
 						</a>
 						<p className="pt-4">
-							My current pet project. This is a collaboritive project that aims
-							to create a visualization of ego networks for npm dependencies. It
-							essentially dynamically searches npm packages by name to find
-							package.json files, and creates a network based on every
-							dependency that would appear in your package.lock.jsono. Luckily,
-							I have been able to incorperate three of my graduate course
-							projects into this. It is working great, and should be hosted
-							online very soon.{" "}
+							Allows users to visualize and inspect the resulting ego network of
+							their npm dependencies. Analyzes the network and searches for
+							vulnerabilities.
 						</p>
+						<div className="flex flex-row py-3 gap-4">
+							<img className="w-50em " src="dependencyInspectionGraph.png" />
+							<div className="min-w-48 flex flex-col gap-4">
+								<p>
+									We all know that frontend dependencies have gone a little
+									insane lately. We have thousands of dependencies and have to
+									update all the time to identify security vulnerabilities.
+								</p>
+								<img
+									className=" pt-4 w-80 float-right"
+									src="dependencyInspectionMotivation2.png"
+								/>
+								<p>
+									DependencyInspection allows users to inspect each of these
+									dependencies for vulnerabilities.
+								</p>
+							</div>
+						</div>
+						<p className="pt-4">
+							DependencyInspection acceps the name of any number of npm
+							repository names, and recursivly scrapes relevant data for all
+							packages and dependencies.{" "}
+						</p>
+						<p className="pt-4">
+							A cypher graph database stores project data. Frontend written in
+							React+Typescript. Backend written in Python and Quart (async
+							Flask). Neomodel is used as an ORM. Pydantic is used for data
+							validation.{" "}
+						</p>
+						{/* <img src="dependencyInspectionLogo.png" width={70} height={70} /> */}
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
