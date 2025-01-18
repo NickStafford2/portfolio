@@ -16,12 +16,14 @@ export const NsCard = ({
 	className,
 	childContainerClassName,
 	animate = true,
+	showImage = true,
 	id,
 }: {
 	children?: React.ReactNode;
 	className?: string;
 	childContainerClassName?: string;
 	animate?: boolean;
+	showImage?: boolean;
 	id?: string;
 }) => {
 	// useOutsideClick(ref, () => setIsVisible(false))
@@ -81,8 +83,9 @@ export const NsCard = ({
 					childContainerClassName,
 				)}
 				style={{
-					background: `linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), 
-    url(/backgrounds/pexels-cottonbro2.png)`,
+					background: showImage
+						? `linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url(/backgrounds/pexels-cottonbro2.png)`
+						: "var(--ns-background)",
 				}}
 			>
 				{children}

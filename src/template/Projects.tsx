@@ -1,6 +1,7 @@
 import { NsCard } from "@/components/ns/nsCard";
 import NsCollapse from "@/components/ns/NsCollapse";
 import { Title1 } from "@/Title";
+import { GithubLink } from "./GithubLink";
 // import nvimImage from '@/assets/NvimScreenshot.png'
 
 export function Projects() {
@@ -16,13 +17,25 @@ export function Projects() {
 						title="Dependency Inspection"
 						description="Inspect and visualize your NPM dependencies."
 					>
-						Currently in Development:{" "}
-						<a
-							className="text-xl text-accent hover:text-destructive underline"
-							href="dependencyinspection.com"
-						>
-							dependencyinspection.com
-						</a>
+						<div className="flex flex-row justify-end gap-8 ">
+							<GithubLink
+								name="Dependency Inspection"
+								href="https://github.com/NickStafford2/DependencyInspection"
+							/>
+							<NsCard
+								className="w-fit"
+								childContainerClassName="p-4 flex flex-col"
+								showImage={false}
+							>
+								Currently in Development{" "}
+								<a
+									className="text-xl text-accent hover:text-destructive underline"
+									href="dependencyinspection.com"
+								>
+									dependencyinspection.com
+								</a>
+							</NsCard>
+						</div>
 						<p className="pt-4">
 							Allows users to visualize and inspect the resulting ego network of
 							their npm dependencies. Analyzes the network and searches for
