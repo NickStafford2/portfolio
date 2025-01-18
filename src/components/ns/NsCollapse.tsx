@@ -20,7 +20,7 @@ const NsCollapse = ({
 	title?: string;
 	description?: string;
 }) => {
-	const [isVisible, setIsVisible] = useState(true);
+	const [isVisible, setIsVisible] = useState(false);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -50,11 +50,11 @@ const NsCollapse = ({
 				>
 					<div className="flex flex-grow flex-col">
 						{!!title && <h2 className="text-2xl">{title}</h2>}
-						{!!description && <h2 className="text-large }">{description}</h2>}
+						{!!description && <h2 className="text-lg}">{description}</h2>}
 					</div>
 					<ChevronDown className="h-8 w-8 shrink-0 pl-3 transition-transform duration-200" />
 				</CollapsibleTrigger>
-				<CollapsibleContent className="overflow-hidden p-4 text-sm transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
+				<CollapsibleContent className="overflow-hidden p-4 text-md transition-all data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
 					{children}
 				</CollapsibleContent>
 			</Collapsible>
