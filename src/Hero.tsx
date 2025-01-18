@@ -3,7 +3,6 @@ import TextWriter from "@/components/uiBeats/TextWriter.tsx";
 // import { motion } from 'framer-motion'
 // import React from 'react'
 // import ThemeSwitch from "./ThemeSwitch";
-import casualHeadshot from "/casualHeadshotBlue.png";
 
 import "./HeroBackgroundStars.css";
 import { NsCard } from "./components/ns/nsCard";
@@ -12,46 +11,35 @@ export function Hero() {
 	return (
 		<div
 			id="hero"
-			className="col-start-2 col-span-10 flex items-start h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between bg-opacity-20  "
+			className=" py-24 col-start-2 col-span-10 flex items-start gap-6 h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between "
 		>
-			<div className="flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end">
-				<img
-					src={casualHeadshot}
-					// src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-					className="h-[calc((100vh-64px)*0.95)] min-h-[calc((100vh-64px)*0.95)] max-h-[calc((100vh-64px)*0.95)]object-contain"
-					alt="profile-picture"
-				/>
-			</div>
-			<div className="flex flex-col flex-grow justify-between h-full">
-				<div className="relative top-12 left-[-7rem] text-right min-w-[19em] max-w-[19em] w-[19em]  bg-clip-text p-3 text-2xl font-medium foreground text-accent">
-					<NsCard childContainerClassName="p-4">
-						My name is Nicholas Stafford. I am a developer based in Cleveland,
-						Ohio. Let me tell you a bit about myself.
-					</NsCard>
-				</div>
+			<div className="flex gap-5 flex-col flex-grow justify-between h-full">
+				<NsCard childContainerClassName="p-6 py-24 flex flex-row justify-center">
+					<span className="text-[8rem] leading-[8rem] text-accent">
+						I write Code
+					</span>
+				</NsCard>
 
+				<div className="flex flex-row justify-start items-end">
+					<div>
+						<NsCard
+							className="flex-grow-0 flex-shrink"
+							childContainerClassName="p-6 text-3xl flex flex-col gap-4"
+						>
+							<span className=" text-primary">
+								Want me to write something for you?
+							</span>
+							<span className="text-accent self-end">Contact me.</span>
+						</NsCard>
+					</div>
+				</div>
 				<NsCard>
 					<div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
 						<a
 							href="#aboutme"
-							className="flex flex-row justify-start flex-grow hover:margin-b-[-1rem] transition-transform duration-300 "
+							className="flex flex-row justify-center flex-grow "
 						>
-							<div className="flex flex-col justify-center items-center ">
-								<span className="text-text text-3xl">Learn More</span>
-								{/* <BiChevronDown className="text-text text-[12em] "></BiChevronDown>{" "} */}
-							</div>
-						</a>
-						<span className="align-center text-text text-3xl text-accent">
-							- or -
-						</span>
-						<a
-							href="#"
-							className="flex flex-row justify-end flex-grow hover:translate-y-[-1rem] transition-transform duration-300 "
-						>
-							<div className="flex flex-col justify-center items-center ">
-								{/* <BiChevronUp className="text-text text-[12em] "></BiChevronUp>{" "} */}
-								<span className="text-text text-3xl">Contact Me</span>
-							</div>
+							<span className="text-text text-3xl">Learn More</span>
 						</a>
 					</div>
 				</NsCard>
@@ -68,16 +56,17 @@ export function Hero() {
 			{/* 	</div> */}
 			{/* 	<ThemeSwitch></ThemeSwitch> */}
 			{/* </div> */}
-			<span className=" absolute top-64 right-12 text-destructive text-3xl font-bold text-right bg-black/50 h-fit">
-				<NsCard childContainerClassName="p-4">
-					Work in progress. <br />
-					Definitly not finished!
-					<br />
-					<br />I am still playing around <br />
-					with the background <br />
-					vertex shaders, <br /> so for now, you get this.
-				</NsCard>
-			</span>
+
+			{/* <span className=" absolute top-64 right-12 text-destructive text-3xl font-bold text-right bg-black/50 h-fit"> */}
+			{/* 	<NsCard childContainerClassName="p-4"> */}
+			{/* 		Work in progress. <br /> */}
+			{/* 		Definitly not finished! */}
+			{/* 		<br /> */}
+			{/* 		<br />I am still playing around <br /> */}
+			{/* 		with the background <br /> */}
+			{/* 		vertex shaders, <br /> so for now, you get this. */}
+			{/* 	</NsCard> */}
+			{/* </span> */}
 		</div>
 	);
 }

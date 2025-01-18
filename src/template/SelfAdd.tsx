@@ -1,21 +1,20 @@
 import { NsCard } from "@/components/ns/nsCard";
 import { Title1, Title2, Title3 } from "@/Title";
+import casualHeadshot from "/casualHeadshotBlue.png";
 
 export default function SelfAdd() {
 	return (
 		<>
-			<div className="contents">
-				<div className="col-start-1 col-span-7 z-10 row-start-2 pt-28">
-					<NsCard className="h-full"></NsCard>
-				</div>
-			</div>
-			<div className="contents">
-				<div className="col-start-2 col-span-6 row-start-2 z-20 pt-28 my-12 mr-8">
-					<Title1 id="aboutme" className="pb-12 scroll-mt-36">
-						A Bit About Me
-					</Title1>
+			<div
+				id="aboutme"
+				className="scroll-mt-16 col-start-1 col-span-12 flex items-start gap-6 h-[calc(100vh-84px)] min-h-[calc(100vh-84px)] "
+			>
+				<NsCard
+					className="h-full"
+					childContainerClassName="p-6 flex flex-col justify-between"
+				>
+					<Title1 className="pb-12 ">A Bit About Me</Title1>
 					<div>
-						<Title2>I write code and do nerd stuff</Title2>
 						<p className="py-4">
 							Solving problems and helping others are my true passions. When I
 							have spare time, you will find me reading about some obscure
@@ -30,14 +29,14 @@ export default function SelfAdd() {
 								progress)
 							</Title3>
 							<p>Full time graduate student while working at Amazon. </p>
-							Current Courses:
-							<ul className="list-desc">
-								<li>- Artificial Intelligence</li>
-								<li>- Secure Programming</li>
-								<li>- Cryptography</li>
-								<li>- Graph Algorithms</li>
-								<li>- iOS Programming</li>
-							</ul>
+							{/* Current Courses: */}
+							{/* <ul className="list-desc"> */}
+							{/* 	<li>- Artificial Intelligence</li> */}
+							{/* 	<li>- Secure Programming</li> */}
+							{/* 	<li>- Cryptography</li> */}
+							{/* 	<li>- Graph Algorithms</li> */}
+							{/* 	<li>- iOS Programming</li> */}
+							{/* </ul> */}
 							<Title3 className="pt-4">
 								B.S in Computer Science from Kent State University. GPA: 3.98
 							</Title3>
@@ -64,6 +63,19 @@ export default function SelfAdd() {
 						architect. Successfully converted the companies main website from
 						AngularJs to Angular.
 					</div>
+				</NsCard>
+				<div className="flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end">
+					<NsCard
+						className="h-full"
+						childContainerClassName="px-5 flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end"
+					>
+						<img
+							src={casualHeadshot}
+							// src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
+							className="h-[calc((100vh-64px)*0.95)] min-h-[calc((100vh-64px)*0.95)] max-h-[calc((100vh-64px)*0.95)]object-contain"
+							alt="profile-picture"
+						/>
+					</NsCard>
 				</div>
 			</div>
 		</>
