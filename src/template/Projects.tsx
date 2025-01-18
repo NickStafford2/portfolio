@@ -10,13 +10,19 @@ export function Projects() {
 				Projects
 			</Title1>
 
-			<div className="row-start-8 col-start-2 col-span-10 grid grid-cols-1 items-start gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+			<div className="row-start-8 col-start-2 col-span-10 flex flex-col gap-8">
 				<NsCard id="dependencyInspection">
 					<NsCollapse
 						title="Dependency Inspection"
-						description="Visualize the tools that power the web. See it change over time. Coming soon. . . "
+						description="Inspect and visualize your NPM dependencies."
 					>
-						<p>
+						<a
+							className="text-xl hover:text-accent underline"
+							href="dependencyinspection.com"
+						>
+							dependencyinspection.com
+						</a>
+						<p className="pt-4">
 							My current pet project. This is a collaboritive project that aims
 							to create a visualization of ego networks for npm dependencies. It
 							essentially dynamically searches npm packages by name to find
@@ -31,9 +37,10 @@ export function Projects() {
 				<NsCard>
 					<NsCollapse
 						title="Portfolio"
-						description="You are currently looking at it"
+						description="You are currently looking at it."
 					>
-						<p>
+						<p className="text-2xl text-destructive">Work in Progress!</p>
+						<p className="pt-4">
 							I am starting simple. Hoping to make this pretty nice as time goes
 							on. I am working on the animations currently with three.js.
 							Written in React, Typescript, and GLSL.
@@ -45,6 +52,16 @@ export function Projects() {
 						title="IO Architecture rewrite"
 						description="I can't believe this actually worked."
 					>
+						<p>
+							Hired as a web developer, I ended up working the role of a
+							software architect. I was granted permission to rewrite and
+							redesign the companies primary website and build process. I made
+							some serious changes:
+						</p>
+						<ul>
+							<li>- Converted Javascript to Typescript.</li>
+							<li>- Converted AngularJs to Angular</li>
+						</ul>
 						<img className="pb-4" src="IoLogo.png" />
 						<p>
 							Without a question, my most successful programming project of my
