@@ -109,6 +109,11 @@ export function Projects() {
 						title="Portfolio"
 						description="You are currently looking at it."
 					>
+						<GithubLink
+							className="float-right w-fit"
+							name="Portfolio"
+							href="https://github.com/NickStafford2/portfolio"
+						/>
 						<p className="text-2xl text-destructive">Work in Progress!</p>
 						<p className="pt-4">
 							I am starting simple. Hoping to make this pretty nice as time goes
@@ -121,7 +126,7 @@ export function Projects() {
 								vertex shaders for animations has been plenty of fun. I am still
 								working on it though.
 							</p>
-							<div className=" pt-4 flex flex-row gap-3">
+							<div className=" pt-4 flex flex-row gap-3 self-end">
 								<NsIcon name="ThreeJs" svg={<TbBrandThreejs />} />
 								<NsIcon name="React" svg={<SiReact />} />
 								<NsIcon name="Typescript" svg={<SiTypescript />} />
