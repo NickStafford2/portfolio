@@ -75,6 +75,12 @@
 	animation: tanime 2s ease forwards 1.2s;
 }
 
+#svgtest text:nth-last-child(1) {
+	stroke-dasharray: 184;
+	stroke-dashoffset: 184;
+	animation: tanime 2s ease forwards 1.2s;
+}
+
 @keyframes tanime {
 	to {
 		stroke-dasharray: 0px;

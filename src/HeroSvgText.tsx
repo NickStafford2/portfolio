@@ -14,7 +14,7 @@ export default function HeroSvgText() {
 
 	const [id, setId] = useState("homewrite");
 	const [strokeColor, setStrokeColor] = useState("var(--ns-primary)");
-	const fillColorHover = "group-hover:fill-gray-800";
+	const fillColorHover = ""; //  `group-hover:$(strokeColor)`;
 	const toggleId = () => {
 		setId("");
 		setTimeout(() => {
