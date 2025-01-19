@@ -119,26 +119,28 @@ export function Skills() {
 					</div>
 				</NsCard>
 			</div>
-			<div className="col-start-2 row-start-5 col-span-10 flex flex-row gap-6 pt-10">
-				<div className="py-8">
-					<NsCard>
+			<div className="col-start-2 row-start-5 col-span-10 flex flex-col xl:flex-row gap-6 pt-10">
+				<div className="w-fit">
+					<NsCard childContainerClassName="overflow-hidden">
 						<OptionTwo></OptionTwo>
 					</NsCard>
 				</div>
-				<div className="flex flex-col pt-12 justify-between">
+				<NsCard childContainerClassName="p-4 min-w-[20em]">
 					<Title2 className="pb-6">
 						But the important stuff you remember.
 					</Title2>
-					{skills.map((skill) => (
-						<NsSkill
-							key={skill.title}
-							svg={skill.icon}
-							description={skill.description}
-							title={skill.title}
-							skill={skill.value}
-						></NsSkill>
-					))}
-				</div>
+					<div className="flex flex-row flex-wrap justify-start">
+						{skills.map((skill) => (
+							<NsSkill
+								key={skill.title}
+								svg={skill.icon}
+								description={skill.description}
+								title={skill.title}
+								skill={skill.value}
+							></NsSkill>
+						))}
+					</div>
+				</NsCard>
 			</div>
 			<div className="col-start-2 row-start-6 col-span-11 my-6">
 				<div>

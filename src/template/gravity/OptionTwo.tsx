@@ -155,7 +155,7 @@ export const OptionTwo: React.FC = () => {
 
 	return (
 		<div className="p-4">
-			<Title2>Frameworks come and go. . .</Title2>
+			<Title2>I have forgotten more skills than I can count. . .</Title2>
 			<canvas
 				ref={canvas}
 				width={860}
