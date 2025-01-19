@@ -7,10 +7,10 @@ export default function SelfAdd() {
 		<>
 			<div
 				id="aboutme"
-				className="scroll-mt-16 col-start-1 col-span-12 3xl:col-start-2 3xl:col-span-10 flex flex-col md:flex-row items-start gap-6 min-h-[calc(100vh-84px)] "
+				className="scroll-mt-16 col-start-1 col-span-12 2xl:col-start-2 2xl:col-span-10 flex flex-col lg:flex-row items-start gap-6 min-h-[calc(100vh-84px)] "
 			>
 				<NsCard
-					className="h-auto"
+					className="h-auto lg:min-w-[30em]"
 					childContainerClassName="p-6 flex flex-col justify-between "
 				>
 					<div>
