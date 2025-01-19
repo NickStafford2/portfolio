@@ -40,7 +40,7 @@ export const NsCard = ({
 			animate={{
 				opacity: inView ? 1 : 0,
 			}}
-			transition={{ duration: 0.4 }}
+			transition={{ duration: 0.2 }}
 		>
 			{inView && (
 				<>
