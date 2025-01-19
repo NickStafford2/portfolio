@@ -51,7 +51,9 @@ export function Projects() {
 										Currently in Development{" "}
 										<a
 											className="text-xl text-accent hover:text-destructive underline"
-											href="dependencyinspection.com"
+											target="_blank"
+											href="https://www.dependencyinspection.com"
+											rel="noopener noreferrer"
 										>
 											dependencyinspection.com
 										</a>
