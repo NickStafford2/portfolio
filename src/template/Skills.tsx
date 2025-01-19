@@ -93,10 +93,13 @@ const skills = [
 export function Skills() {
 	return (
 		<>
-			<Title1 id="skills" className="scroll-mt-6 pb-6 col-start-2 pt-36">
+			<Title1
+				id="skills"
+				className="scroll-mt-6 pb-6 col-start-1 lg:col-start-2 pt-36"
+			>
 				Skills
 			</Title1>
-			<div className="col-start-2 row-start-4 col-span-11">
+			<div className="row-start-4 col-start-1 lg:col-start-2 col-span-12 lg:col-span-11">
 				<NsCard
 					className="w-full flex flex-col"
 					childContainerClassName="p-4 pr-[10vw]"
@@ -119,7 +122,7 @@ export function Skills() {
 					</div>
 				</NsCard>
 			</div>
-			<div className="col-start-2 row-start-5 col-span-10 flex flex-col xl:flex-row gap-6 pt-10">
+			<div className="row-start-5 col-start-1 lg:col-start-2 col-span-12 lg:col-span-10 flex flex-col xl:flex-row gap-6 pt-10">
 				<div className="w-fit">
 					<NsCard childContainerClassName="overflow-hidden">
 						<OptionTwo></OptionTwo>
@@ -142,7 +145,7 @@ export function Skills() {
 					</div>
 				</NsCard>
 			</div>
-			<div className="col-start-2 row-start-6 col-span-11 my-6">
+			<div className="row-start-6 col-start-1 lg:col-start-2 col-span-12 lg:col-span-11 my-6">
 				<div>
 					<NsCard
 						className="w-full flex flex-col "
