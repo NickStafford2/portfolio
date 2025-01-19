@@ -16,7 +16,7 @@ export const NsCard = ({
 	className,
 	childContainerClassName,
 	animate = true,
-	showImage = true,
+	showImage = false,
 	id,
 }: {
 	children?: React.ReactNode;
@@ -28,15 +28,19 @@ export const NsCard = ({
 }) => {
 	const { ref, inView, entry } = useInView({
 		/* Optional options */
-		rootMargin: "1000px 0px 1000px 0px",
+		rootMargin: "0px 0px 0px 0px",
 		threshold: 0,
 	});
 	return (
 		<motion.div
 			id={id}
 			ref={ref}
-			// onClick={() => setIsVisible(!isVisible)}
 			className={cn("group relative min-h[50px] w-full p-[2px]", className)}
+			initial={{ opacity: 0 }} //
+			animate={{
+				opacity: inView ? 1 : 0,
+			}}
+			transition={{ duration: 0.4 }}
 		>
 			{inView && (
 				<>
