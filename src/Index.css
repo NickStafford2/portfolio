@@ -190,3 +190,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }*/
+
+/* Default scrollbar styles */
+html::-webkit-scrollbar {
+	width: 5px; /* Default width */
+}
+
+html::-webkit-scrollbar-track {
+	background: black;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+	background: var(--ns-primary);
+	background: linear-gradient(0deg, var(--ns-primary) 0%, var(--ns-accent) 100%);
+	transition: width 0.3s ease; /* Smooth transition when resizing */
+}
+
+/* Hover effect to increase the width of the scrollbar */
+html::-webkit-scrollbar:hover {
+	width: 8px; /* Increase scrollbar width on hover */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(0deg, var(--ns-primary) 0%, var(--ns-accent) 100%);
+	width: 8px; /* Increase thumb width on hover */
+}
