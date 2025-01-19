@@ -7,10 +7,10 @@ export default function SelfAdd() {
 		<>
 			<div
 				id="aboutme"
-				className="scroll-mt-16 col-start-1 col-span-12 xl:col-start-2 xl:col-span-10 flex items-start gap-6 h-[calc(100vh-84px)] min-h-[calc(100vh-84px)] "
+				className="scroll-mt-16 col-start-1 col-span-12 3xl:col-start-2 3xl:col-span-10 flex flex-col md:flex-row items-start gap-6 min-h-[calc(100vh-84px)] "
 			>
 				<NsCard
-					className="h-full "
+					className="h-auto"
 					childContainerClassName="p-6 flex flex-col justify-between "
 				>
 					<div>
@@ -64,15 +64,15 @@ export default function SelfAdd() {
 						AngularJs to Angular.
 					</div>
 				</NsCard>
-				<div className="flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end">
+				<div className="flex flex-shrink-0">
 					<NsCard
 						className="h-full"
-						childContainerClassName="px-5 flex flex-col flex-shrink-0 flex-grow-0  h-full min-h-full justify-end"
+						childContainerClassName="h-[calc((100vh-64px)*0.95)] min-h-[calc((100vh-64px)*0.95)] max-h-[calc((100vh-64px)*0.95)] px-5 flex flex-col items-center justify-center"
 					>
 						<img
 							src={casualHeadshot}
 							// src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
-							className="h-[calc((100vh-64px)*0.95)] min-h-[calc((100vh-64px)*0.95)] max-h-[calc((100vh-64px)*0.95)]object-contain"
+							className="w-auto h-full"
 							alt="profile-picture"
 						/>
 					</NsCard>
