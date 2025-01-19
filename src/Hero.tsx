@@ -41,9 +41,10 @@ export function Hero() {
 				<div className=" flex flex-col lg:flex-row pt-16 gap-6 justify-between flex-grow">
 					<div className="flex-col flex justify-between ">
 						<div>
-							<span className=" text-primary text-wrap lg:text-nowrap text-3xl">
-								Need code written?
-							</span>
+							{/* <span className=" text-primary text-wrap lg:text-nowrap text-3xl"> */}
+							{/* 	Need code? */}
+							{/* </span> */}
+
 							{/* <svg xmlns="http://www.w3.org/2000/svg"> */}
 							{/* 	<g fill="var(--ns-primary)"> */}
 							{/* 		<g fill="var(--ns-primary)" transform="translate(0, 0)"> */}
