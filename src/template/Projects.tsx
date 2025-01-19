@@ -141,22 +141,47 @@ export function Projects() {
 						title="IO Architecture rewrite"
 						description="I can't believe this actually worked."
 					>
-						<p>
-							Hired as a web developer, I ended up working the role of a
-							software architect. I was granted permission to rewrite and
-							redesign the companies primary website and build process. I made
-							some serious changes:
-						</p>
-						<ul>
-							<li>- Converted Javascript to Typescript.</li>
-							<li>- Converted AngularJs to Angular</li>
-						</ul>
-						<img className="pb-4" src="IoLogo.png" />
-						<p>
-							Without a question, my most successful programming project of my
-							life. Currenty used by InflatableOffice.com. Copy description from
-							linkedin and fix it.
-						</p>
+						<div className="flex flex-col gap-4">
+							<div>
+								<img className=" float-right pb-4" src="IoLogo.png" />
+								<p>
+									Hired as a web developer, I ended up working the role of a
+									software architect. I made executive software decisions for
+									the company. I rewrote and refactored the company's frontend
+									macroscopic system structure, integrated all previous
+									functionality, while keeping all legacy code functional. The
+									system stated as Javascript spaghetti code written in PHP.
+									After the rewrite, we could utilize all the power of IDEs,
+									ES6, Webpack, Typescript, NPM, and RxJs. I could not have done
+									it without the bravery of my former employers. I requested six
+									weeks alone, dedicated solely to rewriting the frontend
+									architecture. Luckily they believed in me, and the results
+									were better than I thought possible. Their website today sits
+									upon a new and solid foundation. While the customers could not
+									notice a difference, the developers were no longer restrained
+									by legacy code. To this day, I struggle to believe I pulled it
+									off.
+								</p>{" "}
+							</div>
+							<p>
+								Expert in AngularJS to Angular transitions. Converted a medium
+								scale AngularJS application into an Angular Hybrid app. I led a
+								team afterword migrating the remaining AngularJS code to
+								Angular. Developed and documented best practices for other
+								employees. Wrote several web applications used by customers
+								every day.
+							</p>
+							<img src="angularjsRefactoring.jpeg" />
+							<p>
+								How To Refactor Angular Hybrid Apps This is the Continuous
+								Improvement workflow I designed to guide other developers. This
+								is the ideal process to efficiently convert an AngularJS
+								Directives into Angular Components. For performance reasons,
+								DowngradeModule was preferred to UpgradeModule. Refactoring is
+								best done by developers familiar with the code and thus should
+								be done concurrently with normal bug fixes
+							</p>
+						</div>
 					</NsCollapse>
 				</NsCard>
 
