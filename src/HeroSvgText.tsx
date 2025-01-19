@@ -1,4 +1,5 @@
 import "./HeroSvgText.css";
+// Lookup gsap for awesome svg animations. wordmorph
 export default function HeroSvgText() {
 	return (
 		<svg
