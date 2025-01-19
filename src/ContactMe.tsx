@@ -9,7 +9,7 @@ interface props {
 }
 
 export default function ContactMe({ toggle }: props) {
-	const [isVisible, setIsVisible] = useState<boolean>(false);
+	const [isVisible, setIsVisible] = useState<boolean>(true);
 	useEffect(() => {
 		console.log(isVisible);
 		setIsVisible(!isVisible);
