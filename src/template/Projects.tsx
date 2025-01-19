@@ -1,7 +1,7 @@
 import { NsCard } from "@/components/ns/nsCard";
 import { PiNetworkX } from "react-icons/pi";
 import NsCollapse from "@/components/ns/NsCollapse";
-import { Title1 } from "@/Title";
+import { Title1, Title2 } from "@/Title";
 import { GithubLink } from "./GithubLink";
 import NsIcon from "@/components/ns/NsIcon";
 import {
@@ -263,8 +263,10 @@ export function Projects() {
 						</p>
 					</NsCollapse>
 				</NsCard>
+				<Title1 className="pt-12">Wild Ideas</Title1>
+
 				<NsCard>
-					<NsCollapse title="NN Code Injection">
+					<NsCollapse title="Neural Network Code Injection">
 						<p>
 							Project in planning. Experimental idea to do AI where nodes
 							contain pointers that execute arbitrary small code snippits and
