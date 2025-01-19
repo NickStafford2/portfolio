@@ -236,21 +236,28 @@ export function Projects() {
 						title="NSVim"
 						description="Neovim configuration is no joke."
 					>
-						<img className="pb-4" src="NvimScreenshot.png" />
-						<p>
-							These configurations contain serious Lua code. I am returning to
-							the church of vi after many years away. It is glorious. I don't
-							want to use the mouse ever again. I have spent way too many hours
-							configuring my neovim setup. I started with kickstarter, then I
-							ruined that configuration. Now I switched to my own customized
-							version. My perfect IDE.
-						</p>
-						{/* <img src={nvimImage} alt="" /> */}
-						<br />
-						<p>
-							Insert image of google search "vi: did you mean emacs?" and the
-							reverse
-						</p>
+						<div className="flex flex-col gap-4">
+							<div>
+								<p>I do all of my programming in neovim.</p>
+								<GithubLink
+									className="pl-8 float-right w-fit"
+									name="NsVim"
+									href="https://github.com/NickStafford2/nsvim"
+								/>
+								<p>
+									These configurations contain serious Lua code. I am returning
+									to the church of vi after many years away. It is glorious. I
+									don't want to use the mouse ever again. I have spent way too
+									many hours configuring my neovim setup. I started with
+									kickstarter, then I ruined that configuration. Now I switched
+									to my own customized version. My perfect IDE.
+								</p>
+							</div>
+							{/* <img src={nvimImage} alt="" /> */}
+							<br />
+							<img className="pb-4" src="NvimScreenshot.png" />
+							<img className="pb-4" src="didYouMeanVim.png" />
+						</div>
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
@@ -286,21 +293,27 @@ export function Projects() {
 					<NsCollapse
 						title="Rainmeter Desktop"
 						description="My first successful pet project"
+						startVisible={true}
 					>
-						<img src="desktop_lg.jpg" />
-						<p>
-							A whole lot of Lua code. I wish I still had access to this old
-							passion project. I was not happy with any of the windows 8
-							customization options, I made my perfect desktop with every
-							feature I ever wanted. Customizing the volume bars was a total
-							pain.{" "}
-						</p>
+						<div className="flex flex-col gap-4">
+							<p>
+								I wrote this beauty back in high school. Made all rainmeter
+								components with lua. Made the photos with photoshop.
+							</p>
+							<img src="desktop_lg.jpg" />
+							<p>
+								I wish I still had access to this old passion project. I was not
+								happy with any of the windows 8 customization options, I made my
+								perfect desktop with every feature I ever wanted. Customizing
+								the volume bars was a total pain.{" "}
+							</p>
+						</div>
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
 					<NsCollapse
 						title="Vpython Tic Tac Toe"
-						description="My first pet project"
+						description="Learning to Code"
 					>
 						<p>
 							I wrote this before I knew what for loops were. I was so excited
@@ -308,6 +321,13 @@ export function Projects() {
 							This is completely overengineered, written in a 3d Vpython engine,
 							and I absolutely loved it. I even made an opponent program that
 							would play against you. It is great seeing how far I have come.{" "}
+						</p>
+						<br />
+						<p>
+							I was learning physics simulations with vPython when I first
+							started learning programming. I made the whole tic tac toe in a
+							giant 3d environment with all sorts of animations. I even wrote a
+							simple AI that would play against you.{" "}
 						</p>
 					</NsCollapse>
 				</NsCard>
