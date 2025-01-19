@@ -187,15 +187,33 @@ export function Projects() {
 
 				<NsCard>
 					<NsCollapse
-						title="CCounter Dev"
-						description="Too nerdy and useful not to mention"
+						title="Personal Health Tracking"
+						description="Too useful not to mention"
 					>
-						<p>
-							This program has made a bigger impact on my life than anything one
-							this list. I worked on this for at least five minutes a day for
-							seven months. Built with the glorious power of google sheets, this
-							solved a real life problem of mine and I use it every day.{" "}
-						</p>
+						<div className="flex flex-row flex-wrap gap-4">
+							<p>
+								This program has made a bigger impact on my life than anything
+								on this list. I worked on this for at least five minutes a day
+								for seven months. This solved a real life problem of mine and I
+								use it every day.{" "}
+							</p>
+							<img src="weightVsTime.png" />
+							<img className="max-w-[30em] h-auto" src="waistVsTime.png" />
+							<img className="max-w-[30em] h-auto" src="weightVsWaist.png" />
+							<div>
+								<img
+									className="max-w-[30em] h-auto"
+									src="buffaloMacNCheese.png"
+								/>
+							</div>
+							<div>
+								<img className="max-w-[30em] h-auto" src="dailyMacros.png" />
+							</div>
+							<img
+								className="max-w-[30em] h-auto"
+								src="weightLossVsDeficit.png"
+							/>
+						</div>
 					</NsCollapse>
 				</NsCard>
 				<NsCard>
