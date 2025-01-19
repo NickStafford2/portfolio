@@ -17,7 +17,7 @@ export const GithubLink = ({
 	return (
 		<a className={cn("", className)} {...props} href={href}>
 			<NsCard
-				className="h-full"
+				className="h-24"
 				childContainerClassName="gird place-items-center pt-2"
 				showImage={false}
 			>

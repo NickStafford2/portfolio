@@ -22,77 +22,80 @@ export function Projects() {
 			</Title1>
 
 			<div className="row-start-8 col-start-2 col-span-10 flex flex-col gap-8">
-				<NsCard id="dependencyInspection">
+				<NsCard id="dependencyInspection" className="scroll-mt-24">
 					<NsCollapse
 						title="Dependency Inspection"
 						description="Inspect and visualize your NPM dependencies."
 						startVisible={true}
 					>
-						<div className="flex flex-row justify-between py-3 pb-6">
-							<p className="py-4 pr-4">
-								Visualize and inspect the resulting ego network of their npm
-								dependencies. Analyzes the network and searches for
-								vulnerabilities.
-							</p>
-							<div className="flex flex-row justify-end gap-8">
-								<GithubLink
-									name="Dependency Inspection"
-									href="https://github.com/NickStafford2/DependencyInspection"
-								/>
-								<NsCard
-									className="w-fit"
-									childContainerClassName="p-4 flex flex-col"
-									showImage={false}
-								>
-									Currently in Development{" "}
-									<a
-										className="text-xl text-accent hover:text-destructive underline"
-										href="dependencyinspection.com"
+						<div className="flex flex-col">
+							<div className="flex flex-col xl:flex-row justify-between py-3 pb-6">
+								<p className="py-4 pr-4">
+									Visualize and inspect the resulting ego network of their npm
+									dependencies. Analyzes the network and searches for
+									vulnerabilities.
+								</p>
+								<div className="flex flex-row justify-around xl:justify-end gap-8">
+									<GithubLink
+										name="Dependency Inspection"
+										href="https://github.com/NickStafford2/DependencyInspection"
+									/>
+									<NsCard
+										className="w-fit"
+										childContainerClassName="p-4 flex flex-col"
+										showImage={false}
 									>
-										dependencyinspection.com
-									</a>
-								</NsCard>
+										Currently in Development{" "}
+										<a
+											className="text-xl text-accent hover:text-destructive underline"
+											href="dependencyinspection.com"
+										>
+											dependencyinspection.com
+										</a>
+									</NsCard>
+								</div>
 							</div>
-						</div>
-						<div className="flex flex-row py-3 gap-4">
-							<img className="w-50em " src="dependencyInspectionGraph.png" />
-							<div className="min-w-48 flex flex-col gap-4">
-								<p>
-									We all know that frontend dependencies have gone a little
-									insane lately. We have thousands of dependencies and have to
-									update all the time to identify security vulnerabilities.
-								</p>
-								<img
-									className="pt-4 w-80 float-right self-end"
-									src="dependencyInspectionMotivation2.png"
-								/>
-								<p>
-									DependencyInspection allows users to inspect each of these
-									dependencies for vulnerabilities.
-								</p>
+
+							<div className="flex flex-col xl:flex-row py-3 gap-4">
+								<img className="w-[30em]" src="dependencyInspectionGraph.png" />
+								<div className="min-w-48 xl:flex xl:flex-col gap-4">
+									<p className="order-1 lg:order-2">
+										We all know that frontend dependencies have gone a little
+										insane lately. We have thousands of dependencies and have to
+										update all the time to identify security vulnerabilities.
+									</p>
+									<img
+										className="pt-4 w-80 float-right self-end order-1 xl:order-1"
+										src="dependencyInspectionMotivation2.png"
+									/>
+									<p>
+										DependencyInspection allows users to inspect each of these
+										dependencies for vulnerabilities.
+									</p>
+								</div>
 							</div>
-						</div>
-						<div className="flex flex-row gap-3 items-end">
-							<div className="min-w-48">
-								<p className="pt-4">
-									DependencyInspection acceps the name of any number of npm
-									repository names, and recursivly scrapes relevant data for all
-									packages and dependencies.{" "}
-								</p>
-								<p className="pt-4">
-									A cypher graph database stores project data. Frontend written
-									in React+Typescript. Backend written in Python and Quart
-									(async Flask). Neomodel is used as an ORM. Pydantic is used
-									for data validation.{" "}
-								</p>
-							</div>
-							<div className="flex flex-row gap-3">
-								<NsIcon name="Flask/Quart" svg={<SiFlask />} />
-								<NsIcon name="Python" svg={<SiPython />} />
-								<NsIcon name="NetworkX" svg={<PiNetworkX />} />
-								<NsIcon name="Typescript" svg={<SiTypescript />} />
-								<NsIcon name="React" svg={<SiReact />} />
-								<NsIcon name="Neo4j" svg={<SiNeo4J />} />
+							<div className="flex flex-col gap-8  items-end">
+								<div className="min-w-48">
+									<p className="pt-4">
+										DependencyInspection acceps the name of any number of npm
+										repository names, and recursivly scrapes relevant data for
+										all packages and dependencies.{" "}
+									</p>
+									<p className="pt-4">
+										A cypher graph database stores project data. Frontend
+										written in React+Typescript. Backend written in Python and
+										Quart (async Flask). Neomodel is used as an ORM. Pydantic is
+										used for data validation.{" "}
+									</p>
+								</div>
+								<div className="flex flex-row gap-3">
+									<NsIcon name="Flask/Quart" svg={<SiFlask />} />
+									<NsIcon name="Python" svg={<SiPython />} />
+									<NsIcon name="NetworkX" svg={<PiNetworkX />} />
+									<NsIcon name="Typescript" svg={<SiTypescript />} />
+									<NsIcon name="React" svg={<SiReact />} />
+									<NsIcon name="Neo4j" svg={<SiNeo4J />} />
+								</div>
 							</div>
 						</div>
 						{/* <img src="dependencyInspectionLogo.png" width={70} height={70} /> */}

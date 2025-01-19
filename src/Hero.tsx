@@ -14,7 +14,7 @@ export function Hero() {
 	return (
 		<div
 			id="hero"
-			className=" py-24 col-start-2 col-span-11 flex items-start gap-6 h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between "
+			className=" py-24 col-start-2 col-span-11 flex items-start gap-6 min-h-[calc(100vh-64px)] flex-row justify-between "
 		>
 			<div className=" flex gap-5 flex-col flex-grow-0 justify-between h-full w-full">
 				<HeroSvgText />
@@ -62,7 +62,7 @@ export function Hero() {
 							</button>
 						</div>
 
-						<NsCard className="invisible lg:visible max-w-[20em]">
+						<NsCard className="invisible lg:visible w-[15em] xl:w-[25em] 2xl:w-[30em] max-w-[30em]">
 							<div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
 								<a
 									href="#aboutme"
