@@ -3,11 +3,10 @@
 // import { motion } from 'framer-motion'
 // import React from 'react'
 // import ThemeSwitch from "./ThemeSwitch";
-import { MdOutlineEmail } from "react-icons/md";
+import ContactMe from "./ContactMe";
 import "./HeroBackgroundStars.css";
 import HeroSvgText from "./HeroSvgText";
 import { NsCard } from "./components/ns/nsCard";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Hero() {
 	return (
@@ -67,36 +66,7 @@ export function Hero() {
 							</div>
 						</NsCard>
 					</div>
-					<div className="w-full h-full ">
-						<NsCard
-							className="h-full"
-							childContainerClassName="p-12 flex flex-col gap-12"
-						>
-							<div className="flex flex-row items-center gap-4 ">
-								<a
-									href="mailto:ngstafford1@gmail.com"
-									className=" hover:text-accent"
-								>
-									<MdOutlineEmail className="w-12 h-12" />
-								</a>
-								ngstafford1@gmail.com
-							</div>
-							<a
-								href="https://github.com/NickStafford2"
-								className="flex flex-row items-center gap-4 hover:text-accent"
-							>
-								<FaGithub className="w-12 h-12" />
-								https://github.com/NickStafford2
-							</a>
-							<a
-								href="https://www.linkedin.com/in/nicholas-stafford-3ba90018a/"
-								className="flex flex-row items-center gap-4 hover:text-accent"
-							>
-								<FaLinkedin className="w-12 h-12" />
-								https://www.linkedin.com/in/nicholas-stafford-3ba90018a/{" "}
-							</a>
-						</NsCard>
-					</div>
+					<ContactMe />
 				</div>
 			</div>
 			{/* <div className="flex flex-grow flex-row justify-between bg-red-600/50"> */}
