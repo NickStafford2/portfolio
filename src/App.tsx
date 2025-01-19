@@ -11,7 +11,7 @@ import { Skills } from "./template/Skills";
 
 function App() {
 	return (
-		<div className="grid grid-cols-12 lg:grid-cols-[minmax(100px,_1fr),repeat(10,_1fr),minmax(100px,_1fr)] grid-rows-[minmax(100vh,_auto)] overflow-x-hidden py-[var(--header-height)]  w-svw text-xl">
+		<div className="grid grid-cols-12 lg:grid-cols-[minmax(100px,_1fr),repeat(10,_1fr),minmax(100px,_1fr)] grid-rows-[minmax(100vh,_auto)]  py-[var(--header-height)]  w-svw text-xl">
 			{/* <HeroBackground></HeroBackground> */}
 			{/* <Three></Three> */}
 			<Hero></Hero>

@@ -4,7 +4,7 @@ export default function HeroSvgText() {
 	return (
 		<svg
 			id="homewrite"
-			className="h-fit"
+			className="h-fit min-h-32"
 			width="90vw"
 			viewBox="0 0 322 30"
 			fill="none"

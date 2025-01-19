@@ -3,18 +3,20 @@
 // import { motion } from 'framer-motion'
 // import React from 'react'
 // import ThemeSwitch from "./ThemeSwitch";
+import { useState } from "react";
 import ContactMe from "./ContactMe";
 import "./HeroBackgroundStars.css";
 import HeroSvgText from "./HeroSvgText";
 import { NsCard } from "./components/ns/nsCard";
 
 export function Hero() {
+	const [showContacts, setShowContacts] = useState<boolean>(false);
 	return (
 		<div
 			id="hero"
-			className=" py-24 col-start-2 col-span-10 flex items-start gap-6 h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between "
+			className=" py-24 col-start-2 col-span-11 flex items-start gap-6 h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between "
 		>
-			<div className="flex gap-5 flex-col flex-grow justify-between h-full">
+			<div className=" flex gap-5 flex-col flex-grow-0 justify-between h-full w-full">
 				<HeroSvgText />
 
 				{/* <span className="text-[8rem] leading-[8rem] text-accent"> */}
@@ -36,11 +38,11 @@ export function Hero() {
 				{/* 	</g> */}
 				{/* </svg> */}
 
-				<div className="flex flex-row pt-16 gap-36 justify-between flex-grow">
+				<div className=" flex flex-col lg:flex-row pt-16 gap-6 justify-between flex-grow">
 					<div className="flex-col flex justify-between ">
 						<div>
-							<span className=" text-primary text-nowrap text-3xl">
-								Want me to write something for you?
+							<span className=" text-primary text-wrap lg:text-nowrap text-3xl">
+								Need code written?
 							</span>
 							{/* <svg xmlns="http://www.w3.org/2000/svg"> */}
 							{/* 	<g fill="var(--ns-primary)"> */}
@@ -50,12 +52,17 @@ export function Hero() {
 							{/* 	</g> */}
 							{/* </svg> */}
 							<br />
-							<button className="text-accent self-start pt-16 text-4xl ">
+							<button
+								onClick={() => {
+									setShowContacts(!showContacts);
+								}}
+								className="text-accent self-start pt-16 text-4xl "
+							>
 								Contact me.
 							</button>
 						</div>
 
-						<NsCard className="max-w-[30em]">
+						<NsCard className="invisible lg:visible max-w-[20em]">
 							<div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
 								<a
 									href="#aboutme"
@@ -66,7 +73,7 @@ export function Hero() {
 							</div>
 						</NsCard>
 					</div>
-					<ContactMe />
+					<ContactMe toggle={showContacts} />
 				</div>
 			</div>
 			{/* <div className="flex flex-grow flex-row justify-between bg-red-600/50"> */}
