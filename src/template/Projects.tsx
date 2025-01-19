@@ -17,11 +17,14 @@ import { TbBrandThreejs } from "react-icons/tb";
 export function Projects() {
 	return (
 		<>
-			<Title1 id="projects" className="pb-16  pt-48 row-start-7 col-start-2">
+			<Title1
+				id="projects"
+				className="pb-16  pt-48 row-start-7 col-start-1 lg:col-start-2 col-span-12 lg:col-span-11"
+			>
 				Projects
 			</Title1>
 
-			<div className="row-start-8 col-start-2 col-span-10 flex flex-col gap-8">
+			<div className="row-start-8 col-start-1 lg:col-start-2 col-span-12 lg:col-span-11 flex flex-col gap-8">
 				<NsCard id="dependencyInspection" className="scroll-mt-24">
 					<NsCollapse
 						title="Dependency Inspection"
