@@ -14,26 +14,22 @@ export function Hero() {
 			className=" py-24 col-start-2 col-span-10 flex items-start gap-6 h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-row justify-between "
 		>
 			<div className="flex gap-5 flex-col flex-grow justify-between h-full">
-				<NsCard childContainerClassName="p-6 py-24 flex flex-row justify-center">
-					<span className="text-[8rem] leading-[8rem] text-accent">
-						I write Code
-					</span>
-				</NsCard>
+				<span className="text-[8rem] leading-[8rem] text-accent">
+					Got Code?
+				</span>
 
 				<div className="flex flex-row justify-start items-end">
-					<div>
-						<NsCard
-							className="flex-grow-0 flex-shrink"
-							childContainerClassName="p-6 text-3xl flex flex-col gap-4"
-						>
-							<span className=" text-primary">
-								Want me to write something for you?
-							</span>
-							<span className="text-accent self-end">Contact me.</span>
-						</NsCard>
+					<div className="flex-col flex ">
+						<span className=" text-primary text-3xl">
+							Want me to write something for you?
+						</span>
+						<br />
+						<span className="text-accent self-start text-4xl ">
+							Contact me.
+						</span>
 					</div>
 				</div>
-				<NsCard>
+				<NsCard className="max-w-[30em]">
 					<div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
 						<a
 							href="#aboutme"
