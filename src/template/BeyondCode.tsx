@@ -173,6 +173,12 @@ export function BeyondCode() {
 						<p>add a picture of my writing here.</p>
 					</NsCollapse>
 				</NsCard>
+				<NsCard>
+					<NsCollapse title="Voice Acting" description="">
+						I have made some amature voicovers and voiced a few characters. Just
+						for fun.
+					</NsCollapse>
+				</NsCard>
 			</div>
 		</>
 	);
