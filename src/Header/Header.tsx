@@ -39,3 +39,20 @@ export default function Header() {
     </div>
   )
 }
+/*
+ 
+          <motion.h1
+            className="px-2 text-2xl font-semibold"
+            animate={{ opacity: [1, 0] }}
+            transition={{
+              duration: 0.2,
+              repeat: 0,
+              // repeat: Infinity,
+              // ease: stepEasing,
+            }}
+          >
+            Nicholas Stafford
+          </motion.h1>
+ 
+ * */
+
