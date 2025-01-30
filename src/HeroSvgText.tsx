@@ -30,12 +30,12 @@ export default function HeroSvgText() {
   return (
     <>
       <span
-        className="text-4xl text-primary font-bold tracking-widest hover:cursor-pointer"
+        className="text-4xl text-primary tracking-widest hover:cursor-pointer"
         style={{ color: strokeColor }}
         onClick={toggleId}
         ref={ref}
       >
-        I am a
+        <h1 className="text-[var(--ns-primary)] sm:hidden">Nicholas Stafford</h1>
       </span>
       {inView ? (
         <svg
