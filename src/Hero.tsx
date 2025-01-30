@@ -57,9 +57,9 @@ export function Hero() {
                 onClick={() => {
                   setShowContacts(!showContacts);
                 }}
-                className="text-accent self-start mt-16 text-4xl"
+                className="self-start mt-16 text-4xl"
               >
-                <NsCard className="p-[4px]" childContainerClassName="p-6 text-6xl font-bold">
+                <NsCard className="p-[4px] " childContainerClassName="p-2 text-nowrap bg-transparent text-6xl font-bold text-[var(--ns-background)]">
                   Contact Me
                 </NsCard>
               </button>
@@ -69,8 +69,9 @@ export function Hero() {
               <div className="font-light text-[var(--ns-primary)]">
                 <a
                   href="#aboutme"
+                  className="py-6 pr-6 text-text text-3xl text-nowrap hover:text-accent"
                 >
-                  <span className="text-text text-3xl">See what else I do...</span>
+                  See what else I do...
                 </a>
               </div>
             </div>
