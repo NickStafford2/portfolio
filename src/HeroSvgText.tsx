@@ -35,15 +35,15 @@ export default function HeroSvgText() {
         onClick={toggleId}
         ref={ref}
       >
-        I'm just a
+        I am a
       </span>
       {inView ? (
         <svg
           id={id}
           onClick={toggleId}
           className="h-fit min-h-32 hover:cursor-pointer group"
-          width="90vw"
-          viewBox="0 0 322 30"
+          width="70vw"
+          viewBox="0 0 216.92799 31.000019"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
