@@ -65,16 +65,15 @@ export function Hero() {
               </button>
             </div>
 
-            <NsCard className="invisible lg:visible w-[15em] xl:w-[25em] 2xl:w-[30em] max-w-[30em]">
-              <div className="flex flex-row items-center justify-between p-10 font-light text-[var(--ns-primary)]">
+            <div className="invisible lg:visible w-[15em] xl:w-[12em] 2xl:w-[30em] max-w-[30em]">
+              <div className="font-light text-[var(--ns-primary)]">
                 <a
                   href="#aboutme"
-                  className="flex flex-row justify-center flex-grow "
                 >
-                  <span className="text-text text-3xl">Learn More</span>
+                  <span className="text-text text-3xl">See what else I do...</span>
                 </a>
               </div>
-            </NsCard>
+            </div>
           </div>
           <ContactMe toggle={showContacts} />
         </div>
