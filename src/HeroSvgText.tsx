@@ -30,12 +30,17 @@ export default function HeroSvgText() {
   return (
     <>
       <span
-        className="text-4xl text-primary tracking-widest hover:cursor-pointer"
+        className="text-4xl text-primary tracking-widest hover:cursor-pointer text-nowrap relative w-fit"
         style={{ color: strokeColor }}
         onClick={toggleId}
         ref={ref}
       >
-        <h1 className="text-[var(--ns-primary)] sm:hidden">Nicholas Stafford</h1>
+        <h1 className="bg-black sm:hidden absolute  left-[-1em] right-[-1em] top-[-1em] bottom-[-1em] blur-xl  z-10 text-transparent">Nicholas Stafford</h1>
+        <h1 className="w-fit bg-black sm:hidden absolute inset  z-20 text-transparent">Nicholas Stafford</h1>
+        <h1 className="w-fit sm:hidden z-30 relative"
+
+          style={{ color: strokeColor }}
+        >Nicholas Stafford</h1>
       </span>
       {inView ? (
         <svg
