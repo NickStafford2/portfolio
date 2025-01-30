@@ -41,8 +41,7 @@ export default function HeroSvgText() {
         <svg
           id={id}
           onClick={toggleId}
-          className="h-fit min-h-32 hover:cursor-pointer group"
-          width="70vw"
+          className="w-full max-w-[1300px] h-fit min-h-32 pr-12 hover:cursor-pointer group"
           viewBox="0 0 216.92799 31.000019"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <div
       id="hero"
-      className=" py-24 col-start-2 col-span-11 flex items-start gap-6 min-h-[calc(100vh-64px)] flex-row justify-between "
+      className=" py-24 col-start-2 col-span-11 flex items-start gap-6 min-h-[calc(100vh-64px)] flex-row justify-between"
     >
       <div className=" flex gap-5 flex-col flex-grow-0 justify-between h-full w-full">
         <HeroSvgText />
