@@ -17,8 +17,9 @@ export function Portfolio() {
           {' '}
           <NsHeader />
           <App />
-          <WarpingOrbScene />
         </ContactContext.Provider>
+
+        <WarpingOrbScene />
       </ThemeProvider>
     </StrictMode>
   )
