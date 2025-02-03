@@ -46,7 +46,7 @@ export default function VisualNpmDemo() {
   return (
     <div>
       <Popover open={open} onOpenChange={setOpen}>
-        <PopoverTrigger asChild className="w-full ">
+        <PopoverTrigger asChild className="w-full">
           <Button
             variant="outline"
             role="combobox"
@@ -90,7 +90,7 @@ export default function VisualNpmDemo() {
       </Popover>
 
       <img
-        className="w-full "
+        className="w-full"
         alt="visual npm image here"
         src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?ixid=2yJhcHBfaWQiOjEyMDd9"
       />

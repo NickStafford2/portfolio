@@ -1,17 +1,17 @@
-import React, { createContext, ReactNode, useState } from "react";
-import { Theme, ThemeContextType } from "./theme.ts";
+import React, { createContext, ReactNode, useState } from 'react'
+import { Theme, ThemeContextType } from './theme.ts'
 
-export const ThemeContext = createContext<ThemeContextType | null>(null);
+export const ThemeContext = createContext<ThemeContextType | null>(null)
 
 const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-	const [themeMode, setThemeMode] = useState<Theme>("dark");
-	return (
-		<ThemeContext.Provider value={{ theme: themeMode, setTheme: setThemeMode }}>
-			{children}
-		</ThemeContext.Provider>
-	);
-};
-export default ThemeProvider;
+  const [themeMode, setThemeMode] = useState<Theme>('dark')
+  return (
+    <ThemeContext.Provider value={{ theme: themeMode, setTheme: setThemeMode }}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+export default ThemeProvider
 /*
 interface ThemeContextProps extends React.HTMLProps<e{}
 

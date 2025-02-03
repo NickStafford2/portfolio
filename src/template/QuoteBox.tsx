@@ -25,6 +25,12 @@ export function QuoteBox() {
   return (
     <div className="h-screen">
       {/* <RotateBetween quotes={quotes} className="text-2xl"></RotateBetween> */}
+      {quotes.map((q: Quote) => (
+        <div>
+          {q.text}
+          {q.source}
+        </div>
+      ))}
     </div>
   )
 }
