@@ -277,8 +277,11 @@ export function Projects() {
         </NsCard>
         <NsCard>
           <NsCollapse
-            title="Simple C++ Parcer"
-            description="A tool I built in university to help me learn C++"></NsCollapse>
+            title="C++ Parcer"
+            description="A tool I built in university to help me learn C++">
+            {' '}
+            todo: find code and link to it.
+          </NsCollapse>
         </NsCard>
         <NsCard>
           <NsCollapse
@@ -323,11 +326,17 @@ export function Projects() {
         <Title1 className="pt-12">Wild Ideas</Title1>
 
         <NsCard>
-          <NsCollapse title="Neural Network Code Injection">
+          <NsCollapse title="Master's Thesis">
             <p>
-              Project in planning. Experimental idea to do AI where nodes
-              contain pointers that execute arbitrary small code snippits and
-              then pass the result to the next node.{' '}
+              My tentitive plan. I think we have tunnel vision. Why must we use
+              these enormous matrix multiplications for all our AI models? There
+              are many ways to accomplish multilinear regression. Neural
+              networks are just one.
+            </p>
+            <p>
+              I think we can create an alterative to neural networks where
+              primative nodes with weights/biases are replaced with with
+              stochastically assigned to be pointers to chunks of code?
             </p>
           </NsCollapse>
         </NsCard>
@@ -337,7 +346,7 @@ export function Projects() {
               This may be crazy, but has anyone tried brute force approach to
               see if any unexpected relationship exists between physics
               consants? Is the plank's constant 1/2 of Newton's constant? How
-              about the square root? There are infinite potential relationships,
+              about the nth root? There are infinite potential relationships,
               but since the number of constants is not too large, I think we can
               get away with a brute force search with some dynamic programming.
               An api would also exist so that more advanced relationships

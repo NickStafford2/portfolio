@@ -2,16 +2,18 @@ export function RandomIdeas() {
   return (
     <div className="min-h-screen">
       <h1>Random Ideas</h1>
-      <h2>Neural Network code injection</h2>
+      <h2>Anti-Matrix Neural Network</h2>
       <p>
-        Why ought neural network nodes be constrained to weights and biases?
-        What if some nodes were stochastically assigned to be pointers to chunks
-        of code?
+        My tentitive plan for my master's thesis. I think we have tunnel vision.
+        Why must we use enormous matrix multiplications for all our AI models?
+        There is many ways to accomplish multilinear regression. Neural networks
+        are just one.
       </p>
       <p>
-        It would completely mess up the matrix multiplications used at the
-        moment, but I keep thinking that I should test this out some time and
-        see what happens.
+        I think we can create a more efficient neural network that replaces
+        primative nodes with atomic code blocks. Why ought neural network nodes
+        be constrained to weights and biases?. What if some nodes were
+        stochastically assigned to be pointers to chunks of code?
       </p>
     </div>
   )
