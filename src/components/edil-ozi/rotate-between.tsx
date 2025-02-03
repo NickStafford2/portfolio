@@ -28,12 +28,12 @@ const RotateBetween: FC<Props> = ({ quotes, className }) => {
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
         className={cn(
-          'font-display font-bold tracking-[-0.02em] drop-shadow-sm flex flex-column bg-blue',
+          'font-display flex-column bg-blue flex font-bold tracking-[-0.02em] drop-shadow-sm',
           className
         )}
       >
         <p>"{quotes[index].text}"</p>
-        <p className="text-gray-400 text-right ">- {quotes[index].source}</p>
+        <p className="text-right text-gray-400">- {quotes[index].source}</p>
       </motion.div>
     </AnimatePresence>
   )

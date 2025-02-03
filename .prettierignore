@@ -2,3 +2,6 @@ node_modules
 # Ignore artifacts:
 build
 Coverage
+package-lock.json
+dist
+lint-*
