@@ -1,74 +1,74 @@
-import { useContext, useEffect, useState } from "react";
-import { Switch } from "./components/ui/switch";
+import { useContext, useEffect, useState } from 'react'
+import { Switch } from './components/ui/switch'
 // todo: remove
 // import { FaReact as SunIcon } from 'react-icons/fa'
-import { useLocalStorage } from "usehooks-ts";
-import { themes, Theme, ThemeContextType } from "./context/theme.ts";
-import React from "react";
-import { ThemeContext } from "./context/ThemeProvider.tsx";
+import { useLocalStorage } from 'usehooks-ts'
+import { themes, Theme, ThemeContextType } from './context/theme.ts'
+import React from 'react'
+import { ThemeContext } from './context/ThemeProvider.tsx'
 
 function ThemeSwitch() {
-	const [themeLS, setThemeLS] = useLocalStorage("theme", "light");
-	// const [theme, setTheme] = useContext(ThemeContext)
-	const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType;
+  const [themeLS, setThemeLS] = useLocalStorage('theme', 'light')
+  // const [theme, setTheme] = useContext(ThemeContext)
+  const { theme, setTheme } = useContext(ThemeContext) as ThemeContextType
 
-	useEffect(() => {
-		// todo: use theme type in contextProvider
-		themes.forEach((t: Theme) => {
-			document.body.classList.remove(t);
-		});
-		document.body.classList.add(themeLS);
-	}, [themeLS]);
+  useEffect(() => {
+    // todo: use theme type in contextProvider
+    themes.forEach((t: Theme) => {
+      document.body.classList.remove(t)
+    })
+    document.body.classList.add(themeLS)
+  }, [themeLS])
 
-	const [enabled, setEnabled] = useState(themeLS == "dark");
+  const [enabled, setEnabled] = useState(themeLS == 'dark')
 
-	const handleThemeChange = (enabled: boolean) => {
-		const newTheme: Theme = enabled ? "light" : "dark";
-		setTheme(newTheme);
-		setThemeLS(newTheme);
-		setEnabled(enabled);
-	};
+  const handleThemeChange = (enabled: boolean) => {
+    const newTheme: Theme = enabled ? 'light' : 'dark'
+    setTheme(newTheme)
+    setThemeLS(newTheme)
+    setEnabled(enabled)
+  }
 
-	return (
-		<div className="flex flex-col items-end justify-start">
-			<h2 className="text-text text- pb-2">Toggle graphics:</h2>
+  return (
+    <div className="flex flex-col items-end justify-start">
+      <h2 className="text-text text- pb-2">Toggle graphics:</h2>
 
-			<Switch checked={enabled} onCheckedChange={handleThemeChange}>
-				{/* <span className="sr-only">Use setting</span> */}
-				{/* <span */}
-				{/*   className={classNames( */}
-				{/*     enabled ? 'translate-x-5' : 'translate-x-0', */}
-				{/*     'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out' */}
-				{/*   )} */}
-				{/* > */}
+      <Switch checked={enabled} onCheckedChange={handleThemeChange}>
+        {/* <span className="sr-only">Use setting</span> */}
+        {/* <span */}
+        {/*   className={classNames( */}
+        {/*     enabled ? 'translate-x-5' : 'translate-x-0', */}
+        {/*     'pointer-events-none relative inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out' */}
+        {/*   )} */}
+        {/* > */}
 
-				{/* <span */}
-				{/*   className={classNames( */}
-				{/*     enabled */}
-				{/*       ? 'opacity-0 duration-100 ease-out' */}
-				{/*       : 'opacity-100 duration-200 ease-in', */}
-				{/*     'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity' */}
-				{/*   )} */}
-				{/*   aria-hidden="true" */}
-				{/* > */}
-				{/*   <SunIcon className="h-3 w-3 text-gray-400" /> */}
-				{/* </span> */}
-				{/* <span */}
-				{/*   className={classNames( */}
-				{/*     enabled */}
-				{/*       ? 'opacity-100 duration-200 ease-in' */}
-				{/*       : 'opacity-0 duration-100 ease-out', */}
-				{/*     'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity' */}
-				{/*   )} */}
-				{/*   aria-hidden="true" */}
-				{/* > */}
-				{/*   <SunIcon className="h-3 w-3 text-yellow-600" /> */}
-				{/* </span> */}
+        {/* <span */}
+        {/*   className={classNames( */}
+        {/*     enabled */}
+        {/*       ? 'opacity-0 duration-100 ease-out' */}
+        {/*       : 'opacity-100 duration-200 ease-in', */}
+        {/*     'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity' */}
+        {/*   )} */}
+        {/*   aria-hidden="true" */}
+        {/* > */}
+        {/*   <SunIcon className="h-3 w-3 text-gray-400" /> */}
+        {/* </span> */}
+        {/* <span */}
+        {/*   className={classNames( */}
+        {/*     enabled */}
+        {/*       ? 'opacity-100 duration-200 ease-in' */}
+        {/*       : 'opacity-0 duration-100 ease-out', */}
+        {/*     'absolute inset-0 flex h-full w-full items-center justify-center transition-opacity' */}
+        {/*   )} */}
+        {/*   aria-hidden="true" */}
+        {/* > */}
+        {/*   <SunIcon className="h-3 w-3 text-yellow-600" /> */}
+        {/* </span> */}
 
-				{/* </span> */}
-			</Switch>
-		</div>
-	);
+        {/* </span> */}
+      </Switch>
+    </div>
+  )
 }
 
-export default ThemeSwitch;
+export default ThemeSwitch

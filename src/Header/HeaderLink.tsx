@@ -1,24 +1,23 @@
-import * as React from "react";
+import * as React from 'react'
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils'
 
 export interface HeaderLinkProps
-  extends React.LinkHTMLAttributes<HTMLAnchorElement> { }
+  extends React.LinkHTMLAttributes<HTMLAnchorElement> {}
 
 const HeaderLink = React.forwardRef<HTMLAnchorElement, HeaderLinkProps>(
   ({ className, children, ...props }, ref) => {
     return (
       <a
         className={cn(
-          "h-full min-w-28 text-[var(--ns-primary)] font-semibold flex flex-row justify-center items-center hover:bg-[var(--ns-primary)] hover:text-black transition-[background-color] hover:duration-0 duration-700 bg-background flex-grow",
-          className,
+          'flex h-full min-w-28 flex-grow flex-row items-center justify-center bg-background font-semibold text-[var(--ns-primary)] transition-[background-color] duration-700 hover:bg-[var(--ns-primary)] hover:text-black hover:duration-0',
+          className
         )}
         ref={ref}
-        {...props}
-      >
+        {...props}>
         <span className="">{children}</span>
       </a>
-    );
-  },
-);
-export default HeaderLink;
+    )
+  }
+)
+export default HeaderLink

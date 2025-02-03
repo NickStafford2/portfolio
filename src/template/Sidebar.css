@@ -25,13 +25,13 @@
 }
 
 .sidebar-item:first-child {
-  content: "test";
+  content: 'test';
 }
 
 .sidebar-item:after {
   left: calc(8rem + 0rem);
   top: 2rem;
-  content: "";
+  content: '';
   position: absolute;
   width: 2rem;
   height: 2em;
