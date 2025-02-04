@@ -33,8 +33,7 @@ export default function HeroSvgText() {
         className="relative w-fit text-nowrap text-4xl tracking-widest text-primary hover:cursor-pointer"
         style={{ color: strokeColor }}
         onClick={toggleId}
-        ref={ref}
-      >
+        ref={ref}>
         <h1 className="absolute bottom-[-1em] left-[-1em] right-[-1em] top-[-1em] z-10 bg-black text-transparent blur-xl sm:hidden">
           Nicholas Stafford
         </h1>
@@ -43,8 +42,7 @@ export default function HeroSvgText() {
         </h1>
         <h1
           className="relative z-30 w-fit sm:hidden"
-          style={{ color: strokeColor }}
-        >
+          style={{ color: strokeColor }}>
           Nicholas Stafford
         </h1>
       </span>
@@ -55,8 +53,7 @@ export default function HeroSvgText() {
           className="group h-fit min-h-32 w-full max-w-[1300px] pr-12 hover:cursor-pointer"
           viewBox="0 0 216.92799 31.000019"
           fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <path
             d="m 216.428,11.965919 h -11.025 c -0.666,0 -1.169,0.1439 -1.508,0.4317 -0.339,0.2772 -0.509,0.6877 -0.509,1.2314 v 11.4659 h -4.9 v -11.4659 c 0,-0.7143 0.107,-1.354 0.32,-1.919 0.214,-0.565 0.497,-1.0608 0.848,-1.4872 0.365,-0.4371 0.779,-0.80491 1.244,-1.10342 0.465,-0.30916 0.949,-0.5597 1.451,-0.7516 0.516,-0.19189 1.031,-0.33049 1.546,-0.41577 0.528,-0.09595 1.018,-0.14393 1.47,-0.14393 h 11.063 z"
             stroke={strokeColor}

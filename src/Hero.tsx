@@ -11,7 +11,9 @@ export function Hero() {
     <div
       id="hero"
       className="col-span-11 col-start-2 flex max-h-[calc(100vh-64px)] min-h-[calc(100vh-64px)] flex-col justify-around gap-6">
-      <HeroSvgText />
+      <div className="min-h-[8rem]">
+        <HeroSvgText />
+      </div>
       <div className="overflow-none flex flex-col justify-between gap-6 lg:flex-row">
         <div className="flex flex-col justify-between">
           <button
