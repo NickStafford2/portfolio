@@ -1,10 +1,10 @@
 // babel.config.js
 const ReactCompilerConfig = {
-	target: "18",
-};
+  target: '18',
+}
 
 module.exports = function () {
-	return {
-		plugins: [["babel-plugin-react-compiler", ReactCompilerConfig]],
-	};
-};
+  return {
+    plugins: [['babel-plugin-react-compiler', ReactCompilerConfig]],
+  }
+}
