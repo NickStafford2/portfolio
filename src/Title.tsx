@@ -8,9 +8,8 @@ export const Title1 = React.forwardRef<
   return (
     <h1
       ref={ref}
-      className={cn('text-7xl font-semibold text-primary', className)}
-      {...props}
-    >
+      className={cn('font-[Raleway] text-7xl text-primary', className)}
+      {...props}>
       {children}
     </h1>
   )
@@ -24,8 +23,7 @@ export const Title2 = React.forwardRef<
     <h2
       ref={ref}
       className={cn('text-3xl font-semibold text-accent', className)}
-      {...props}
-    >
+      {...props}>
       {children}
     </h2>
   )
@@ -39,8 +37,7 @@ export const Title3 = React.forwardRef<
     <h3
       ref={ref}
       className={cn('text-xl font-semibold text-primary', className)}
-      {...props}
-    >
+      {...props}>
       {children}
     </h3>
   )
