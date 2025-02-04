@@ -22,7 +22,7 @@ export default function NsSkill({
         <div className="color-[var(--ns-primary)]">{svgElement}</div>
       </div>
       <div className="flex w-full flex-col pt-4">
-        <Progress className="color[var(--ns-primary)]" value={skill}></Progress>
+        {/* <Progress className="color[var(--ns-primary)]" value={skill}></Progress> */}
         <h2 className="text-xl font-semibold text-[var(--ns-primary)]">
           {title}
         </h2>
