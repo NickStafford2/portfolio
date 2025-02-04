@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 
 export function Experience() {
   return (
-    <div>
+    <div id="inflatableOffice">
       <h1 className="pb-4 pt-10 text-3xl">Work</h1>
       <NsCard>
         <NsCollapse title="InflatableOffice LLC">
