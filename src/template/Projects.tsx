@@ -1,17 +1,29 @@
 import { NsCard } from '@/components/ns/nsCard'
 import { PiNetworkX } from 'react-icons/pi'
 import NsCollapse from '@/components/ns/NsCollapse'
-import { Title1 } from '@/Title'
+import { Title1, Title2, Title3 } from '@/Title'
 import { GithubLink } from './GithubLink'
 import NsIcon from '@/components/ns/NsIcon'
 import {
+  SiAngular,
+  SiCplusplus,
   SiFlask,
+  SiGulp,
+  SiLua,
   SiNeo4J,
+  SiPhpstorm,
   SiPython,
   SiReact,
+  SiSqlalchemy,
   SiTypescript,
+  SiWebgl,
+  SiWebpack,
 } from 'react-icons/si'
-import { TbBrandThreejs } from 'react-icons/tb'
+import { TbBrandThreejs, TbFileTypeSql } from 'react-icons/tb'
+import NsSkill from '@/components/ns/NsSkill'
+import { RiAngularjsFill, RiJavascriptFill } from 'react-icons/ri'
+import { FaPhp } from 'react-icons/fa6'
+import { FaGrunt } from 'react-icons/fa'
 // import nvimImage from '@/assets/NvimScreenshot.png'
 
 export function Projects() {
@@ -32,7 +44,7 @@ export function Projects() {
             <div className="flex flex-col">
               <div className="flex flex-col justify-between py-3 pb-6 xl:flex-row">
                 <p className="py-4 pr-4">
-                  Visualize and inspect the resulting ego network of their npm
+                  Visualize and inspect the ego network of your npm
                   dependencies. Analyzes the network and searches for
                   vulnerabilities.
                 </p>
@@ -45,7 +57,6 @@ export function Projects() {
                     className="w-fit"
                     childContainerClassName="p-4 flex flex-col"
                     showImage={false}>
-                    Currently in Development{' '}
                     <a
                       className="text-xl text-accent underline hover:text-destructive"
                       target="_blank"
@@ -106,11 +117,6 @@ export function Projects() {
           <NsCollapse
             title="Portfolio"
             description="You are currently looking at it.">
-            <GithubLink
-              className="float-right w-fit"
-              name="Portfolio"
-              href="https://github.com/NickStafford2/portfolio"
-            />
             <p className="text-2xl text-destructive">Work in Progress!</p>
             <p className="pt-4">
               I am starting simple. Hoping to make this pretty nice as time goes
@@ -119,37 +125,50 @@ export function Projects() {
             </p>
             <div className="flex flex-row justify-between gap-4">
               <p className="pt-4">
-                Used Gpu Acceleration for animations. Writing the fragment and
+                Uses Gpu Acceleration for animations. Writing the fragment and
                 vertex shaders for animations has been plenty of fun. I am still
                 working on it though.
               </p>
               <div className="flex flex-row gap-3 self-end pt-4">
+                <NsIcon name="WebGL" svg={<SiWebgl />} />
                 <NsIcon name="ThreeJs" svg={<TbBrandThreejs />} />
                 <NsIcon name="React" svg={<SiReact />} />
                 <NsIcon name="Typescript" svg={<SiTypescript />} />
                 <NsIcon name="Flask/Quart" svg={<SiFlask />} />
                 <NsIcon name="Python" svg={<SiPython />} />
+                <GithubLink
+                  className="float-right w-fit"
+                  name="Portfolio"
+                  href="https://github.com/NickStafford2/portfolio"
+                />
               </div>
             </div>
           </NsCollapse>
         </NsCard>
-        <NsCard>
+        <NsCard id="inflatableOffice" className="scroll-mt-48">
           <NsCollapse
-            title="IO Architecture rewrite"
-            description="I can't believe this actually worked.">
-            <div className="flex flex-col gap-4">
+            startVisible={true}
+            title="InflatableOffice.com"
+            description="Professional work as a web developer.">
+            <div className="flex scroll-mt-48 flex-col gap-4">
               <div>
-                <img className="float-right pb-4" src="IoLogo.png" />
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="www.InflatableOffice.com">
+                  <img className="float-right pb-4" src="IoLogo.png" />
+                </a>
+                <Title2>Software Architect</Title2>
                 <p>
                   Hired as a web developer, I ended up working the role of a
                   software architect. I made executive software decisions for
                   the company. I rewrote and refactored the company's frontend
                   macroscopic system structure, integrated all previous
                   functionality, while keeping all legacy code functional. The
-                  system stated as Javascript spaghetti code written in PHP.
-                  After the rewrite, we could utilize all the power of IDEs,
-                  ES6, Webpack, Typescript, NPM, and RxJs. I could not have done
-                  it without the bravery of my former employers. I requested six
+                  system stated as Javascript code written in PHP files. After
+                  the rewrite, we could utilize all the power of IDEs, ES6,
+                  Webpack, Typescript, NPM, and RxJs. I could not have done it
+                  without the bravery of my former employers. I requested six
                   weeks alone, dedicated solely to rewriting the frontend
                   architecture. Luckily they believed in me, and the results
                   were better than I thought possible. Their website today sits
@@ -167,16 +186,28 @@ export function Projects() {
                 employees. Wrote several web applications used by customers
                 every day.
               </p>
-              <img src="angularjsRefactoring.jpeg" />
+              <Title2>How To Refactor Angular Hybrid Apps </Title2>
+              <img src="angularjsRefactoring.jpeg" width="800px" />
               <p>
-                How To Refactor Angular Hybrid Apps This is the Continuous
-                Improvement workflow I designed to guide other developers. This
-                is the ideal process to efficiently convert an AngularJS
+                This is the Continuous Improvement workflow I designed to guide
+                other developers. This is how we efficiently converted AngularJS
                 Directives into Angular Components. For performance reasons,
                 DowngradeModule was preferred to UpgradeModule. Refactoring is
-                best done by developers familiar with the code and thus should
-                be done concurrently with normal bug fixes
+                best done by whichever developer is most familiar with the code
+                and should be done concurrently with normal bug fixes
               </p>
+              <div className="flex flex-row flex-wrap justify-around gap-8 pt-4 xl:justify-end">
+                <NsSkill svg={<SiAngular />} title="Angular" />
+                <NsSkill svg={<RiJavascriptFill />} title="Javascript" />
+                <NsSkill svg={<SiTypescript />} title="Typescript" />
+                <NsSkill svg={<RiAngularjsFill />} title="AngularJS" />
+                <NsSkill svg={<TbFileTypeSql />} title="SQL" />
+                <NsSkill svg={<FaPhp />} title="PHP" />
+                <NsSkill svg={<SiPhpstorm />} title="PHP Storm" />
+                <NsSkill svg={<SiWebpack />} title="Webpack" />
+                <NsSkill svg={<FaGrunt />} title="Grunt" />
+                <NsSkill svg={<SiGulp />} title="Gulp" />
+              </div>
             </div>
           </NsCollapse>
         </NsCard>
@@ -255,7 +286,7 @@ export function Projects() {
         </NsCard>
         <NsCard>
           <NsCollapse
-            title="Undergrad Portfolio"
+            title="Undergrad Portfolio Website"
             description="Great work for the time">
             <p>
               Built entirely in Python flask and lots of very clever CSS, this
@@ -264,6 +295,14 @@ export function Projects() {
               simple templating engines. I no longer host this anymore, but I
               still have some pretty pictures.{' '}
             </p>
+            <div className="flex flex-row justify-around gap-8 pt-4 xl:justify-end">
+              <NsSkill svg={<SiFlask />} title="Flask" />
+              <NsSkill svg={<SiPython />} title="Python" />
+              <GithubLink
+                name="Old Portfolio"
+                href="https://github.com/NickStafford2/Resume"
+              />
+            </div>
           </NsCollapse>
         </NsCard>
         <NsCard>
@@ -273,6 +312,16 @@ export function Projects() {
               scrapes uploaded syllabi, stores their content, indexes them, and
               outputs them into a standardized format.{' '}
             </p>
+
+            <div className="flex flex-row justify-around gap-8 pt-4 xl:justify-end">
+              <NsSkill svg={<SiFlask />} title="Flask" />
+              <NsSkill svg={<SiPython />} title="Python" />
+              <NsSkill svg={<SiSqlalchemy />} title="SQLalchemy" />
+              <GithubLink
+                name="Syllahub"
+                href="https://github.com/JarvisCapstone/Syllahub"
+              />
+            </div>
           </NsCollapse>
         </NsCard>
         <NsCard>
@@ -281,6 +330,7 @@ export function Projects() {
             description="A tool I built in university to help me learn C++">
             {' '}
             todo: find code and link to it.
+            <NsSkill svg={<SiCplusplus />} title="C++" />
           </NsCollapse>
         </NsCard>
         <NsCard>
@@ -300,6 +350,7 @@ export function Projects() {
                 perfect desktop with every feature I ever wanted. Customizing
                 the volume bars was a total pain.{' '}
               </p>
+              <NsSkill svg={<SiLua />} title="Lua"></NsSkill>
             </div>
           </NsCollapse>
         </NsCard>

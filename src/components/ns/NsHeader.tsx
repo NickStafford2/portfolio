@@ -39,8 +39,7 @@ export default function NsHeader() {
           }}
           style={{
             backgroundSize: '200% 200%',
-          }}
-        ></motion.div>
+          }}></motion.div>
         <motion.div
           variants={borderVariants}
           className="absolute h-full w-full bg-[radial-gradient(circle_farthest-side_at_0_100%,var(--ns-accent),transparent),radial-gradient(circle_farthest-side_at_100%_0,var(--ns-primary),transparent),radial-gradient(circle_farthest-side_at_100%_100%,var(--ns-primary),transparent),radial-gradient(circle_farthest-side_at_0_0,var(--ns-accent),#141316)]"
@@ -53,8 +52,7 @@ export default function NsHeader() {
           }}
           style={{
             backgroundSize: '200% 200%',
-          }}
-        ></motion.div>
+          }}></motion.div>
       </div>
 
       <div className="fixed z-30 flex h-[var(--header-height)] w-full items-stretch justify-between gap-[2px] bg-transparent text-[var(--ns-primary)]">
@@ -80,7 +78,7 @@ export default function NsHeader() {
             Projects
           </HeaderLink>
           <HeaderLink className="bg-background" href="#thoughts">
-            Thoughts
+            Random
           </HeaderLink>
         </div>
         <div className="hidden h-full w-full bg-background sm:flex"></div>
