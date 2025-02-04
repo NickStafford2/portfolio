@@ -1,15 +1,14 @@
 import React from 'react'
-import { Progress } from '../ui/progress'
+// import { Progress } from '../ui/progress'
 
 export default function NsSkill({
   title,
   svg,
-  skill,
+  // skill,
   description,
 }: {
   title: string
   svg: React.ReactNode
-  skill: number
   description?: string
 }) {
   const className = 'h-12 w-12 text-primary'

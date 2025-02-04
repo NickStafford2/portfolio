@@ -14,7 +14,7 @@ import angularJsLogo from '/logos/angularJsLogo.svg'
 import flaskLogo from '/logos/flaskLogo.svg'
 import vueLogo from '/logos/vueLogo.svg'
 import laravelLogo from '/logos/laravelLogo.svg'
-import { Title2 } from '@/Title'
+import { Title2, Title3 } from '@/Title'
 
 const logos = [
   angularLogo,
@@ -157,13 +157,17 @@ export const OptionTwo: React.FC = () => {
 
   return (
     <div className="p-4">
-      <Title2>I have forgotten more skills than I can count. . .</Title2>
+      <Title2>Modern Web Development:</Title2>
       <canvas
         ref={canvas}
         width={860}
         height={640}
         className="bg-gradient-to-t from-primary to-background"
       />
+      <Title3 className="pt-4">
+        I have used a lot of tools and frameworks. I avoid getting too
+        committed.
+      </Title3>
     </div>
   )
 }
