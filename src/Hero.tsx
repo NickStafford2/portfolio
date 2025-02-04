@@ -28,15 +28,11 @@ export function Hero() {
             </NsCard>
           </button>
 
-          <div className="hidden w-[15em] max-w-[30em] lg:block xl:w-[12em] 2xl:w-[30em]">
-            <div className="font-light text-[var(--ns-primary)]">
-              <a
-                href="#aboutme"
-                className="text-text text-nowrap py-6 pr-6 text-3xl hover:text-accent">
-                See what else I do...
-              </a>
-            </div>
-          </div>
+          <a
+            href="#aboutme"
+            className="text-text hidden w-[15em] max-w-[30em] text-nowrap py-6 pr-6 text-3xl font-light text-[var(--ns-primary)] hover:text-accent lg:block xl:w-[12em] 2xl:w-[30em]">
+            Learn more...
+          </a>
         </div>
         <ContactMe />
       </div>
