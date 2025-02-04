@@ -9,7 +9,7 @@ export default function ContactMe() {
   // const [contactOpen, setIsVisible] = useState<boolean>(true)
   const { contactOpen, setContactOpen } = useContext(ContactContext)
   return (
-    <div className="h-[22em] max-w-[35em] self-end pr-2">
+    <div className="h-[16em] max-w-[35em] flex-shrink-0 self-end pr-2 md:h-[22em]">
       {contactOpen}
       <NsCard
         className="h-full"
@@ -26,7 +26,7 @@ export default function ContactMe() {
           initial={{ width: '4em', maxWidth: '4em' }}
           animate={{
             width: contactOpen ? '35em' : '4em',
-            maxWidth: contactOpen ? '35em' : '4em',
+            maxWidth: contactOpen ? 'min(100vw - 1em,35em)' : '4em',
           }}>
           <div className="flex flex-col justify-around pb-6 text-primary">
             <div className="flex flex-row items-center gap-4">
